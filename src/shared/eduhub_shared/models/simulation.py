@@ -1,7 +1,9 @@
 from enum import StrEnum
 from pydantic import Field, NonNegativeInt, PositiveFloat
 from eduhub_shared.models.analysis import Rate
+from eduhub_shared.models.audience import AudienceFilters
 from eduhub_shared.models.common import ContractModel, Handle
+from eduhub_shared.models.context import CreatorContext
 
 class ReactionType(StrEnum):
     """
@@ -36,14 +38,6 @@ class Persona(ContractModel):
     traits: list[str] = Field(default_factory=list, description="Short es-AR descriptors.")
     weight: PositiveFloat = Field(description="Survey expansion weight.")
 
-class AudienceFilters(ContractModel):
-    """
-    Restrict the simulated audience. Empty lists mean no restriction.
-    """
-    age_groups: list[str] = Field(default_factory=list)
-    genders: list[str] = Field(default_factory=list)
-    provinces: list[str] = Field(default_factory=list)
-
 class SimulationRequest(ContractModel):
     """
     Test 1-3 text variants against a synthetic audience.
@@ -52,6 +46,7 @@ class SimulationRequest(ContractModel):
     variants: list[str] = Field(min_length=1, max_length=3)
     audience_size: int = Field(default=50, ge=5, le=200)
     filters: AudienceFilters = Field(default_factory=AudienceFilters)
+    context: CreatorContext | None = Field(default=None, description="Optional creator brief (product, audience).")
 
 class PersonaReaction(ContractModel):
     """

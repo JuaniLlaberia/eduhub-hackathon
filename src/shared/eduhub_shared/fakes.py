@@ -430,6 +430,7 @@ class FakeAnalyzer:
             recommendations=build_recommendations(insights),
             summary=build_summary(snapshot.profile, kpis, insights),
             engine="fake",
+            context=snapshot.context,
         )
 
 DRAFT_TEMPLATES = (

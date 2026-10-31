@@ -1,5 +1,6 @@
 from pydantic import AwareDatetime, Field, NonNegativeFloat
 from eduhub_shared.models.common import ContractModel, Handle
+from eduhub_shared.models.context import CreatorContext
 
 class DraftRequest(ContractModel):
     """
@@ -10,6 +11,7 @@ class DraftRequest(ContractModel):
     recommendation_id: str | None = None
     instructions: str | None = Field(default=None, max_length=500)
     count: int = Field(default=3, ge=1, le=5)
+    context: CreatorContext | None = Field(default=None, description="Overrides report.context for these drafts.")
 
 class Draft(ContractModel):
     """

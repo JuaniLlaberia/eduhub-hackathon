@@ -1,6 +1,6 @@
 # Stage 11: Creator brief ("el para qué") — Option A · contract + AI + backend
 
-- **Status:** todo (decision: approved for planning on 2026-10-31; go/no-go with the team)
+- **Status:** phase 0 done (contract v1.2.0 committed on `ai`, acked; merged into `dev` together with phases 1–2); phases 1–2 todo
 - **Priority:** WANTED (after the demo path works; nothing in the demo may depend on it)
 - **Depends on:** 06, 08, 09 (all done). Contract change → needs front + back agreement first.
 - **Who runs what:**
@@ -244,4 +244,10 @@ Phase 0 (contract, ~1 h incl. approvals) → merge into dev → send the front f
 
 ## Handoff notes
 
-_(fill in per phase: who agreed, deviations, real-run results)_
+- **Phase 0 (2026-10-31):**
+  - **Built:** `models/audience.py` (`AudienceFilters`, moved) and `models/context.py` (`CreatorGoal`, `PreferredCta`, `CreatorContext`); optional `context` on the 5 models; `FakeAnalyzer` echo; example brief in the `demo_finanzas` fixture; v1.2.0 + CHANGELOG; openapi and fixtures regenerated.
+  - **Agreement:** Juan, repo maintainer. Back and front notified via the CHANGELOG and the front hand-off.
+  - **Tests:** `src/shared/tests/test_contract_v1_2.py`, approved by Juan.
+  - **Results:** 481 tests green across shared, AI and backend; the existing frozen tests are unchanged.
+  - **Deviation:** pydantic split `CreatorContext` and `AudienceFilters` into `-Input`/`-Output` OpenAPI schemas (renaming the existing `AudienceFilters` type for the front). Fixed with `json_schema_serialization_defaults_required=False` on those two models; a test guards that no schema name splits.
+  - **After the commit:** Juan acked v1.2.0 and sent the front file. Merging into `dev` waits until phases 1–2 are done (no one else is working on the backend now).
