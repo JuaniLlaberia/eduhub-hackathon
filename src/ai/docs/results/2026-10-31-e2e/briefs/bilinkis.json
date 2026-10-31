@@ -1,0 +1,10 @@
+{
+  "goal": "launch",
+  "goal_detail": "Lanzar un newsletter semanal y conseguir los primeros suscriptores.",
+  "offering": "Newsletter semanal gratuito sobre tecnología, educación y futuro del trabajo.",
+  "target_audience": "Docentes, padres y curiosos de la tecnología.",
+  "audience_filters": {"age_groups": ["30 a 49 años", "50 a 64 años"], "genders": [], "provinces": []},
+  "brand_voice": "Divulgativo, curioso, sin jerga técnica.",
+  "avoid_topics": ["fútbol"],
+  "preferred_cta": "link"
+}
