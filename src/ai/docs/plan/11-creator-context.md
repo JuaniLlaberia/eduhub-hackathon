@@ -1,6 +1,6 @@
 # Stage 11: Creator brief ("el para qué") — Option A · contract + AI + backend
 
-- **Status:** phase 0 done (contract v1.2.0 committed on `ai`, acked); phase 1 done (committed on `ai`); phase 2 todo. Everything goes into `dev` together after phase 2.
+- **Status:** phase 0 done (contract v1.2.0 committed on `ai`, acked); phase 1 done (committed on `ai`); phase 2 done (committed on `backend`, `ai` fast-forwarded to include it). Next: push and merge into `dev`.
 - **Priority:** WANTED (after the demo path works; nothing in the demo may depend on it)
 - **Depends on:** 06, 08, 09 (all done). Contract change → needs front + back agreement first.
 - **Who runs what:**
@@ -216,9 +216,9 @@ Small, because the AI does all the interpretation.
    - Requests without `context` behave as before.
    - `assert_routes_match_contract` still passes.
 6. **Definition of done:**
-   - [ ] `pytest src/shared src/backend` green, ruff and style.
-   - [ ] The backend's existing tests are unchanged (frozen).
-   - [ ] Committed on `backend` (`backend: pass the creator brief into the snapshot`), PR into `dev`.
+   - [x] `pytest src/shared src/backend` green, ruff and style.
+   - [x] The backend's existing tests are unchanged (frozen).
+   - [x] Committed on `backend` (`backend: pass the creator brief into the snapshot`). PR into `dev` pending.
    - [ ] Mark told what changed.
 
 ---
@@ -274,3 +274,15 @@ Phase 0 (contract, ~1 h incl. approvals) → merge into dev → send the front f
     - **Insights (15.6 s, 0 grounding errors):** still frame the link as something to move, and propose recording the ebook's recipes as videos.
     - **To watch:** "sin sobras por dos semanas" is a mild product claim the brief didn't make. It's not a number, so grounding doesn't catch it; the prompt already forbids invented product facts.
   - Manual-run helper: `sh src/ai/scripts/brief_check.sh [account] [brief]` (loads `.env`; avoids long copy-pasted commands, which lost the `--brief` flag twice).
+- **Phase 2 (2026-10-31):**
+  - **Built:** `eduhub_backend/jobs.py` passes `request.context` into the `AccountSnapshot` it stores and analyzes (`_fetch(..., context)`).
+  - **No change needed** for `/drafts` and `/simulations`: they already forward the request models, so the optional brief reaches the generator and the simulator. The demo reports load from JSON, so they keep `context`.
+  - **Tests:** `src/backend/tests/test_creator_context.py` (5), approved by Juan as repo maintainer:
+    - the brief reaches the analyzer's snapshot, `/reports/{id}` and the latest-report route;
+    - no brief → `None`;
+    - an invalid brief → 422 `invalid_request`;
+    - drafts and simulations pass the brief through.
+  - **Results:** 503 tests green across shared, backend and AI.
+  - **Branches:** `backend` was fast-forwarded to `ai` first, to get contract v1.2.0 and phase 1. After the commit, `ai` was fast-forwarded to `backend`, so either branch carries all of stage 11.
+  - **Session note:** Claude Code reloads `.claude/settings.local.json`, so switching `EDUHUB_TEAM` took effect without a restart. The guard then allowed `src/backend/` edits normally.
+  - **Pending:** tell Mark about the `jobs.py` change; push and merge into `dev`; the front team implements its part from `11-creator-context-frontend.md`.
