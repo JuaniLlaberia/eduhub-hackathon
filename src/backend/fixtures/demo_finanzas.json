@@ -1,0 +1,1186 @@
+{
+  "profile": {
+    "platform": "x",
+    "handle": "demo_finanzas",
+    "display_name": "Cami (demo) · Finanzas sin vueltas",
+    "bio": "Cuenta ficticia de ejemplo. Finanzas personales para gente que cobra en pesos 💸",
+    "followers_count": 18400,
+    "following_count": 612,
+    "posts_count": 2140,
+    "verified": false,
+    "avatar_url": null,
+    "created_at": "2021-03-14T15:00:00Z"
+  },
+  "posts": [
+    {
+      "id": "1980000000000308841",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Error de novato con la tarjeta: confundir límite de compra con plata disponible. #tarjetas",
+      "created_at": "2026-10-28T16:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000308841",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1729,
+        "likes": 18,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 4,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000300922",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Primer sueldo: la guía que me hubiera gustado leer a los 20. #sueldo",
+      "created_at": "2026-10-27T00:05:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000300922",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4876,
+        "likes": 140,
+        "reposts": 23,
+        "quotes": 4,
+        "replies": 19,
+        "bookmarks": 31,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000293003",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Interés compuesto explicado con un mate: un ejemplo simple que te va a cambiar la cabeza. #inversiones",
+      "created_at": "2026-10-25T18:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000293003",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1791,
+        "likes": 18,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 4,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000285084",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¡Llegué a mi primer fondo de emergencia completo! Les cuento cómo lo hice en un hilo 🧵 #ahorro",
+      "created_at": "2026-10-23T11:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000285084",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": "1980000000000285084",
+      "metrics": {
+        "impressions": 3942,
+        "likes": 123,
+        "reposts": 15,
+        "quotes": 3,
+        "replies": 13,
+        "bookmarks": 33,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000277165",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Infografía: cómo armar tu primer presupuesto si cobrás en negro o por proyecto. #presupuesto",
+      "created_at": "2026-10-22T00:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000277165",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 7089,
+        "likes": 450,
+        "reposts": 57,
+        "quotes": 11,
+        "replies": 48,
+        "bookmarks": 123,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000269246",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Fecha de cierre y vencimiento: el truco para ganar casi 50 días de financiación. #tarjetas",
+      "created_at": "2026-10-20T16:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000269246",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1608,
+        "likes": 16,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000261327",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Aumento de sueldo: subí el ahorro antes de subir el estilo de vida. #sueldo",
+      "created_at": "2026-10-19T00:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000261327",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3374,
+        "likes": 68,
+        "reposts": 11,
+        "quotes": 2,
+        "replies": 9,
+        "bookmarks": 15,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000253408",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "La mejor inversión del año fue un curso de finanzas de 10 mil pesos. En serio. #inversiones",
+      "created_at": "2026-10-16T18:12:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000253408",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 2244,
+        "likes": 35,
+        "reposts": 5,
+        "quotes": 1,
+        "replies": 4,
+        "bookmarks": 7,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000245489",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Ahorro automático: programá la transferencia para el día de cobro y olvidate. #ahorro",
+      "created_at": "2026-10-14T11:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000245489",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4800,
+        "likes": 133,
+        "reposts": 22,
+        "quotes": 4,
+        "replies": 18,
+        "bookmarks": 29,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000237570",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "La regla de las 48 horas: antes de cualquier compra no planificada, esperá dos días. Te sorprende. #presupuesto",
+      "created_at": "2026-10-13T00:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000237570",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 6349,
+        "likes": 306,
+        "reposts": 39,
+        "quotes": 7,
+        "replies": 32,
+        "bookmarks": 83,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000229651",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Tarjeta de débito vs. crédito para el día a día. #tarjetas",
+      "created_at": "2026-10-11T16:05:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000229651",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1021,
+        "likes": 7,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000221732",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¿Cuánto tiempo te dura el sueldo? Encuesta honesta 👇 #sueldo",
+      "created_at": "2026-10-10T00:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000221732",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4057,
+        "likes": 110,
+        "reposts": 18,
+        "quotes": 3,
+        "replies": 46,
+        "bookmarks": 24,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000213813",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Hilo: cómo leer el rendimiento de una inversión sin marearte con los porcentajes 🧵 #inversiones",
+      "created_at": "2026-10-07T18:12:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000213813",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": "1980000000000213813",
+      "metrics": {
+        "impressions": 2202,
+        "likes": 30,
+        "reposts": 5,
+        "quotes": 1,
+        "replies": 4,
+        "bookmarks": 6,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000205894",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "5 gastos hormiga que me comían 30 mil pesos por mes y cómo los corté 🐜 #ahorro",
+      "created_at": "2026-10-06T11:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000205894",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3316,
+        "likes": 73,
+        "reposts": 12,
+        "quotes": 2,
+        "replies": 10,
+        "bookmarks": 16,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000197975",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Checklist de fin de mes: revisar gastos hormiga, suscripciones que no usás y cuotas que vencen 🧾 #presupuesto",
+      "created_at": "2026-10-05T00:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000197975",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 6956,
+        "likes": 277,
+        "reposts": 46,
+        "quotes": 9,
+        "replies": 38,
+        "bookmarks": 61,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000190056",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Cómo salí de la deuda de la tarjeta en 8 meses, paso a paso. #tarjetas",
+      "created_at": "2026-10-02T16:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000190056",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1459,
+        "likes": 18,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 5,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000182137",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Si tu sueldo aumenta y tu ahorro no, el problema no es el sueldo. #sueldo",
+      "created_at": "2026-10-01T00:05:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000182137",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3398,
+        "likes": 81,
+        "reposts": 13,
+        "quotes": 2,
+        "replies": 11,
+        "bookmarks": 18,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000174218",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Diversificar no es tener 20 activos. Es no depender de uno solo. #inversiones",
+      "created_at": "2026-09-28T18:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000174218",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 2202,
+        "likes": 32,
+        "reposts": 5,
+        "quotes": 1,
+        "replies": 4,
+        "bookmarks": 7,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000166299",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Ahorrar en pesos vs. en dólares: lo que nadie te explica de la inflación y el plazo. #ahorro",
+      "created_at": "2026-09-27T11:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000166299",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3849,
+        "likes": 95,
+        "reposts": 15,
+        "quotes": 3,
+        "replies": 13,
+        "bookmarks": 21,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000158380",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Si no sabés a dónde se va tu sueldo, no es falta de plata: es falta de registro. #presupuesto",
+      "created_at": "2026-09-26T00:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000158380",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 5238,
+        "likes": 201,
+        "reposts": 33,
+        "quotes": 6,
+        "replies": 27,
+        "bookmarks": 44,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000150461",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Resumen de tarjeta: las 4 líneas que tenés que mirar siempre. #tarjetas",
+      "created_at": "2026-09-23T16:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000150461",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1544,
+        "likes": 14,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000142542",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Freelance y cobrás en dólares: tres cosas que tenés que ordenar sí o sí. #sueldo",
+      "created_at": "2026-09-23T00:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000142542",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3285,
+        "likes": 93,
+        "reposts": 12,
+        "quotes": 2,
+        "replies": 10,
+        "bookmarks": 25,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000134623",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Qué es un FCI money market y por qué lo uso para la plata del mes. #inversiones",
+      "created_at": "2026-09-20T18:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000134623",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1961,
+        "likes": 25,
+        "reposts": 4,
+        "quotes": 0,
+        "replies": 3,
+        "bookmarks": 5,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000126704",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Mi truco para ahorrar: una cuenta separada que no veo en la app del banco. #ahorro",
+      "created_at": "2026-09-18T11:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000126704",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4016,
+        "likes": 96,
+        "reposts": 16,
+        "quotes": 3,
+        "replies": 13,
+        "bookmarks": 21,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000118785",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¿Llevás un presupuesto mensual? Contame qué app o método usás 👇 #presupuesto",
+      "created_at": "2026-09-17T00:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000118785",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 7785,
+        "likes": 388,
+        "reposts": 64,
+        "quotes": 12,
+        "replies": 162,
+        "bookmarks": 86,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000110866",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¿Usás la tarjeta de crédito o la evitás? Debate. #tarjetas",
+      "created_at": "2026-09-14T16:12:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000110866",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1299,
+        "likes": 11,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 4,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000102947",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Recibo de sueldo: qué es cada descuento y por qué te importa. #sueldo",
+      "created_at": "2026-09-14T00:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000102947",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3230,
+        "likes": 61,
+        "reposts": 10,
+        "quotes": 2,
+        "replies": 8,
+        "bookmarks": 13,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000095028",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Antes de invertir: fondo de emergencia, deudas al día y objetivos claros. En ese orden. #inversiones",
+      "created_at": "2026-09-11T18:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000095028",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1849,
+        "likes": 27,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 7,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000087109",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Fondo de emergencia: 3 a 6 meses de gastos fijos. Empezá con uno, aunque tardes. #ahorro",
+      "created_at": "2026-09-09T11:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000087109",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3640,
+        "likes": 92,
+        "reposts": 15,
+        "quotes": 3,
+        "replies": 12,
+        "bookmarks": 20,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000079190",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Presupuesto en 3 pasos: anotá todo una semana, separá fijos de variables, recortá lo que no te suma. #presupuesto",
+      "created_at": "2026-09-09T00:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000079190",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 7456,
+        "likes": 339,
+        "reposts": 56,
+        "quotes": 11,
+        "replies": 47,
+        "bookmarks": 75,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000071271",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Cuotas sin interés: cuándo convienen y cuándo son una trampa. #tarjetas",
+      "created_at": "2026-09-06T16:12:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000071271",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1543,
+        "likes": 13,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000063352",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¿Negociaste tu sueldo alguna vez? Cuento cómo me fue la primera vez. #sueldo",
+      "created_at": "2026-09-05T00:12:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000063352",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4022,
+        "likes": 91,
+        "reposts": 15,
+        "quotes": 3,
+        "replies": 38,
+        "bookmarks": 20,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000055433",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¿Empezaste a invertir este año? ¿En qué? Leo todo 👇 #inversiones",
+      "created_at": "2026-09-02T18:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000055433",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 2025,
+        "likes": 29,
+        "reposts": 4,
+        "quotes": 0,
+        "replies": 12,
+        "bookmarks": 6,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000047514",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "¿Cuánto de tu sueldo lográs ahorrar? Sin juzgar, quiero saber la realidad 👀 #ahorro",
+      "created_at": "2026-08-31T11:12:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000047514",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4211,
+        "likes": 152,
+        "reposts": 19,
+        "quotes": 3,
+        "replies": 48,
+        "bookmarks": 41,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000039595",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Mi planilla de presupuesto mensual, gratis. Guardala y usala el día que cobrás 📊 #presupuesto",
+      "created_at": "2026-08-31T00:05:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000039595",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 3942,
+        "likes": 150,
+        "reposts": 19,
+        "quotes": 3,
+        "replies": 16,
+        "bookmarks": 41,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000031676",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Pagar el mínimo de la tarjeta es la deuda más cara que podés tener. #tarjetas",
+      "created_at": "2026-08-28T16:30:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000031676",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "tarjetas"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 1589,
+        "likes": 16,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000023757",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Cobraste el aguinaldo. Antes de gastarlo, pensá en estos 3 destinos. #sueldo",
+      "created_at": "2026-08-27T00:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000023757",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "sueldo"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4587,
+        "likes": 126,
+        "reposts": 21,
+        "quotes": 4,
+        "replies": 17,
+        "bookmarks": 28,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000015838",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Plazo fijo, FCI o cuenta remunerada: diferencias explicadas en 1 minuto. #inversiones",
+      "created_at": "2026-08-25T18:45:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000015838",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "inversiones"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 2296,
+        "likes": 31,
+        "reposts": 5,
+        "quotes": 1,
+        "replies": 4,
+        "bookmarks": 7,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000007919",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "Ahorrar no es lo que sobra a fin de mes. Es lo primero que separás cuando cobrás. #ahorro",
+      "created_at": "2026-08-23T11:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000007919",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [
+        "ahorro"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 4162,
+        "likes": 101,
+        "reposts": 16,
+        "quotes": 3,
+        "replies": 14,
+        "bookmarks": 22,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "1980000000000000000",
+      "platform": "x",
+      "author_handle": "demo_finanzas",
+      "text": "El método 50/30/20 adaptado a Argentina: 50% fijos, 30% vida, 20% a ahorro en lo que no se licúa. #presupuesto",
+      "created_at": "2026-08-22T00:00:00Z",
+      "url": "https://x.com/demo_finanzas/status/1980000000000000000",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "presupuesto"
+      ],
+      "mentions": [],
+      "conversation_id": null,
+      "metrics": {
+        "impressions": 6977,
+        "likes": 363,
+        "reposts": 46,
+        "quotes": 9,
+        "replies": 38,
+        "bookmarks": 99,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    }
+  ],
+  "trends": [
+    {
+      "name": "#Aguinaldo",
+      "rank": 1,
+      "post_count": 48200,
+      "location": "Argentina",
+      "observed_at": "2026-10-30T12:00:00Z"
+    },
+    {
+      "name": "Halloween",
+      "rank": 2,
+      "post_count": 31000,
+      "location": "Argentina",
+      "observed_at": "2026-10-30T12:00:00Z"
+    },
+    {
+      "name": "#FinanzasPersonales",
+      "rank": 3,
+      "post_count": 12800,
+      "location": "Argentina",
+      "observed_at": "2026-10-30T12:00:00Z"
+    },
+    {
+      "name": "Black Friday",
+      "rank": 4,
+      "post_count": 9600,
+      "location": "Argentina",
+      "observed_at": "2026-10-30T12:00:00Z"
+    }
+  ],
+  "source": "fixture",
+  "collected_at": "2026-10-30T12:00:00Z"
+}
