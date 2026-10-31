@@ -1,4 +1,59 @@
 {
+  "src/backend/tests/test_api_analyses.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "fc9177f3652faa1c13dd67b9997e9ec93f419e247ffe848ffe1dbd84fd47d5d1"
+  },
+  "src/backend/tests/test_api_basics.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "8a301eb272cf660cf9ce7b888861a45af33b69b7b68317af552df5ddde3b03cb"
+  },
+  "src/backend/tests/test_api_generation.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "ec9f77ebb20e0fb167cc0bfc7bc5c70082ca00a7fbc553e984a0a3db1307b246"
+  },
+  "src/backend/tests/test_api_reports.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "2690a65b4e9284ebc526527a6f2df9520163aebcbcd7aafb1dad38e47c0ba3b0"
+  },
+  "src/backend/tests/test_demo_mode.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "9fd8b7cfa73ee1e8e6ed996f733d1f054dbf9a5c7a4912ae97150cfefe90554f"
+  },
+  "src/backend/tests/test_fixture_source.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "ca4c7c478d62b595267dc9bde8c27e7d5568dbf2e9edd9afb84c75881e6b80b6"
+  },
+  "src/backend/tests/test_jobs.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "dc083468399edc5639cf862aadd2ee9728b21cd35efae80178800ba84d5a74bd"
+  },
+  "src/backend/tests/test_routes_contract.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "8abd1e34c82058c8ac17956b5c66469dd4b54af43ba4a3715afb5b6d39039214"
+  },
+  "src/backend/tests/test_settings.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "ee2dad6c4ce8f7ed4862d6c8566e560ad2d51262fccf172f5a05e9e7f96d84c9"
+  },
+  "src/backend/tests/test_startup.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "3e7335d26f392083b82cce8bcc4ac1944089d3f3079e9a148fd88b26425eee6c"
+  },
+  "src/backend/tests/test_storage.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "a04547fd15ad20d59048c84073430aee2b7cd5912fed4356d3ec4522fc8a4315"
+  },
   "src/shared/tests/test_contract_v1_1.py": {
     "approved_at": "2026-10-31T01:53:00.765194+00:00",
     "approved_by": "Juan",
