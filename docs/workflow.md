@@ -66,8 +66,19 @@ Frameworks: `pytest` + `pytest-asyncio` (back, AI, shared). The front team choos
 
 ## 5. Git
 
-- `main` is protected by convention. Work in branches named `<team>/<feature>` and merge often.
-- The first full integration happens when the three parts are merged. **Run every team's tests before merging into `main`.**
+```
+frontend ─┐
+backend  ─┼──► dev ──► main
+ai       ─┘
+```
+
+- **Each team works on its own branch:** `frontend`, `backend` or `ai`. Commit there only, and never commit directly to `dev` or `main`.
+- **`dev` is the integration branch.** Teams merge their branch into `dev`, and that's where the three parts are tested together.
+  - Before merging into `dev`, merge the latest `dev` into your branch and run your team's tests.
+  - After merging into `dev`, run **every** team's tests (`pytest src/shared src/backend src/ai` plus the front checks) to confirm nothing broke.
+- **`main` only gets `dev` when everything works together.** That means all tests pass and the demo path works end to end. `main` is what gets deployed and demoed.
+- **Contract changes travel through `dev`.** A team changes `src/shared/` on its own branch and merges it into `dev` as soon as it's agreed. The other teams then merge `dev` into their branch, and the post-merge hook flags the change (see §3).
+- Keep each branch up to date by merging `dev` into it often, at least after every contract change and before every merge into `dev`.
 - One-time setup per clone:
   ```bash
   git config core.hooksPath .githooks

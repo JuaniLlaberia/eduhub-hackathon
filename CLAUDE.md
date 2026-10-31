@@ -69,4 +69,14 @@ python scripts/check_contracts.py               # contract changed since my last
 python scripts/check_approved_tests.py          # frozen tests untouched?
 ```
 
-Commits: small, in a branch named `<team>/<feature>`, with a clear message. Run the checks above before committing. The git hooks enforce ownership, frozen tests and contract bookkeeping.
+## 7. Branches: `<team>` → `dev` → `main`
+
+- Work and commit **only on your team's branch** (`frontend`, `backend` or `ai`). Never commit directly to `dev` or `main`. If you're on the wrong branch, stop and tell the developer.
+- **To integrate:**
+  1. Merge `dev` into your team branch.
+  2. Run your team's tests and `python scripts/check_contracts.py`.
+  3. Merge the team branch into `dev`.
+  4. Run **all** teams' tests on `dev`.
+- `dev` → `main` only when everything works together: all tests green and the demo path working. Only do this when the developer explicitly asks.
+- Contract changes go into `dev` as soon as they're agreed. Other teams then merge `dev` into their branch.
+- Keep commits small, with clear messages. Run the checks in §6 before each commit. The git hooks enforce ownership, frozen tests and contract bookkeeping.

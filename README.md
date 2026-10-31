@@ -9,6 +9,7 @@ Docs: [`docs/README.md`](docs/README.md) · rules for humans and Claude: [`CLAUD
 ```bash
 git clone git@github.com:JuaniLlaberia/eduhub-hackathon.git && cd eduhub-hackathon
 git config core.hooksPath .githooks                        # ownership, frozen tests, contract checks
+git checkout backend                                       # your team branch: frontend | backend | ai (flow: team -> dev -> main)
 
 # Your team: frontend | backend | ai   (used by the Claude Code hooks and the git hooks)
 printf '{\n  "env": { "EDUHUB_TEAM": "backend" }\n}\n' > .claude/settings.local.json
