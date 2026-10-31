@@ -79,6 +79,11 @@
     "approved_by": "mark",
     "sha256": "2690a65b4e9284ebc526527a6f2df9520163aebcbcd7aafb1dad38e47c0ba3b0"
   },
+  "src/backend/tests/test_creator_context.py": {
+    "approved_at": "2026-10-31T14:28:44.615957+00:00",
+    "approved_by": "Juan",
+    "sha256": "a78790bf3f270d71ffad5a397c032d65a08d8e9df8075ba80125914ffa57d52c"
+  },
   "src/backend/tests/test_demo_mode.py": {
     "approved_at": "2026-10-31T04:22:20.688558+00:00",
     "approved_by": "mark",

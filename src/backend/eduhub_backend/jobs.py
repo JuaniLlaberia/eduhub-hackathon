@@ -14,6 +14,7 @@ from eduhub_shared.models import (
     AnalysisJob,
     AnalysisReport,
     AnalysisRequest,
+    CreatorContext,
     JobStatus,
 )
 
@@ -92,7 +93,7 @@ class JobRunner:
         self._latest[job.id] = job
         try:
             await self._update(job.id, status=JobStatus.FETCHING, progress=FETCH_PROGRESS, message=FETCHING_MESSAGE)
-            snapshot = await self._fetch(profile, request.max_posts)
+            snapshot = await self._fetch(profile, request.max_posts, request.context)
             await self._update(job.id, status=JobStatus.ANALYZING, progress=ANALYZE_START, message=ANALYZING_MESSAGE)
             report = await self._analyze(job.id, snapshot)
             await self._store.save_report(report)
@@ -104,14 +105,15 @@ class JobRunner:
             self._tasks.pop(job.id, None)
             self._latest.pop(job.id, None)
 
-    async def _fetch(self, profile: AccountProfile, limit: int) -> AccountSnapshot:
+    async def _fetch(self, profile: AccountProfile, limit: int, context: CreatorContext | None) -> AccountSnapshot:
         """
-        Fetch posts and trends for profile and store them as a snapshot.
+        Fetch posts and trends for profile and store them as a snapshot, with the creator brief of the request.
         """
         posts = await self._source.fetch_posts(profile.handle, limit)
         trends = await self._source.fetch_trends()
         snapshot = AccountSnapshot(
-            profile=profile, posts=posts, trends=trends, source=type(self._source).__name__, collected_at=utc_now()
+            profile=profile, posts=posts, trends=trends, source=type(self._source).__name__, collected_at=utc_now(),
+            context=context,
         )
         await self._store.save_snapshot(snapshot)
         return snapshot
