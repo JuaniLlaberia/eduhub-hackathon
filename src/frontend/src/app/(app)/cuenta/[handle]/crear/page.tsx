@@ -13,7 +13,8 @@ export default function CreatePage({ params, searchParams }: PageProps<"/cuenta/
 
 async function CreateForHandle({ params, searchParams }: PageProps<"/cuenta/[handle]/crear">) {
   const { handle } = await params;
-  const { recomendacion } = await searchParams;
+  const { recomendacion, tema } = await searchParams;
   const recommendationId = typeof recomendacion === "string" ? recomendacion : undefined;
-  return <CreateView handle={handle} recommendationId={recommendationId} />;
+  const initialTopic = typeof tema === "string" ? tema : undefined;
+  return <CreateView handle={handle} recommendationId={recommendationId} initialTopic={initialTopic} />;
 }
