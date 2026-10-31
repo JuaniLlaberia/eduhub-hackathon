@@ -1,0 +1,1334 @@
+{
+ "date": "2026-10-31",
+ "branch": "ai",
+ "contract_version": "1.2.0",
+ "setup": {
+  "backend": "uvicorn eduhub_backend.app:main (via a test launcher that adds GET /_e2e/usage), EDUHUB_FAKE_AI=0, DEMO_MODE=1 with FIXTURES_DIR = the 4 real snapshots only (no TWITTERAPI_IO_KEY in .env, so no live fetch)",
+  "label_model": "deepseek/deepseek-v4.1-flash",
+  "label_reasoning": "off",
+  "max_concurrency": 8,
+  "api_simulation_audience_size": 100,
+  "draft_count": 3
+ },
+ "api_e2e": {
+  "cases": [
+   {
+    "handle": "bilinkis",
+    "brief": false,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 17.07,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 5,
+      "failures": 0,
+      "prompt_tokens": 28928,
+      "completion_tokens": 8717,
+      "cost": 0.0188
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.017,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 190,
+     "scored": 70,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": true,
+     "avoid_topic_mentions": [],
+     "summary": "Tu cuenta tiene un patrón claro: el tono de opinión (1,8x), la franja mañana (1,8x) y el video (1,2x) son lo que mejor rinde, y el modelo lo confirma en los tres casos. Lo que te frena es el tono informativo (0,8x), la foto (0,9x), la tarde (0,8x) y el gancho de pregunta (0,8x). El CTA de link te cuesta alcance (0,7x), así que conviene moverlo fuera del post. Inteligencia artificial es tu tema más fuerte (1,4x) y tu mejor slot es viernes a las 9 h con 2,9x."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 14.97,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1724,
+      "completion_tokens": 3771,
+      "cost": 0.005042
+     },
+     "count": 3,
+     "lengths": [
+      468,
+      320,
+      380
+     ],
+     "scores": [
+      1.634431698081438,
+      1.0938309548798966,
+      1.6198535332657706
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "texts": [
+      "El otro día un amigo hincha de Central me dijo que ya no disfruta los partidos como antes. Que entre memes, opiniones y debates, se olvida de mirar la pelota. Me quedé pensando. ¿Nos está pasando eso con el Mundial? Tanta información alrededor que la esencia se diluye. Merlos, Sarmiento, Central... nombres que suenan, pero lo que importa es lo que pasa en la cancha. Al final, todo se reduce a once contra once y una pelota. ¿No será hora de volver a mirar solo eso?",
+      "Un [dato] de los goles en los mundiales se define en los últimos 15 minutos. No es casualidad: el cansancio, la presión, la necesidad. Y sin embargo, seguimos hablando de los primeros tiempos como si fueran decisivos. El fútbol se juega hasta el final. Siempre. Como la vida. ¿O no te pasó de definir algo sobre la hora?",
+      "El Mundial no se juega solo en la cancha. Se juega en la cabeza. Un [dato] de los penales se erran por factores psicológicos, no técnicos. La presión, el miedo a fallar, la mirada del otro. Por eso los equipos trabajan con psicólogos deportivos. Y por eso, a veces, el mejor jugador no es el que patea mejor, sino el que sostiene la mente. ¿Te parece que se entrena lo suficiente?"
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 9.46,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 16599,
+      "completion_tokens": 15722,
+      "cost": 0.02283
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.066,
+      0.449,
+      0.366
+     ],
+     "best": 1,
+     "brief_filters_respected": null,
+     "summary": "La variante 2 generó 1,2 veces más interacción que la variante 3 en la audiencia simulada. Donde mejor funcionó fue entre personas de 50 a 64 años."
+    }
+   },
+   {
+    "handle": "bilinkis",
+    "brief": true,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 42.94,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 5,
+      "failures": 0,
+      "prompt_tokens": 29104,
+      "completion_tokens": 9584,
+      "cost": 0.016506
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.011,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 190,
+     "scored": 70,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": true,
+     "avoid_topic_mentions": [],
+     "summary": "La cuenta publica 7,0 posts por semana con 1.654 vistas medianas y 2,3% de engagement. Lo que mejor rinde es el tono de opinión (1,8x), la franja mañana (1,8x) y el video (1,2x), mientras que la tarde (0,8x), la foto (0,9x) y el gancho pregunta (0,8x) quedan abajo. Para el lanzamiento del newsletter, los posts sin CTA rinden 1,5x más que los que llevan link, así que conviene mover el link a la respuesta o la bio."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 7.25,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1831,
+      "completion_tokens": 1809,
+      "cost": 0.002306
+     },
+     "count": 3,
+     "lengths": [
+      475,
+      385,
+      345
+     ],
+     "scores": [
+      2.0105076942134676,
+      1.4781153139396803,
+      1.264223716063199
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "avoid_topic_mentions": [],
+     "offering_keywords": [
+      "newsletter",
+      "semanal",
+      "gratuito",
+      "tecnologia,"
+     ],
+     "drafts_naming_offering": 2,
+     "drafts_with_link_mention": 3,
+     "texts": [
+      "Un amigo me dijo hace poco que la IA no le preocupa porque \"todavía no hace nada sola\". Le contesté que ese no es el problema. El problema es que nosotros tampoco hacemos nada solos: adoptamos cosas nuevas sin entender qué cambian en nuestra vida. Y eso ya pasó antes, varias veces, con otras tecnologías.\n\nLa diferencia es la velocidad. Antes teníamos tiempo de reaccionar; ahora el cambio llega antes de que terminemos de hacer las preguntas.\n\nLink en la primera respuesta.",
+      "Hay una asimetría que casi no se discute: la tecnología cambia en meses y las reglas que deberían contenerla cambian en décadas. No es pesimismo, es aritmética.\n\nCuando entendés eso, dejás de preguntarte si va a pasar y empezás a preguntarte cómo prepararte. Y prepararse no es saber programar: es entender qué está cambiando y por qué.\n\nLo desarrollo en el newsletter. Link en mi bio.",
+      "Arranqué un newsletter semanal gratuito. No es sobre \"lo último en IA\". Es sobre cómo pensar la tecnología cuando toca la educación, el trabajo y la vida cotidiana.\n\nSin jerga, sin humo, sin pronósticos grandilocuentes. Para docentes, padres y curiosos que quieren entender antes de opinar.\n\nSi te sirve, te espero. Link en la primera respuesta."
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 11.82,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 16695,
+      "completion_tokens": 15452,
+      "cost": 0.022422
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.174,
+      0.413,
+      0.407
+     ],
+     "best": 1,
+     "brief_filters_respected": true,
+     "summary": "La variante 2 generó 1,0 veces más interacción que la variante 3 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años. (Simulado con la audiencia objetivo de tu brief.)"
+    }
+   },
+   {
+    "handle": "mercadolibre",
+    "brief": false,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 12.55,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 4,
+      "failures": 0,
+      "prompt_tokens": 12322,
+      "completion_tokens": 7232,
+      "cost": 0.012074
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.02,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 200,
+     "scored": 50,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": true,
+     "avoid_topic_mentions": [],
+     "summary": "La cuenta vive de Fórmula 1: ese tema rinde 5,8x tu post típico y copa los cinco mejores posts. Lo que no funciona es el uso del feed como canal de atención: el tono conversacional da 0,0x y el modelo lo confirma en 0,1x. El video (1,2x) y la franja mañana de días de semana (4,6x) son tus palancas de formato y horario, mientras que el solo texto (0,3x) y el CTA con link (0,7x) te restan. Con 1,6 posts por semana, hay margen para subir volumen sin perder el foco en Fórmula 1."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 5.18,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1306,
+      "completion_tokens": 1557,
+      "cost": 0.00226
+     },
+     "count": 3,
+     "lengths": [
+      128,
+      142,
+      129
+     ],
+     "scores": [
+      7.521373333173261,
+      3.18892282475525,
+      5.150246573438755
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "texts": [
+      "En la F1 no se juega: se acelera. Y nosotros ya somos team partner de @alpinef1team y @francolapinto. Lo mejor está llegando. 🏁💛",
+      "La velocidad también se construye desde acá. Mercado Libre es partner oficial de @williamsracing y @francolapinto. Lo mejor está llegando. 🏎️💛",
+      "Fran Colapinto no corre solo: corre con todo un país. Y nosotros somos team partner de @alpinef1team. Lo mejor está llegando. 🇦🇷🏁"
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 8.16,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 14649,
+      "completion_tokens": 15467,
+      "cost": 0.019568
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.224,
+      0.32,
+      0.567
+     ],
+     "best": 2,
+     "brief_filters_respected": null,
+     "summary": "La variante 3 generó 1,8 veces más interacción que la variante 2 en la audiencia simulada. Donde mejor funcionó fue entre personas de 18 a 29 años."
+    }
+   },
+   {
+    "handle": "mercadolibre",
+    "brief": true,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 17.01,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 4,
+      "failures": 0,
+      "prompt_tokens": 12581,
+      "completion_tokens": 8103,
+      "cost": 0.012068
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.033,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 200,
+     "scored": 50,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": false,
+     "avoid_topic_mentions": [],
+     "summary": "La cuenta vive de Fórmula 1: ese tema rinde 5,8x tu post típico y explica casi todos los mejores posts. La franja mañana en días de semana (4,6x) y el tono promoción (6,8x) son las otras palancas claras. El objetivo es llevar gente al link del Black Friday, pero el link en el cuerpo cuesta alcance (0,7x): conviene ponerlo en respuesta o en la bio. Las respuestas de soporte conversacionales no rinden (0,0x) y no deberían esperar alcance."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 3.52,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1392,
+      "completion_tokens": 815,
+      "cost": 0.001207
+     },
+     "count": 3,
+     "lengths": [
+      124,
+      152,
+      121
+     ],
+     "scores": [
+      8.5913269919108,
+      3.93406965748697,
+      0.21785585164652974
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "avoid_topic_mentions": [],
+     "offering_keywords": [
+      "ofertas",
+      "friday",
+      "mercado",
+      "libre."
+     ],
+     "drafts_naming_offering": 3,
+     "drafts_with_link_mention": 0,
+     "texts": [
+      "En la F1 se define por milésimas. En el Black Friday, por segundos: las ofertas vuelan 🏁💛 Todo lo que buscás está en mi bio.",
+      "Y pensábamos que nosotros éramos rápidos... hasta que vimos los precios del Black Friday 💛🏁 Las ofertas del año, en la primera respuesta. No te duermas.",
+      "Hablamos el mismo idioma: el de la velocidad 🏁 Y el Black Friday se corre igual: el que duda, pierde. Ofertas en mi bio 💛"
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 7.67,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 14729,
+      "completion_tokens": 15270,
+      "cost": 0.01898
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.234,
+      0.317,
+      0.121
+     ],
+     "best": 1,
+     "brief_filters_respected": null,
+     "summary": "La variante 2 generó 1,4 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 18 a 29 años."
+    }
+   },
+   {
+    "handle": "paulina_cocina",
+    "brief": false,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 19.06,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 9,
+      "failures": 0,
+      "prompt_tokens": 33119,
+      "completion_tokens": 13800,
+      "cost": 0.022465
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.02,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 200,
+     "scored": 164,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": true,
+     "avoid_topic_mentions": [],
+     "summary": "Tu cuenta vive del video: rinde 3,5x vs. el resto y el solo texto se queda en 0,2x. Las recetas saladas son tu mejor tema (1,4x vs. el resto) y el tono personal suma 1,3x a igualdad de lo demás. El link y el tono promoción te cuestan alcance (0,5x y 0,6x), así que conviene reservarlos para respuestas o bio. La tarde, sobre todo miércoles y lunes a las 18 h, es tu mejor ventana."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 5.67,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1544,
+      "completion_tokens": 1431,
+      "cost": 0.001992
+     },
+     "count": 3,
+     "lengths": [
+      246,
+      269,
+      229
+     ],
+     "scores": [
+      1.3796519586779,
+      1.5747592171978408,
+      1.2325420234252318
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "texts": [
+      "Tu air fryer no recalienta, cocina. Y cocina mejor de lo que pensás 🤯\n\nPapas, milanesas, verduras, hasta flan. Todo sin prender el horno y sin llorar con el baño María.\n\nSi la tenés juntando polvo en la mesada, este es tu momento.\n\nBai los tkm ❤️",
+      "180° y 15 minutos. Ese es el número que te salva la cena.\n\nPollo, verduras y papas al mismo tiempo en la air fryer: primero lo que tarda más, después lo que se hace en 5.\n\nSin aceite de más, sin horno, sin lavar mil cosas.\n\nGuardátelo para el próximo martes sin ganas 💞",
+      "Berenjenas en la air fryer: crocantes por fuera, cremosas por dentro 🍆\n\nLas cortás, un chorrito de aceite, 180° y a los 12 minutos les das vuelta. Sal y ya.\n\nSi las odiabas hervidas, probá así y después me contás.\n\nBai los tkm ❤️"
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 9.69,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 16029,
+      "completion_tokens": 15962,
+      "cost": 0.0202
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.255,
+      0.397,
+      0.261
+     ],
+     "best": 1,
+     "brief_filters_respected": null,
+     "summary": "La variante 2 generó 1,5 veces más interacción que la variante 3 en la audiencia simulada. Donde mejor funcionó fue entre personas de 65 años y mas."
+    }
+   },
+   {
+    "handle": "paulina_cocina",
+    "brief": true,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 17.85,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 9,
+      "failures": 0,
+      "prompt_tokens": 33312,
+      "completion_tokens": 15181,
+      "cost": 0.026894
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.034,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 200,
+     "scored": 164,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": true,
+     "avoid_topic_mentions": [],
+     "summary": "Tu cuenta vive del video: rinde 1,1x (3,5x vs. el resto) y todo lo que no sea video se hunde (solo texto 0,2x, foto 0,4x). La tarde manda, con las 18 h como mejor horario, y recetas saladas es tu tema más fuerte (1,3x). Como el objetivo es vender el ebook antes de fin de año, el link no se elimina pero sí se reubica: en el post cuesta alcance (0,6x), así que va en la respuesta o la bio. Evitá el tono promoción y el tema 'otros', que te bajan el alcance."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 4.03,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1722,
+      "completion_tokens": 1284,
+      "cost": 0.001681
+     },
+     "count": 3,
+     "lengths": [
+      220,
+      243,
+      250
+     ],
+     "scores": [
+      1.175802395591781,
+      1.1365314807823406,
+      1.1304108286104626
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "avoid_topic_mentions": [],
+     "offering_keywords": [
+      "solito",
+      "recetas",
+      "faciles",
+      "cocinar"
+     ],
+     "drafts_naming_offering": 2,
+     "drafts_with_link_mention": 3,
+     "texts": [
+      "Si estás solo en Navidad no tenés que cocinar para veinte. Te armo una cena navideña para UNO en 20 minutos y sin horno.\n\nNo es triste, es práctico. Y sale riquísima.\n\nReceta completa en el link de mi bio. Bai los tkm ❤️",
+      "Dato: un pollo al horno a 180° necesita unos 20 minutos por cada medio kilo. Si vivís solo, comprá muslos en vez del pollo entero: se hacen en 30 minutos y no te sobra nada.\n\nCena navideña para uno, resuelta. Paso a paso en el link de mi bio 🎄",
+      "Navidad viviendo solo no es un bajón, es la excusa para cocinarte algo rico sin rendirle cuentas a nadie.\n\nTodas esas recetas las junto en 'Soy Solito', mi ebook de cocina para una persona. Está en el link de mi bio, aprovechalo antes de fin de año 🎄"
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 7.6,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 15949,
+      "completion_tokens": 15137,
+      "cost": 0.021783
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.095,
+      0.268,
+      0.112
+     ],
+     "best": 1,
+     "brief_filters_respected": true,
+     "summary": "La variante 2 generó 2,4 veces más interacción que la variante 3 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años. (Simulado con la audiencia objetivo de tu brief.)"
+    }
+   },
+   {
+    "handle": "valearvejita",
+    "brief": false,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 18.27,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 4,
+      "failures": 0,
+      "prompt_tokens": 10330,
+      "completion_tokens": 7289,
+      "cost": 0.011319
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.014,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 106,
+     "scored": 40,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": true,
+     "avoid_topic_mentions": [],
+     "summary": "Tu cuenta tiene un motor claro: la opinión fuerte sobre marchas y protestas, publicada lunes a las 17 h o miércoles a las 13 h. El humor largo también te responde. Lo que te frena es el contenido de libros infantiles, el tono promoción y los links en el cuerpo, que rinden por debajo de tu post típico. Con 4,5 posts por semana y 1.068 vistas medianas, hay margen para empujar los temas y horarios que ya te funcionan."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 11.48,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1462,
+      "completion_tokens": 3250,
+      "cost": 0.00415
+     },
+     "count": 3,
+     "lengths": [
+      188,
+      214,
+      241
+     ],
+     "scores": [
+      2.2327710008380235,
+      2.3086837199321613,
+      2.3493160340691763
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "texts": [
+      "Dato: las marchas se convocan por redes, pero se sostienen en la calle. El lunes 17, a las 17, no se mira desde el balcón. Se está. O se opina desde el sofá, que es más cómodo y no cuenta.",
+      "Que no te vendan la marcha como épica si después se vuelven en Sube y se olvidan. La protesta sin organización es una foto para el algoritmo. Y el algoritmo no paga el ajuste. Nos vemos en la calle, no en el trend.",
+      "¿Cuántas marchas te tenés que comer para que un funcionario te mire a la cara? Ninguna. No te va a mirar. La marcha no es para que te mire: es para que no se olvide que estamos. Miércoles 13, a las 13, si el cuerpo aguanta y el país también."
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 8.14,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 15369,
+      "completion_tokens": 15269,
+      "cost": 0.01917
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.16,
+      0.254,
+      0.189
+     ],
+     "best": 1,
+     "brief_filters_respected": null,
+     "summary": "La variante 2 generó 1,3 veces más interacción que la variante 3 en la audiencia simulada. Donde mejor funcionó fue entre personas de 65 años y mas."
+    }
+   },
+   {
+    "handle": "valearvejita",
+    "brief": true,
+    "failures": [],
+    "analysis": {
+     "ok": true,
+     "seconds": 14.99,
+     "messages": [
+      "Clasificando temas y estilo",
+      "Escribiendo tus insights",
+      "Análisis listo"
+     ],
+     "cost": {
+      "calls": 4,
+      "failures": 0,
+      "prompt_tokens": 10037,
+      "completion_tokens": 6470,
+      "cost": 0.009496
+     }
+    },
+    "report": {
+     "status": [
+      200,
+      200
+     ],
+     "seconds": 0.009,
+     "latest_is_this": true,
+     "engine": "hybrid-v1",
+     "posts": 106,
+     "scored": 40,
+     "labeled_share": 1.0,
+     "insights": 6,
+     "recommendations": 6,
+     "context_echoed": false,
+     "avoid_topic_mentions": [],
+     "summary": "Tu cuenta tiene un motor claro: el tono opinión rinde 2,3x tu post típico y las franjas de lunes 17 h y miércoles 13 h son las que más empujan. Lo que te frena es el CTA link (0,5x) y el tono promoción (0,7x), que además chocan con tu objetivo de armar comunidad. Tenés alcance pero poca charla: 0,1% de respuestas y 0,2% de guardados, así que el próximo paso es cerrar los posts con preguntas de ciencia en tus mejores horarios."
+    },
+    "drafts": {
+     "status": 200,
+     "seconds": 6.0,
+     "cost": {
+      "calls": 1,
+      "failures": 0,
+      "prompt_tokens": 1431,
+      "completion_tokens": 1543,
+      "cost": 0.00198
+     },
+     "count": 3,
+     "lengths": [
+      274,
+      252,
+      265
+     ],
+     "scores": [
+      1.6198164052488062,
+      1.3312226926448476,
+      1.6837064674154762
+     ],
+     "with_rationale": 3,
+     "with_insight_ids": 3,
+     "avoid_topic_mentions": [],
+     "offering_keywords": [],
+     "drafts_naming_offering": null,
+     "drafts_with_link_mention": 0,
+     "texts": [
+      "Un paper en inglés llega a [dato] veces más gente que el mismo paper en español.\nY nosotros seguimos mandando todo a revistas que ni nos leen, en un idioma que no es el nuestro, para que después nadie acá lo pueda usar.\n¿Vos publicás en inglés o en español? Contame por qué.",
+      "Que un pibe de 15 años no pueda leer un paper porque está detrás de un paywall de 40 dólares no es un problema de plata.\nEs una decisión.\nLa ciencia que se paga con impuestos debería poder leerse gratis. Punto.\n¿A vos cuántas veces te frenó un paywall?",
+      "Me preguntan por qué pierdo tiempo explicando ciencia en redes en vez de \"hacer ciencia de verdad\".\nPorque la ciencia de verdad se paga con impuestos, y cualquiera tiene derecho a entender en qué se gasta.\nPreguntame lo que quieras de ciencia. En serio, cualquiera."
+     ]
+    },
+    "simulation": {
+     "status": 200,
+     "seconds": 7.5,
+     "cost": {
+      "calls": 10,
+      "failures": 0,
+      "prompt_tokens": 15652,
+      "completion_tokens": 15358,
+      "cost": 0.021996
+     },
+     "personas": 100,
+     "reactions": 300,
+     "expected": 300,
+     "rates": [
+      0.0,
+      0.246,
+      0.545
+     ],
+     "best": 2,
+     "brief_filters_respected": true,
+     "summary": "La variante 3 generó 2,2 veces más interacción que la variante 2 en la audiencia simulada. Donde mejor funcionó fue entre personas de 18 a 29 años. (Simulado con la audiencia objetivo de tu brief.)"
+    }
+   }
+  ],
+  "error_paths": {
+   "simulation_size_492": [
+    422,
+    null
+   ],
+   "unknown_handle": [
+    404,
+    null
+   ],
+   "drafts_without_report": [
+    404,
+    null
+   ]
+  }
+ },
+ "sandbox": {
+  "pool_size": 492,
+  "label_model": "deepseek/deepseek-v4.1-flash",
+  "label_reasoning": "off",
+  "max_concurrency": 8,
+  "sets": {
+   "A_paulina_brief_drafts": {
+    "variants": [
+     "Si estás solo en Navidad no tenés que cocinar para veinte. Te armo una cena navideña para UNO en 20 minutos y sin horno.\n\nNo es triste, es práctico. Y sale riquísima.\n\nReceta completa en el link de mi bio. Bai los tkm ❤️",
+     "Dato: un pollo al horno a 180° necesita unos 20 minutos por cada medio kilo. Si vivís solo, comprá muslos en vez del pollo entero: se hacen en 30 minutos y no te sobra nada.\n\nCena navideña para uno, resuelta. Paso a paso en el link de mi bio 🎄",
+     "Navidad viviendo solo no es un bajón, es la excusa para cocinarte algo rico sin rendirle cuentas a nadie.\n\nTodas esas recetas las junto en 'Soy Solito', mi ebook de cocina para una persona. Está en el link de mi bio, aprovechalo antes de fin de año 🎄"
+    ],
+    "full": [
+     {
+      "personas": 492,
+      "reactions": 1476,
+      "expected": 1476,
+      "missing_reactions": 0,
+      "rates": [
+       0.1518,
+       0.2308,
+       0.1194
+      ],
+      "ranking": [
+       1,
+       0,
+       2
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 144,
+        "read": 251,
+        "like": 96,
+        "reply": 1
+       },
+       {
+        "ignore": 93,
+        "read": 259,
+        "like": 110,
+        "reply": 2,
+        "bookmark": 28
+       },
+       {
+        "ignore": 239,
+        "read": 178,
+        "like": 44,
+        "reply": 8,
+        "repost": 5,
+        "bookmark": 18
+       }
+      ],
+      "seconds": 27.31,
+      "calls": 50,
+      "failures": 0,
+      "prompt_tokens": 77803,
+      "completion_tokens": 75291,
+      "cost": 0.107932,
+      "summary": "La variante 2 generó 1,5 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años.",
+      "paired": {
+       "v1_vs_v2": {
+        "only_v1": 0.0561,
+        "only_v2": 0.1351
+       },
+       "v1_vs_v3": {
+        "only_v1": 0.0559,
+        "only_v3": 0.0235
+       },
+       "v2_vs_v3": {
+        "only_v2": 0.1507,
+        "only_v3": 0.0394
+       }
+      }
+     },
+     {
+      "personas": 492,
+      "reactions": 1476,
+      "expected": 1476,
+      "missing_reactions": 0,
+      "rates": [
+       0.1296,
+       0.2405,
+       0.098
+      ],
+      "ranking": [
+       1,
+       0,
+       2
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 157,
+        "read": 242,
+        "like": 93
+       },
+       {
+        "ignore": 111,
+        "read": 236,
+        "like": 111,
+        "repost": 3,
+        "bookmark": 31
+       },
+       {
+        "ignore": 223,
+        "read": 202,
+        "like": 44,
+        "reply": 2,
+        "repost": 3,
+        "bookmark": 18
+       }
+      ],
+      "seconds": 30.0,
+      "calls": 50,
+      "failures": 0,
+      "prompt_tokens": 77803,
+      "completion_tokens": 74953,
+      "cost": 0.091006,
+      "summary": "La variante 2 generó 1,9 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años.",
+      "paired": {
+       "v1_vs_v2": {
+        "only_v1": 0.035,
+        "only_v2": 0.1459
+       },
+       "v1_vs_v3": {
+        "only_v1": 0.0496,
+        "only_v3": 0.0179
+       },
+       "v2_vs_v3": {
+        "only_v2": 0.1821,
+        "only_v3": 0.0395
+       }
+      }
+     }
+    ],
+    "sample200": [
+     {
+      "seed": 0,
+      "personas": 200,
+      "reactions": 597,
+      "expected": 600,
+      "missing_reactions": 3,
+      "rates": [
+       0.1773,
+       0.2591,
+       0.1613
+      ],
+      "ranking": [
+       1,
+       0,
+       2
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 64,
+        "read": 102,
+        "like": 33
+       },
+       {
+        "ignore": 42,
+        "read": 102,
+        "like": 42,
+        "repost": 1,
+        "bookmark": 12
+       },
+       {
+        "ignore": 107,
+        "read": 59,
+        "like": 19,
+        "reply": 3,
+        "repost": 2,
+        "bookmark": 9
+       }
+      ],
+      "seconds": 13.94,
+      "calls": 20,
+      "failures": 0,
+      "prompt_tokens": 31452,
+      "completion_tokens": 30436,
+      "cost": 0.040916,
+      "summary": "La variante 2 generó 1,5 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 18 a 29 años.",
+      "same_200_in_full_runs": [
+       [
+        0.1266,
+        0.2601,
+        0.115
+       ],
+       [
+        0.1301,
+        0.2664,
+        0.082
+       ]
+      ]
+     },
+     {
+      "seed": 1,
+      "personas": 200,
+      "reactions": 600,
+      "expected": 600,
+      "missing_reactions": 0,
+      "rates": [
+       0.1175,
+       0.1954,
+       0.0778
+      ],
+      "ranking": [
+       1,
+       0,
+       2
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 57,
+        "read": 108,
+        "like": 35
+       },
+       {
+        "ignore": 41,
+        "read": 112,
+        "like": 36,
+        "repost": 1,
+        "bookmark": 10
+       },
+       {
+        "ignore": 102,
+        "read": 73,
+        "like": 12,
+        "reply": 1,
+        "repost": 2,
+        "bookmark": 10
+       }
+      ],
+      "seconds": 12.62,
+      "calls": 20,
+      "failures": 0,
+      "prompt_tokens": 31324,
+      "completion_tokens": 30492,
+      "cost": 0.043617,
+      "summary": "La variante 2 generó 1,7 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 50 a 64 años.",
+      "same_200_in_full_runs": [
+       [
+        0.1102,
+        0.1746,
+        0.0935
+       ],
+       [
+        0.1037,
+        0.2336,
+        0.1061
+       ]
+      ]
+     },
+     {
+      "seed": 2,
+      "personas": 200,
+      "reactions": 600,
+      "expected": 600,
+      "missing_reactions": 0,
+      "rates": [
+       0.1416,
+       0.3029,
+       0.0963
+      ],
+      "ranking": [
+       1,
+       0,
+       2
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 65,
+        "read": 101,
+        "like": 34
+       },
+       {
+        "ignore": 45,
+        "read": 104,
+        "like": 38,
+        "reply": 1,
+        "repost": 1,
+        "bookmark": 11
+       },
+       {
+        "ignore": 104,
+        "read": 75,
+        "like": 15,
+        "repost": 3,
+        "bookmark": 3
+       }
+      ],
+      "seconds": 12.77,
+      "calls": 20,
+      "failures": 0,
+      "prompt_tokens": 31427,
+      "completion_tokens": 30535,
+      "cost": 0.043699,
+      "summary": "La variante 2 generó 2,1 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 50 a 64 años.",
+      "same_200_in_full_runs": [
+       [
+        0.1161,
+        0.2201,
+        0.0956
+       ],
+       [
+        0.1206,
+        0.2494,
+        0.0855
+       ]
+      ]
+     }
+    ],
+    "full_run_agreement": 0.8272
+   },
+   "B_simulate_defaults": {
+    "variants": [
+     "¿Cuánto gastás por mes en delivery? Hice la cuenta y me asusté 😳",
+     "Armé una planilla gratis para controlar tus gastos del mes. Te la dejo acá 👇"
+    ],
+    "full": [
+     {
+      "personas": 492,
+      "reactions": 984,
+      "expected": 984,
+      "missing_reactions": 0,
+      "rates": [
+       0.2879,
+       0.4169
+      ],
+      "ranking": [
+       1,
+       0
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 98,
+        "read": 231,
+        "like": 104,
+        "reply": 59
+       },
+       {
+        "ignore": 155,
+        "read": 78,
+        "like": 103,
+        "repost": 9,
+        "bookmark": 147
+       }
+      ],
+      "seconds": 21.33,
+      "calls": 50,
+      "failures": 0,
+      "prompt_tokens": 67853,
+      "completion_tokens": 51612,
+      "cost": 0.064867,
+      "summary": "La variante 2 generó 1,4 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años.",
+      "paired": {
+       "v1_vs_v2": {
+        "only_v1": 0.0658,
+        "only_v2": 0.1948
+       }
+      }
+     },
+     {
+      "personas": 492,
+      "reactions": 984,
+      "expected": 984,
+      "missing_reactions": 0,
+      "rates": [
+       0.2437,
+       0.4362
+      ],
+      "ranking": [
+       1,
+       0
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 112,
+        "read": 253,
+        "like": 85,
+        "reply": 42
+       },
+       {
+        "ignore": 168,
+        "read": 71,
+        "like": 114,
+        "repost": 8,
+        "bookmark": 131
+       }
+      ],
+      "seconds": 20.28,
+      "calls": 50,
+      "failures": 0,
+      "prompt_tokens": 67853,
+      "completion_tokens": 51155,
+      "cost": 0.063039,
+      "summary": "La variante 2 generó 1,8 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años.",
+      "paired": {
+       "v1_vs_v2": {
+        "only_v1": 0.0568,
+        "only_v2": 0.2493
+       }
+      }
+     }
+    ],
+    "sample200": [
+     {
+      "seed": 0,
+      "personas": 200,
+      "reactions": 400,
+      "expected": 400,
+      "missing_reactions": 0,
+      "rates": [
+       0.267,
+       0.5091
+      ],
+      "ranking": [
+       1,
+       0
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 42,
+        "read": 101,
+        "like": 40,
+        "reply": 17
+       },
+       {
+        "ignore": 61,
+        "read": 28,
+        "like": 43,
+        "reply": 1,
+        "repost": 5,
+        "bookmark": 62
+       }
+      ],
+      "seconds": 10.45,
+      "calls": 20,
+      "failures": 0,
+      "prompt_tokens": 27472,
+      "completion_tokens": 20975,
+      "cost": 0.026224,
+      "summary": "La variante 2 generó 1,9 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años.",
+      "same_200_in_full_runs": [
+       [
+        0.29,
+        0.4578
+       ],
+       [
+        0.2565,
+        0.4402
+       ]
+      ]
+     },
+     {
+      "seed": 1,
+      "personas": 200,
+      "reactions": 400,
+      "expected": 400,
+      "missing_reactions": 0,
+      "rates": [
+       0.2294,
+       0.4024
+      ],
+      "ranking": [
+       1,
+       0
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 39,
+        "read": 104,
+        "like": 37,
+        "reply": 20
+       },
+       {
+        "ignore": 78,
+        "read": 21,
+        "like": 42,
+        "repost": 2,
+        "bookmark": 57
+       }
+      ],
+      "seconds": 11.54,
+      "calls": 20,
+      "failures": 0,
+      "prompt_tokens": 27344,
+      "completion_tokens": 20709,
+      "cost": 0.026581,
+      "summary": "La variante 2 generó 1,8 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 30 a 49 años.",
+      "same_200_in_full_runs": [
+       [
+        0.2728,
+        0.3522
+       ],
+       [
+        0.1846,
+        0.389
+       ]
+      ]
+     },
+     {
+      "seed": 2,
+      "personas": 200,
+      "reactions": 400,
+      "expected": 400,
+      "missing_reactions": 0,
+      "rates": [
+       0.3152,
+       0.4873
+      ],
+      "ranking": [
+       1,
+       0
+      ],
+      "best": 1,
+      "counts": [
+       {
+        "ignore": 42,
+        "read": 95,
+        "like": 39,
+        "reply": 24
+       },
+       {
+        "ignore": 53,
+        "read": 29,
+        "like": 56,
+        "repost": 6,
+        "bookmark": 56
+       }
+      ],
+      "seconds": 11.44,
+      "calls": 20,
+      "failures": 0,
+      "prompt_tokens": 27447,
+      "completion_tokens": 21199,
+      "cost": 0.026673,
+      "summary": "La variante 2 generó 1,5 veces más interacción que la variante 1 en la audiencia simulada. Donde mejor funcionó fue entre personas de 65 años y mas.",
+      "same_200_in_full_runs": [
+       [
+        0.2955,
+        0.4228
+       ],
+       [
+        0.2043,
+        0.4151
+       ]
+      ]
+     }
+    ],
+    "full_run_agreement": 0.7846
+   }
+  }
+ }
+}

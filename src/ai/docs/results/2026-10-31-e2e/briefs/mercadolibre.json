@@ -1,0 +1,9 @@
+{
+  "goal": "traffic",
+  "goal_detail": "Llevar gente a las ofertas del Black Friday.",
+  "offering": "Ofertas del Black Friday en Mercado Libre.",
+  "target_audience": "Compradores online de todo el país.",
+  "brand_voice": "Marca cercana, con humor, sin tecnicismos.",
+  "avoid_topics": ["política"],
+  "preferred_cta": "link"
+}
