@@ -1,4 +1,24 @@
 {
+  "src/frontend/src/lib/api/errors.test.ts": {
+    "approved_at": "2026-10-31T05:03:23.682650+00:00",
+    "approved_by": "lupa",
+    "sha256": "640ba560b94676c74aadf168ed967b38e725e2c37d0ab3ae2f2094a943172839"
+  },
+  "src/frontend/src/lib/api/mock-fetch.test.ts": {
+    "approved_at": "2026-10-31T05:03:23.682650+00:00",
+    "approved_by": "lupa",
+    "sha256": "28ef6c366dea9cf46639aeafa1cecb0df67d61755d1b926f2d2e2dfdadff9c70"
+  },
+  "src/frontend/src/lib/format.test.ts": {
+    "approved_at": "2026-10-31T05:03:23.682650+00:00",
+    "approved_by": "lupa",
+    "sha256": "2a51750a5beffe7193e0aa9e1a6c897c52829a06cc8484f4c2221068da8631bc"
+  },
+  "src/frontend/src/lib/labels.test.ts": {
+    "approved_at": "2026-10-31T05:03:23.682650+00:00",
+    "approved_by": "lupa",
+    "sha256": "d4ffd74e5eb33d40cc75d009154c98ebe2981b6d088f7c2e83cb03e87d44aed2"
+  },
   "src/shared/tests/test_contract_v1_1.py": {
     "approved_at": "2026-10-31T01:53:00.765194+00:00",
     "approved_by": "Juan",

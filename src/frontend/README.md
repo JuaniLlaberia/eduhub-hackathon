@@ -54,7 +54,7 @@ src/
 
 Done: tooling, routes, layout, data hooks, placeholder sections (`<Pending />` marks what is missing; each component has a TODO comment with its spec).
 
-**Waiting for test approval (TDD):** the tests are written; the functions are stubs (`notImplemented()`), so `npm test` is red.
+**Tests approved (frozen) by Lupa on 2026-10-31; implementation pending:** the functions are still stubs (`notImplemented()`), so `npm test` is red.
 
 | Tests | Implements |
 |---|---|
@@ -64,7 +64,7 @@ Done: tooling, routes, layout, data hooks, placeholder sections (`<Pending />` m
 | `src/lib/format.test.ts` | every format function |
 
 Next steps, in order:
-1. Review the four test files, then approve them from the repo root: `python3 scripts/approve_tests.py src/frontend/src/lib`.
+1. ~~Review and approve the four test files~~ (done).
 2. Implement them, starting with `mock-fetch.ts`. After that, the dashboard loads the fixture report in mock mode.
 3. Screens, test first (component tests with Testing Library): handle form → progress page → dashboard sections → create.
 4. Feature flags (`useFeatures`) to hide create/publish/sandbox, then a Playwright smoke test of the demo path and the Vercel deploy.
