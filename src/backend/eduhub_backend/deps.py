@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from eduhub_ai import create_analyzer, create_generator, create_simulator
 from eduhub_backend.settings import Settings
 from eduhub_backend.sources.fixture import FixturePostSource
+from eduhub_backend.sources.twitterapi_io import TwitterApiIoSource
 from eduhub_backend.storage import SqliteStore, Store
 from eduhub_shared.fakes import FakeAnalyzer, FakeAudienceSimulator, FakeDraftGenerator, FakePostPublisher
 from eduhub_shared.interfaces import Analyzer, AudienceSimulator, DraftGenerator, PostPublisher, PostSource
@@ -28,11 +29,14 @@ class Deps:
 
 def build_source(settings: Settings) -> PostSource:
     """
-    Return FixturePostSource in DEMO_MODE; no real source exists yet.
+    Return FixturePostSource in DEMO_MODE, otherwise TwitterApiIoSource (which needs TWITTERAPI_IO_KEY).
     """
-    if not settings.demo_mode:
-        raise ConfigError("DEMO_MODE=0 needs TwitterApiIoSource, which is not implemented yet. Set DEMO_MODE=1.")
-    return FixturePostSource(settings.fixtures_dir)
+    if settings.demo_mode:
+        return FixturePostSource(settings.fixtures_dir)
+    key = (settings.twitterapi_io_key or "").strip()
+    if not key:
+        raise ConfigError("DEMO_MODE=0 needs TWITTERAPI_IO_KEY. Set it, or set DEMO_MODE=1.")
+    return TwitterApiIoSource(key)
 
 def build_ai(settings: Settings) -> tuple[Analyzer, DraftGenerator, AudienceSimulator | None]:
     """
