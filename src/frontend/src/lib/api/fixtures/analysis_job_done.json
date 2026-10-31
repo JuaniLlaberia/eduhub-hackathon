@@ -1,0 +1,11 @@
+{
+  "id": "job-demo-1",
+  "handle": "demo_finanzas",
+  "status": "done",
+  "progress": 1.0,
+  "message": "Listo",
+  "created_at": "2026-10-30T12:00:00Z",
+  "updated_at": "2026-10-30T12:00:40Z",
+  "report_id": "a90b06de-df83-5b86-8885-9fc9e570a769",
+  "error": null
+}

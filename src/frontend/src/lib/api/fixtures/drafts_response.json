@@ -1,0 +1,37 @@
+{
+  "drafts": [
+    {
+      "id": "935b579f-fb79-5d0b-9a0d-73c719b21476",
+      "text": "Hilo rápido sobre presupuesto: 3 cosas que me hubiera gustado saber antes 👇",
+      "rationale": "Basado en tu tema más fuerte ('presupuesto') y en tu mejor horario.",
+      "suggested_time": "2026-11-05T00:00:00Z",
+      "estimated_score": 2.003017152939242,
+      "based_on_insight_ids": [
+        "ins-timing",
+        "ins-topic"
+      ]
+    },
+    {
+      "id": "0c7b5cab-f4d4-58fc-86e1-28cf12f21c7b",
+      "text": "¿Qué es lo que más te cuesta de presupuesto? Leo todas las respuestas y armo un post con las mejores.",
+      "rationale": "Basado en tu tema más fuerte ('presupuesto') y en tu mejor horario.",
+      "suggested_time": "2026-11-05T00:00:00Z",
+      "estimated_score": 2.003017152939242,
+      "based_on_insight_ids": [
+        "ins-timing",
+        "ins-topic"
+      ]
+    },
+    {
+      "id": "2b9e7de9-7d5c-5bd1-ba7f-771899ca1b0f",
+      "text": "Error que veo todo el tiempo con presupuesto: dejarlo para fin de mes. Hacelo el día que cobrás.",
+      "rationale": "Basado en tu tema más fuerte ('presupuesto') y en tu mejor horario.",
+      "suggested_time": "2026-11-05T00:00:00Z",
+      "estimated_score": 2.003017152939242,
+      "based_on_insight_ids": [
+        "ins-timing",
+        "ins-topic"
+      ]
+    }
+  ]
+}
