@@ -32,11 +32,12 @@ Every stage is a separate `.md` file, written so a **fresh Claude Code session**
 | 03 | [Semantic labeling (topic, tone, sentiment, hook, CTA)](03-semantic-labeling.md) | MUST | 01, 02 | done |
 | 04 | [Stats engine (KPIs, heatmap, segments, significance)](04-stats-engine.md) | MUST | 02 | done |
 | 05 | [Insight writer (grounded es-AR texts)](05-insight-writer.md) | MUST | 01, 04 | done |
-| 06 | [HybridAnalyzer + `create_analyzer()`: **milestone, hand-off to backend**](06-analyzer-assembly.md) | MUST | 02–05 | done (not merged into `dev`; real-model run pending) |
-| 07 | [Ridge pattern model (optional per account)](07-ridge-pattern-model.md) | MUST (quality) | 06 | done |
-| 08 | [Draft generator + `create_generator()`](08-draft-generator.md) | WANTED | 06 (07 optional) | done (not merged into `dev`) |
-| 09 | [Audience sandbox + `create_simulator()`](09-audience-sandbox.md) | STRETCH | 01 | done (not merged into `dev`) |
-| 10 | [Evaluation, bake-off and demo hardening](10-evaluation-demo-hardening.md) | MUST (before demo) | 06 | mostly done (team review, pitch numbers and `dev` merge pending) |
+| 06 | [HybridAnalyzer + `create_analyzer()`: **milestone, hand-off to backend**](06-analyzer-assembly.md) | MUST | 02–05 | done (in `dev`) |
+| 07 | [Ridge pattern model (optional per account)](07-ridge-pattern-model.md) | MUST (quality) | 06 | done (in `dev`) |
+| 08 | [Draft generator + `create_generator()`](08-draft-generator.md) | WANTED | 06 (07 optional) | done (in `dev`) |
+| 09 | [Audience sandbox + `create_simulator()`](09-audience-sandbox.md) | STRETCH | 01 | done (in `dev`) |
+| 10 | [Evaluation, bake-off and demo hardening](10-evaluation-demo-hardening.md) | MUST (before demo) | 06 | mostly done (in `dev`; team review and pitch numbers pending) |
+| 11 | [Creator brief ("el para qué"), Option A](11-creator-context.md) | WANTED (multi-team; after the demo path works) | 06, 08, 09 + contract v1.2.0 | todo (planned) |
 
 **Critical path to a working demo:** 00 → 01 → 02 → 03 → 04 → 05 → **06**. After 06, the backend can switch `EDUHUB_FAKE_AI=0`.
 Stages 01, 02 and 04 are independent enough to run in parallel if the team splits.
