@@ -26,16 +26,18 @@ FastAPI · uvicorn · httpx (async) · pydantic-settings · tenacity (retries) �
 - [x] **Scheduling:** **simulated** for the demo. `scheduled_for` is echoed back as `scheduled`; nothing is stored or posted later. Real scheduling only makes sense together with an official-API publisher.
 - [x] **Posts per analysis:** default 200 (the API accepts 10–500). Pages hold 20 tweets and plain retweets are dropped, so paging stops at the limit, at the last page, or after `ceil(limit/20) * 2` pages, whichever comes first. Cost is about $0.15 per 1,000 tweets, so roughly $0.03–0.06 per 200-post analysis. Fetch time hasn't been measured yet. The free tier allows one request every 5 seconds, which is too slow for paging; any paid balance raises the limit (the account has been topped up).
 - [ ] Hosting provider, and how secrets are set there. *Not decided: the demo may run locally.*
-- [x] **Demo account:** **@bilinkis** (Santiago Bilinkis: tech, AI, critical thinking; 130k followers; 190 posts, 63% of them replies), plus the shared `demo_finanzas`. Both live in `src/backend/fixtures/` and are seeded in `DEMO_MODE`. Regenerate them with `python -m eduhub_backend.tools.snapshot bilinkis --include-shared` (with `EDUHUB_FAKE_AI=0` once the real analyzer lands).
+- [x] **Demo account:** **@bilinkis** (Santiago Bilinkis: tech, AI, critical thinking; 130k followers; 190 posts, 63% of them replies), plus the shared `demo_finanzas`. Both live in `src/backend/fixtures/` and are seeded in `DEMO_MODE`. Regenerate them with `set -a; source .env; set +a; EDUHUB_FAKE_AI=0 python -m eduhub_backend.tools.snapshot bilinkis --include-shared` (the AI reads `OPENROUTER_API_KEY` from the environment).
 
 ## Running locally
 
 ```bash
-source .venv/bin/activate
+source .venv/bin/activate          # Windows Git Bash: source .venv/Scripts/activate
 pip install -e src/backend && pip install --group src/backend/pyproject.toml:test
-DEMO_MODE=1 EDUHUB_FAKE_AI=1 uvicorn eduhub_backend.app:main --factory   # http://localhost:8000
+DEMO_MODE=1 EDUHUB_FAKE_AI=0 uvicorn eduhub_backend.app:main --factory --env-file .env   # http://localhost:8000
 pytest src/shared src/backend
 ```
+
+**Always pass `--env-file .env`.** Our `Settings` reads `.env` itself, but `eduhub_ai` reads `OPENROUTER_API_KEY` and `AI_*` only from the process environment. Without the flag the analyzer silently runs in template mode (no LLM), drafts use the fake generator and the sandbox is off; the only sign is a warning in the log. Variables set on the command line win over `.env`. `EDUHUB_FAKE_AI=1` stays as the emergency switch if OpenRouter fails during the demo.
 
 Settings (see `.env.example`): `DEMO_MODE` (1 = fixture source + seeded demo reports, 0 = twitterapi.io, needs `TWITTERAPI_IO_KEY`), `EDUHUB_FAKE_AI`, `FRONTEND_ORIGIN` (comma-separated), `DATABASE_PATH` (default `data/eduhub.sqlite3`), `FIXTURES_DIR` (default `src/backend/fixtures`).
 
