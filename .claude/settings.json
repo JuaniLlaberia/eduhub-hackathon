@@ -7,7 +7,7 @@
       "Bash(git commit --no-verify:*)",
       "Bash(git commit -n:*)",
       "Read(./.env)",
-      "Read(./.env.*)"
+      "Read(./.env.local)","Read(./src/frontend/.env.local)"
     ]
   },
   "hooks": {
