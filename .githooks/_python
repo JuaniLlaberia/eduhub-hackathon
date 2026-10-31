@@ -1,4 +1,7 @@
 #!/bin/sh
-# Resolve the Python interpreter for git hooks: the repo venv if present, else python3.
+# Resolve the Python interpreter for git hooks: the repo venv if present (POSIX or Windows layout), else python3.
 ROOT="$(git rev-parse --show-toplevel)"
-if [ -x "$ROOT/.venv/bin/python" ]; then echo "$ROOT/.venv/bin/python"; else echo python3; fi
+for candidate in "$ROOT/.venv/bin/python" "$ROOT/.venv/Scripts/python.exe"; do
+  if [ -x "$candidate" ]; then echo "$candidate"; exit 0; fi
+done
+echo python3
