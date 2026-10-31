@@ -1,6 +1,6 @@
 # Stage 11: Creator brief ("el para qué") — Option A · contract + AI + backend
 
-- **Status:** phase 0 done (contract v1.2.0 committed on `ai`, acked; merged into `dev` together with phases 1–2); phases 1–2 todo
+- **Status:** phase 0 done (contract v1.2.0 committed on `ai`, acked); phase 1 done (committed on `ai`); phase 2 todo. Everything goes into `dev` together after phase 2.
 - **Priority:** WANTED (after the demo path works; nothing in the demo may depend on it)
 - **Depends on:** 06, 08, 09 (all done). Contract change → needs front + back agreement first.
 - **Who runs what:**
@@ -183,12 +183,12 @@ All use `ScriptedLLMClient`.
 
 ### Definition of done
 
-- [ ] All AI tests green (old and new), ruff, style. The frozen tests are untouched.
-- [ ] Manual real run on 2 accounts with a brief (e.g. paulina_cocina: goal `sell`, offering "ebook Soy Solito"; mercadolibre: goal `traffic`). Use `scripts/write_insights.py` and `scripts/generate_drafts.py`; add a `--brief file.json` argument to both.
+- [x] All AI tests green (old and new), ruff, style. The frozen tests are untouched (498 passed across shared, AI and backend).
+- [x] Manual real run on 2 accounts with a brief (done on paulina_cocina twice; mercadolibre optional) (e.g. paulina_cocina: goal `sell`, offering "ebook Soy Solito"; mercadolibre: goal `traffic`). Use `scripts/write_insights.py` and `scripts/generate_drafts.py`; add a `--brief file.json` argument to both.
   - Do the recommendations change sensibly (link trade-off) and stay grounded?
   - Do the drafts sell the offering in her voice?
   - Record the results in the handoff notes.
-- [ ] Commit `ai: stage 11 creator brief`. Merge `dev` first, run the checks, then open the PR into `dev`.
+- [x] Commit `ai: stage 11 creator brief`. Merge into `dev` together with phase 2 (decided by Juan).
 
 ---
 
@@ -251,3 +251,26 @@ Phase 0 (contract, ~1 h incl. approvals) → merge into dev → send the front f
   - **Results:** 481 tests green across shared, AI and backend; the existing frozen tests are unchanged.
   - **Deviation:** pydantic split `CreatorContext` and `AudienceFilters` into `-Input`/`-Output` OpenAPI schemas (renaming the existing `AudienceFilters` type for the front). Fixed with `json_schema_serialization_defaults_required=False` on those two models; a test guards that no schema name splits.
   - **After the commit:** Juan acked v1.2.0 and sent the front file. Merging into `dev` waits until phases 1–2 are done (no one else is working on the backend now).
+- **Phase 1 (2026-10-31):**
+  - **Built:**
+    - `eduhub_ai/context.py`: goal and CTA labels, `has_brief`, `brief_payload`, `brief_texts`, `mentions_avoided`, `wants_conversion`, `product_line`.
+    - The brief threaded through `label_account`/`build_taxonomy` (an offering hint for topic names), `build_evidence` (`EvidencePack.context`, `contexto_del_creador` in the prompt JSON, `brief_numbers` added to grounding), the writer prompt, the templates (link trade-off for sell/traffic/launch, avoided-topic findings skipped, "Tu objetivo: …" in the summary), the generator (request brief over report brief, `brief` payload, `preferred_cta` replaces `mejores_cta`, drafts about avoided topics dropped and refilled) and the simulator (the brief's audience filters when the request sets none, a `producto` line, a summary note).
+    - `report.context` echoes the snapshot's brief.
+    - Scripts: `--brief file.json` on `write_insights.py` and `generate_drafts.py`, plus `scripts/briefs/` with examples for paulina_cocina (sell) and mercadolibre (traffic).
+  - **Tests:** `src/ai/tests/test_stage_11_creator_context.py` (16), approved by Juan.
+  - **Deviations:**
+    - **System prompts stay fixed constants** that mention the brief conditionally ("si te paso un brief…"). Frozen tests compare `call.system` with `WRITER_SYSTEM` and `GENERATOR_SYSTEM`, and the fixture report now carries a brief, so the system prompt can't change with the brief. The brief goes only in the user message, and a test asserts that no brief and an empty brief send identical prompts and give identical reports.
+    - **`brief_numbers` lives in `insights/evidence.py`**, not `context.py`: importing `insights.grounding` from `context.py` creates an import cycle through `insights/__init__`.
+    - **Template link trade-off text:** "Si necesitás el link, ponelo en una respuesta o en tu bio: en el posteo te cuesta alcance ({vs_resto} vs. el resto)." (goal-neutral wording).
+  - **Real run 1** (paulina_cocina, brief `paulina_cocina_sell`, `sh src/ai/scripts/brief_check.sh`):
+    - **Insights:** 11.8 s, 100% labels, texts from the LLM, 0 grounding errors.
+      - The summary names the goal and frames the link as a cost to manage ("llevarlo a la respuesta o a la bio en vez de eliminarlo").
+      - New goal-specific recommendations: "Contá el ebook como contenido, no como aviso" and "recetas fáciles para una persona… la audiencia del ebook".
+      - Without the brief, the same account got generic advice (drop the link, stay on topic).
+    - **Drafts:** 7 s. Audience and voice are right ("Si vivís solo…", her sign-off), but **none named the ebook**: the model took the link advice too far and ignored the preferred CTA.
+    - **Fix:** the generator prompt now requires at least one draft to name the offering naturally, and to say where the link is when `cta_preferido` is link. Re-run to confirm.
+  - **Real run 2** (after the fix):
+    - **Drafts (2.7 s):** draft 1 names the ebook naturally ("Yo armé el ebook Soy Solito justo para eso… Link en la primera respuesta, bai los tkm ❤️"); the other two serve the same audience (Christmas sides and a flan "para uno solo") without a link. The `goal_detail` "antes de fin de año" became a Christmas angle.
+    - **Insights (15.6 s, 0 grounding errors):** still frame the link as something to move, and propose recording the ebook's recipes as videos.
+    - **To watch:** "sin sobras por dos semanas" is a mild product claim the brief didn't make. It's not a number, so grounding doesn't catch it; the prompt already forbids invented product facts.
+  - Manual-run helper: `sh src/ai/scripts/brief_check.sh [account] [brief]` (loads `.env`; avoids long copy-pasted commands, which lost the `--brief` flag twice).

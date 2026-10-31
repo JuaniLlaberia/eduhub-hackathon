@@ -69,7 +69,7 @@ class HybridAnalyzer:
         scores = score_posts(scorable)
         features = {p.id: extract_deterministic(p, snapshot.trends) for p in snapshot.posts}
         await progress.step(0.30, "Clasificando temas y estilo")
-        labeling = await label_account(scorable, features, self.client, self.settings)
+        labeling = await label_account(scorable, features, self.client, self.settings, context=snapshot.context)
         features = labeling.features if labeling.taxonomy else hashtag_topics(scorable, labeling.features)
         posts = [
             AnalyzedPost(post=p, features=features[p.id], rates=compute_rates(p.metrics), score=scores.get(p.id))
@@ -82,7 +82,7 @@ class HybridAnalyzer:
         segments = build_segments(posts)
         model = self.pattern_model(posts)
         effects = effect_items(model, posts) if model is not None else []
-        pack = build_evidence(snapshot.profile, kpis, posts, slots, pattern_effects=effects)
+        pack = build_evidence(snapshot.profile, kpis, posts, slots, pattern_effects=effects, context=snapshot.context)
         if model is not None:
             pack = adjust_confidence(pack, model)
         await progress.step(0.80, "Escribiendo tus insights")
@@ -103,6 +103,7 @@ class HybridAnalyzer:
             recommendations=texts.recommendations,
             summary=texts.summary,
             engine=ENGINE,
+            context=snapshot.context,
         )
         await progress.step(1.0, "Análisis listo")
         logger.info("@%s analyzed: labels %.0f%%, texts from %s", snapshot.profile.handle,

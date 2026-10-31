@@ -24,6 +24,7 @@ bookmark solo si el post le habla muy directamente a esa persona (por su edad, s
 - Decidí cada persona por separado: no todas reaccionan igual aunque el post sea bueno.
 - Basate en el perfil (edad, género, provincia, nivel socioeconómico, plataformas, hábitos) y en el texto.
 - Tratá cada variante por separado, pero con el mismo criterio para todas.
+- Si te paso un producto, es lo que el post promociona: tenelo en cuenta para decidir si a esa persona le interesa.
 - comment: una frase corta en español rioplatense con lo que pensaría o respondería, o null.
 - sentiment: entre -1 (le cae muy mal) y 1 (le encanta).
 Devolvé una reacción por cada persona y cada variante. Respondé solo con el JSON pedido."""

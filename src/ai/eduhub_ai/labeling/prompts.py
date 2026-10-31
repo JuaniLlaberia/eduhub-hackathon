@@ -3,7 +3,7 @@ es-AR prompts for the labeling passes. Keep them stable (no dates, no per-call d
 providers can cache them; everything account-specific goes in the user message.
 """
 import json
-from eduhub_shared.models import Post
+from eduhub_shared.models import CreatorContext, Post
 
 TAXONOMY_SYSTEM = """\
 Sos un analista de contenido de redes sociales en Argentina.
@@ -17,6 +17,8 @@ Reglas:
 cuenta solo habla de finanzas).
 - Que no se superpongan entre sí y que cubran la mayoría de los posts.
 - No incluyas "otros": lo agregamos nosotros.
+- Si te paso el contexto del creador (su producto, campaña u objetivo), podés usarlo para nombrar un tema, pero \
+cada tema tiene que aparecer en los posts.
 Respondé solo con el JSON pedido."""
 
 LABEL_SYSTEM = """\
@@ -55,12 +57,18 @@ foto o el video adjunto: eso NO es un cta link.
 
 Usá el "id" de cada post como post_id. Etiquetá todos los posts. Respondé solo con el JSON pedido."""
 
-def taxonomy_user(posts: list[Post]) -> str:
+def taxonomy_user(posts: list[Post], context: CreatorContext | None = None) -> str:
     """
-    User message for the taxonomy pass: the sample texts, one per line.
+    User message for the taxonomy pass: the sample texts, one per line, plus the brief's offering and goal as a
+    naming hint when there is one.
     """
     lines = "\n".join(f"- {_one_line(p.text)}" for p in posts)
-    return f"Posts de la cuenta ({len(posts)}):\n{lines}"
+    text = f"Posts de la cuenta ({len(posts)}):\n{lines}"
+    hint = [f"{name}: {value}" for name, value in (("oferta", context and context.offering),
+                                                   ("objetivo", context and context.goal_detail)) if value]
+    if hint:
+        text += "\n\nContexto del creador (pista para nombrar temas): " + "; ".join(hint)
+    return text
 
 def label_user(posts: list[Post], taxonomy: list[str]) -> str:
     """
