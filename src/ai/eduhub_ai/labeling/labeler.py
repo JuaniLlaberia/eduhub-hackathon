@@ -61,6 +61,7 @@ async def build_taxonomy(posts: list[Post], client: LLMClient, settings: AISetti
         user=prompts.taxonomy_user(sample),
         schema=TaxonomyResponse,
         temperature=TAXONOMY_TEMPERATURE,
+        reasoning=settings.label_reasoning,
     )
     return normalize_taxonomy(response.topics)
 
@@ -113,6 +114,7 @@ async def _request_labels(
         user=prompts.label_user(batch, taxonomy),
         schema=label_batch_schema(taxonomy),
         temperature=LABEL_TEMPERATURE,
+        reasoning=settings.label_reasoning,
     )
     wanted = {p.id for p in batch}
     labels: dict[str, PostLabel] = {}

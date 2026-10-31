@@ -20,12 +20,13 @@ class ScriptedLLMClient:
         self.calls: list[LLMCall] = []
 
     async def complete_json[T: BaseModel](
-        self, *, model: str, system: str, user: str, schema: type[T], temperature: float | None = None
+        self, *, model: str, system: str, user: str, schema: type[T], temperature: float | None = None,
+        reasoning: str | None = None,
     ) -> T:
         """
         Replay the next queued responses for this prompt, validated as schema.
         """
-        return await complete_with_retry(LLMCall(model, system, user, schema, temperature), self._send)
+        return await complete_with_retry(LLMCall(model, system, user, schema, temperature, reasoning), self._send)
 
     async def _send(self, call: LLMCall) -> str:
         """

@@ -2,7 +2,7 @@
 The LLM layer every AI step depends on: one complete_json call that returns a validated pydantic object.
 """
 from collections.abc import Awaitable, Callable
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from typing import Protocol
 from pydantic import BaseModel, ValidationError
 
@@ -27,16 +27,19 @@ class LLMCall:
     user: str
     schema: type[BaseModel]
     temperature: float | None = None
+    reasoning: str | None = None
 
 class LLMClient(Protocol):
     """
     Anything that can turn a prompt into a validated pydantic object.
     """
     async def complete_json[T: BaseModel](
-        self, *, model: str, system: str, user: str, schema: type[T], temperature: float | None = None
+        self, *, model: str, system: str, user: str, schema: type[T], temperature: float | None = None,
+        reasoning: str | None = None,
     ) -> T:
         """
-        Send the prompt and return the response parsed and validated as schema.
+        Send the prompt and return the response parsed and validated as schema. reasoning is an effort level
+        from config.REASONING_LEVELS ("off" disables thinking; None or "default" leaves the provider's default).
         """
         ...
 
@@ -69,7 +72,7 @@ async def complete_with_retry[T: BaseModel](call: LLMCall, send: Callable[[LLMCa
     try:
         return parse_or_raise(text, call.schema)
     except LLMError as error:
-        retry = LLMCall(call.model, call.system, retry_prompt(call.user, error), call.schema, call.temperature)
+        retry = replace(call, user=retry_prompt(call.user, error))
     text = await send(retry)
     try:
         return parse_or_raise(text, call.schema)

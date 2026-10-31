@@ -82,7 +82,7 @@ async def write_texts(pack: EvidencePack, client: LLMClient | None, settings: AI
         try:
             response = await client.complete_json(
                 model=settings.writer_model, system=WRITER_SYSTEM, user=user, schema=WriterResponse,
-                temperature=WRITER_TEMPERATURE,
+                temperature=WRITER_TEMPERATURE, reasoning=settings.writer_reasoning,
             )
         except LLM_FAILURES as error:
             logger.warning("insight writer failed, using templates: %s", error)

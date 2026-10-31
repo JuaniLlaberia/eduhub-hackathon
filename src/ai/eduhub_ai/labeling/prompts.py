@@ -49,7 +49,8 @@ cta (qué le pide al lector):
 - responder: pide comentar o responder ("Contame en los comentarios").
 - compartir: pide compartir o retuitear ("Pasáselo a alguien que...").
 - seguir: pide seguir la cuenta.
-- link: manda a un link (web, video, newsletter).
+- link: manda a un link externo (web, newsletter, tienda). Un link "https://t.co/..." suelto al final suele ser la \
+foto o el video adjunto: eso NO es un cta link.
 - ninguno: no pide nada explícito.
 
 Usá el "id" de cada post como post_id. Etiquetá todos los posts. Respondé solo con el JSON pedido."""

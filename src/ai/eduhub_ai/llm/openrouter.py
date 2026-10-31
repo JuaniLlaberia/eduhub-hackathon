@@ -35,12 +35,13 @@ class OpenRouterClient:
         self._semaphore = asyncio.Semaphore(settings.max_concurrency)
 
     async def complete_json[T: BaseModel](
-        self, *, model: str, system: str, user: str, schema: type[T], temperature: float | None = None
+        self, *, model: str, system: str, user: str, schema: type[T], temperature: float | None = None,
+        reasoning: str | None = None,
     ) -> T:
         """
         Send the prompt and return the response validated as schema (one retry on invalid output).
         """
-        return await complete_with_retry(LLMCall(model, system, user, schema, temperature), self._send)
+        return await complete_with_retry(LLMCall(model, system, user, schema, temperature, reasoning), self._send)
 
     async def _send(self, call: LLMCall) -> str | None:
         """
@@ -69,7 +70,10 @@ class OpenRouterClient:
         """
         Build the keyword arguments for chat.completions.create.
         """
-        extra_body: dict[str, Any] = {"provider": {"require_parameters": True}}
+        extra_body: dict[str, Any] = {"provider": self._provider_preferences()}
+        reasoning = reasoning_body(call.reasoning)
+        if reasoning is not None:
+            extra_body["reasoning"] = reasoning
         if self.settings.fallback_models:
             extra_body["models"] = [call.model, *self.settings.fallback_models]
         request: dict[str, Any] = {
@@ -86,16 +90,41 @@ class OpenRouterClient:
             request["temperature"] = call.temperature
         return request
 
+    def _provider_preferences(self) -> dict[str, Any]:
+        """
+        OpenRouter provider routing: only endpoints that support our parameters (strict json_schema), sorted
+        by AI_PROVIDER_SORT and, if set, tried in the AI_PROVIDERS order first.
+        """
+        provider: dict[str, Any] = {"require_parameters": True}
+        if self.settings.provider_sort:
+            provider["sort"] = self.settings.provider_sort
+        if self.settings.providers:
+            provider["order"] = list(self.settings.providers)
+        return provider
+
     def _log(self, call: LLMCall, response: Any, latency_s: float) -> None:
         """
-        Log the model that answered, token usage and latency.
+        Log the model and provider that answered (OpenRouter adds "provider" to the response), token usage
+        and latency.
         """
         usage = getattr(response, "usage", None)
         logger.info(
-            "llm call schema=%s requested=%s answered=%s prompt_tokens=%s completion_tokens=%s latency=%.2fs",
-            call.schema.__name__, call.model, getattr(response, "model", None),
+            "llm call schema=%s requested=%s answered=%s provider=%s reasoning=%s prompt_tokens=%s "
+            "completion_tokens=%s latency=%.2fs",
+            call.schema.__name__, call.model, getattr(response, "model", None), getattr(response, "provider", None),
+            call.reasoning,
             getattr(usage, "prompt_tokens", None), getattr(usage, "completion_tokens", None), latency_s,
         )
+
+def reasoning_body(level: str | None) -> dict[str, Any] | None:
+    """
+    OpenRouter's reasoning parameter for an effort level: "off" disables thinking, None/"default" sends nothing.
+    """
+    if level is None or level == "default":
+        return None
+    if level == "off":
+        return {"enabled": False}
+    return {"effort": level}
 
 def strict_schema(schema: type[BaseModel]) -> dict[str, Any]:
     """

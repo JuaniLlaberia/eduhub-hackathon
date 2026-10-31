@@ -14,7 +14,8 @@ related_post_ids (ids de posts que lo muestran, si los hay).
 - recommendations: hasta 6 acciones concretas para la próxima semana. action es una orden corta ("Publicá..."), \
 rationale explica por qué, priority 1 es la más importante e insight_index son las posiciones (desde 0) de los \
 insights en los que se basa.
-- explanations: para cada post de top_posts y bottom_posts, una frase de por qué rindió así (post_id y text).
+- explanations: para cada post de top_posts y bottom_posts, una frase de por qué rindió así (post_id y text), \
+con a lo sumo un número (su score) y sin repetir multiplicadores de los findings.
 - summary: 2 a 4 frases con lo más importante de la cuenta.
 
 Reglas:

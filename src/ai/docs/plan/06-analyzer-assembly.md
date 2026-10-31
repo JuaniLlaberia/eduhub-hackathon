@@ -72,4 +72,14 @@ Assemble the full pipeline into `HybridAnalyzer`, which implements the contract 
   - The pattern-model step is `_pattern_effects()` returning `[]`; stage 07 fills `EvidencePack.pattern_effects` there.
   - Only `ContractError`s pass through; anything else becomes `AnalysisError("No pudimos analizar la cuenta. Probá de nuevo.")` with the traceback logged.
 - **Integration gotcha (back team):** the backend reads `.env` with pydantic-settings, which does **not** export values to `os.environ`, while `load_settings()` reads `os.environ`. Start the backend with the env exported (e.g. `uvicorn ... --env-file .env`, or `set -a; source .env; set +a`), or the analyzer silently runs in template mode (it logs a warning).
-- Still open: the manual real-model run (needs OpenRouter credits; record latency and cost here), the merge into `dev` coordinated with Mark (their `test_real_ai_fails_until_eduhub_ai_is_delivered` must change at the same time).
+- **Real-model runs (2026-10-31, `deepseek/deepseek-v4.1-flash` via OpenRouter):**
+
+  | Run | Settings | Time | Notes |
+  |---|---|---|---|
+  | bilinkis, 40 posts, labels only | default reasoning, cheapest providers | 45.5 s | ~20 s per call (reasoning tokens, `fp4` providers) |
+  | paulina_cocina, full pipeline to the writer | same | 101.4 s | texts excellent, all grounded |
+  | bilinkis, 40 posts, labels only | `AI_LABEL_REASONING=off`, `AI_PROVIDER_SORT=throughput` | 4.6 s | 1–3 s per call (Wafer, Together); topics slightly vaguer |
+  | paulina_cocina, full pipeline to the writer | + `AI_WRITER_REASONING=low` | 27.0 s | 7 label batches in ~4 s; writer 21.8 s / 3.5k output tokens; ~33k in + 16k out ≈ $0.02 |
+
+  Quality notes: the writer's texts are concrete, voseo, grounded (0 rejected numbers). The labeler over-used `cta = link` for trailing `t.co` media links, which led to a false "sacá el link" recommendation; the label prompt now says a trailing `t.co` link is the attached media. Explanations repeated multipliers; the writer prompt now allows at most one number per explanation. Numbers written as words ("los cinco bottom posts") are not checked by grounding.
+- Still open: the merge into `dev` coordinated with Mark (their `test_real_ai_fails_until_eduhub_ai_is_delivered` must change at the same time).

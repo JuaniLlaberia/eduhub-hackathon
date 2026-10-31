@@ -4,6 +4,11 @@
     "approved_by": "Juan",
     "sha256": "70516017fa730209b208c9a5c217d8973ac73485e47362d482c6a299764e201d"
   },
+  "src/ai/tests/test_stage_01b_routing.py": {
+    "approved_at": "2026-10-31T11:40:55.204820+00:00",
+    "approved_by": "Juan",
+    "sha256": "8d50ab325789afc243556177fb604a929ed5ba6cf4dde2811fffb18624bdf008"
+  },
   "src/ai/tests/test_stage_02_features.py": {
     "approved_at": "2026-10-31T10:39:10.558298+00:00",
     "approved_by": "Juan",

@@ -59,4 +59,5 @@ async def main(path: str | None) -> None:
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.WARNING)
+    logging.getLogger("eduhub_ai.llm").setLevel(logging.INFO)
     asyncio.run(main(sys.argv[1] if len(sys.argv) > 1 else None))
