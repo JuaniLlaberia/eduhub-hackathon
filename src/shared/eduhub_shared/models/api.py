@@ -3,6 +3,7 @@ from typing import Literal
 from pydantic import AwareDatetime, Field
 from eduhub_shared.models.account import Trend
 from eduhub_shared.models.common import ContractModel, Handle
+from eduhub_shared.models.context import CreatorContext
 from eduhub_shared.models.generation import Draft
 
 class ErrorCode(StrEnum):
@@ -55,6 +56,7 @@ class AnalysisRequest(ContractModel):
     """
     handle: Handle
     max_posts: int = Field(default=200, ge=10, le=500)
+    context: CreatorContext | None = Field(default=None, description="Optional creator brief (\"el para qué\").")
 
 class JobStatus(StrEnum):
     """

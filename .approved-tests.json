@@ -1,4 +1,149 @@
 {
+  "src/ai/tests/test_stage_01_foundations.py": {
+    "approved_at": "2026-10-31T10:39:10.558298+00:00",
+    "approved_by": "Juan",
+    "sha256": "70516017fa730209b208c9a5c217d8973ac73485e47362d482c6a299764e201d"
+  },
+  "src/ai/tests/test_stage_01b_routing.py": {
+    "approved_at": "2026-10-31T11:40:55.204820+00:00",
+    "approved_by": "Juan",
+    "sha256": "8d50ab325789afc243556177fb604a929ed5ba6cf4dde2811fffb18624bdf008"
+  },
+  "src/ai/tests/test_stage_02_features.py": {
+    "approved_at": "2026-10-31T10:39:10.558298+00:00",
+    "approved_by": "Juan",
+    "sha256": "d58e2fb7b616266b3e00b1833716194326041cfedb0f39516779c401beaba606"
+  },
+  "src/ai/tests/test_stage_03_labeling.py": {
+    "approved_at": "2026-10-31T11:11:56.807358+00:00",
+    "approved_by": "Juan",
+    "sha256": "423d92210a54622ca5d30ac6c113d7df235d6a6544de286c12d001427ab496bf"
+  },
+  "src/ai/tests/test_stage_04_stats.py": {
+    "approved_at": "2026-10-31T10:57:18.369369+00:00",
+    "approved_by": "Juan",
+    "sha256": "965d5312a1893c650fe5a893905b0a3aabd26de45a0bc86af04bc19220aaa951"
+  },
+  "src/ai/tests/test_stage_05_insights.py": {
+    "approved_at": "2026-10-31T11:11:56.807358+00:00",
+    "approved_by": "Juan",
+    "sha256": "8c5ba3ed35482b0ecc162dff16a91b6bb11bc9fd41014049c1548482247c68e5"
+  },
+  "src/ai/tests/test_stage_06_analyzer.py": {
+    "approved_at": "2026-10-31T11:12:26.243871+00:00",
+    "approved_by": "Juan",
+    "sha256": "c47bff9baa00a0673d3f3ba647e284fd87c651f2119594db5895fa256ce6cc7b"
+  },
+  "src/ai/tests/test_stage_07_ridge.py": {
+    "approved_at": "2026-10-31T11:23:43.771921+00:00",
+    "approved_by": "Juan",
+    "sha256": "271db4d4b47a2311761244ee9a5246da6da75faf28cc2e0474464b3aac98abbe"
+  },
+  "src/ai/tests/test_stage_08_generator.py": {
+    "approved_at": "2026-10-31T12:24:42.709464+00:00",
+    "approved_by": "Juan",
+    "sha256": "de654969559a1e98e4c6f58018b44a72c3704a7a7c81060c7fc038fd326a623c"
+  },
+  "src/ai/tests/test_stage_09_sandbox.py": {
+    "approved_at": "2026-10-31T12:49:13.636175+00:00",
+    "approved_by": "Juan",
+    "sha256": "917b7d6a3f6a496750b43165536db12ea5beebb374dbf9ccabee34b18b6e684a"
+  },
+  "src/ai/tests/test_stage_10_hardening.py": {
+    "approved_at": "2026-10-31T12:36:55.016203+00:00",
+    "approved_by": "Juan",
+    "sha256": "7d7288bbd8676a0e7178c7c14e712a20e7f51d13f990ca46cff65e9cf50e7871"
+  },
+  "src/ai/tests/test_stage_11_creator_context.py": {
+    "approved_at": "2026-10-31T14:17:21.338547+00:00",
+    "approved_by": "Juan",
+    "sha256": "e3e3159ed2e5ac57fb12e1c7128c7e659abe9925d2f24933e5afe629a6130f9d"
+  },
+  "src/backend/tests/test_api_analyses.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "fc9177f3652faa1c13dd67b9997e9ec93f419e247ffe848ffe1dbd84fd47d5d1"
+  },
+  "src/backend/tests/test_api_basics.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "8a301eb272cf660cf9ce7b888861a45af33b69b7b68317af552df5ddde3b03cb"
+  },
+  "src/backend/tests/test_api_generation.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "ec9f77ebb20e0fb167cc0bfc7bc5c70082ca00a7fbc553e984a0a3db1307b246"
+  },
+  "src/backend/tests/test_api_reports.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "2690a65b4e9284ebc526527a6f2df9520163aebcbcd7aafb1dad38e47c0ba3b0"
+  },
+  "src/backend/tests/test_creator_context.py": {
+    "approved_at": "2026-10-31T14:28:44.615957+00:00",
+    "approved_by": "Juan",
+    "sha256": "a78790bf3f270d71ffad5a397c032d65a08d8e9df8075ba80125914ffa57d52c"
+  },
+  "src/backend/tests/test_demo_mode.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "9fd8b7cfa73ee1e8e6ed996f733d1f054dbf9a5c7a4912ae97150cfefe90554f"
+  },
+  "src/backend/tests/test_fixture_source.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "ca4c7c478d62b595267dc9bde8c27e7d5568dbf2e9edd9afb84c75881e6b80b6"
+  },
+  "src/backend/tests/test_jobs.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "dc083468399edc5639cf862aadd2ee9728b21cd35efae80178800ba84d5a74bd"
+  },
+  "src/backend/tests/test_routes_contract.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "8abd1e34c82058c8ac17956b5c66469dd4b54af43ba4a3715afb5b6d39039214"
+  },
+  "src/backend/tests/test_settings.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "ee2dad6c4ce8f7ed4862d6c8566e560ad2d51262fccf172f5a05e9e7f96d84c9"
+  },
+  "src/backend/tests/test_snapshot_tool.py": {
+    "approved_at": "2026-10-31T07:25:10.121525+00:00",
+    "approved_by": "mark",
+    "sha256": "c6f062132ce5636d5ce75f86297bdce516ce22d26cc161f8270ddb30134e9024"
+  },
+  "src/backend/tests/test_stale_jobs.py": {
+    "approved_at": "2026-10-31T07:46:23.878709+00:00",
+    "approved_by": "mark",
+    "sha256": "ac22c6dba1a082d955c71dfaf5dafc4bc7b05a4c334af495a73f3ca6e00e2655"
+  },
+  "src/backend/tests/test_startup.py": {
+    "approved_at": "2026-10-31T13:29:05.982130+00:00",
+    "approved_by": "Tomi",
+    "sha256": "b92164ab15bba12282dbae40862c1d04b15621343311b164cfbfce3b867a9af0"
+  },
+  "src/backend/tests/test_startup_real_ai.py": {
+    "approved_at": "2026-10-31T13:29:05.982130+00:00",
+    "approved_by": "Tomi",
+    "sha256": "52f5571cb6b13e8fbec894967eaf3a907d6c06c786df9762cc13b2cad66f6dda"
+  },
+  "src/backend/tests/test_startup_real_source.py": {
+    "approved_at": "2026-10-31T07:08:50.210164+00:00",
+    "approved_by": "mark",
+    "sha256": "1648ecbbf00bdb26f0ead7bd94978011e658ebac8f1ff8eb6f55d03061da7c61"
+  },
+  "src/backend/tests/test_storage.py": {
+    "approved_at": "2026-10-31T04:22:20.688558+00:00",
+    "approved_by": "mark",
+    "sha256": "a04547fd15ad20d59048c84073430aee2b7cd5912fed4356d3ec4522fc8a4315"
+  },
+  "src/backend/tests/test_twitterapi_io_source.py": {
+    "approved_at": "2026-10-31T07:08:50.210164+00:00",
+    "approved_by": "mark",
+    "sha256": "28ce2c1e1bbd67dbff9baf9b51303db165bf31b07f11916de677d65ecf8abe86"
+  },
   "src/frontend/src/lib/api/errors.test.ts": {
     "approved_at": "2026-10-31T05:03:23.682650+00:00",
     "approved_by": "lupa",
@@ -23,5 +168,10 @@
     "approved_at": "2026-10-31T01:53:00.765194+00:00",
     "approved_by": "Juan",
     "sha256": "28b82ddf45e49ccfaca92f93d48a87906b4e7f55f3b1c8454afd86ffe8fa9b5c"
+  },
+  "src/shared/tests/test_contract_v1_2.py": {
+    "approved_at": "2026-10-31T14:09:06.357042+00:00",
+    "approved_by": "Juan",
+    "sha256": "326422c06479f3a9554ca57eec71cc3c1caa80a650ce32101d6d899e573da1e1"
   }
 }

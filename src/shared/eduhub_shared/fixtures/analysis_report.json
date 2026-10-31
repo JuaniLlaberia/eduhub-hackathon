@@ -2807,5 +2807,25 @@
     }
   ],
   "summary": "Analizamos 40 posts de @demo_finanzas. Tu engagement promedio es 4,9%. Tu mejor momento: miércoles a las 21 h. El tema 'presupuesto' es el que mejor te funciona.",
-  "engine": "fake"
+  "engine": "fake",
+  "context": {
+    "goal": "sell",
+    "goal_detail": "Llenar la próxima cohorte del curso antes de fin de mes.",
+    "offering": "Curso online de finanzas personales para gente que cobra en pesos (4 semanas).",
+    "target_audience": "Jóvenes que empiezan a trabajar y no saben cómo organizar su sueldo.",
+    "audience_filters": {
+      "age_groups": [
+        "18 a 29 años",
+        "30 a 49 años"
+      ],
+      "genders": [],
+      "provinces": []
+    },
+    "brand_voice": "Cercana, con humor y sin tecnicismos. Siempre con voseo.",
+    "avoid_topics": [
+      "política",
+      "cripto"
+    ],
+    "preferred_cta": "link"
+  }
 }

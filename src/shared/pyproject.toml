@@ -1,6 +1,6 @@
 [project]
 name = "eduhub-shared"
-version = "1.1.0"
+version = "1.2.0"
 description = "Shared contracts: domain models, interfaces, metric formulas, OpenAPI, fixtures and fakes."
 requires-python = ">=3.12"
 dependencies = [

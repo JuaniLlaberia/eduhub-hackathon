@@ -28,6 +28,9 @@ next-env.d.ts
 # Data downloads (raw datasets are not committed)
 data/raw/
 
+# Backend SQLite database (DATABASE_PATH default) and its journal files
+data/*.sqlite3*
+
 # OS / editors
 .DS_Store
 .idea/
