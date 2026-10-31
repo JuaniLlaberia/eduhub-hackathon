@@ -1,11 +1,12 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { errorMessage } from "@/lib/api/errors";
 
-// TODO: show errorMessage(error) from lib/api/errors once its tests are approved and it is implemented.
+/** Error of a query or mutation, with the es-AR message the backend sent (or a generic one). */
 export function ErrorState({ error }: { error: unknown }) {
   return (
     <Alert variant="destructive">
       <AlertTitle>Algo salió mal</AlertTitle>
-      <AlertDescription>{error instanceof Error ? error.message : String(error)}</AlertDescription>
+      <AlertDescription>{errorMessage(error)}</AlertDescription>
     </Alert>
   );
 }

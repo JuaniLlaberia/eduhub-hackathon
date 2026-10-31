@@ -2,7 +2,7 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { api } from "./client";
 import { unwrap } from "./errors";
-import type { AnalysisRequest, DraftRequest, PublishRequest } from "./types";
+import type { AnalysisRequest, DraftRequest, PublishRequest, SimulationRequest } from "./types";
 
 export const POLL_INTERVAL_MS = 2000;
 
@@ -62,5 +62,11 @@ export function useCreateDrafts() {
 export function usePublish() {
   return useMutation({
     mutationFn: async (body: PublishRequest) => unwrap(await api.POST("/publications", { body })),
+  });
+}
+
+export function useSimulate() {
+  return useMutation({
+    mutationFn: async (body: SimulationRequest) => unwrap(await api.POST("/simulations", { body })),
   });
 }
