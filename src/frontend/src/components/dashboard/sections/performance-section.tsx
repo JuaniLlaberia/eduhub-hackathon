@@ -98,16 +98,29 @@ export function PerformanceSection({ report, features }: { report: AnalysisRepor
             return (
               <article
                 key={insight.id}
+                aria-labelledby={`insight-${insight.id}`}
                 className="grid grid-cols-[110px_minmax(0,1fr)_auto] items-baseline gap-5 border-t border-[#232738] py-5"
               >
                 <span className="text-muted-foreground text-sm">
                   {insightCategoryLabel(insight.category)}
                 </span>
                 <div className="min-w-0">
-                  <h3 className="text-[17px] leading-snug font-medium">{insight.title}</h3>
+                  <h3 id={`insight-${insight.id}`} className="text-[17px] leading-snug font-medium">
+                    {insight.title}
+                  </h3>
                   <p className="text-muted-foreground mt-1.5 text-[15px] leading-relaxed">
                     {insight.description}
                   </p>
+                  {insight.evidence.length > 0 && (
+                    <dl className="mt-3 flex flex-wrap gap-x-8 gap-y-2">
+                      {insight.evidence.map((item) => (
+                        <div key={item.label} className="flex flex-col">
+                          <dt className="text-muted-foreground text-xs">{item.label}</dt>
+                          <dd className="font-mono text-[15px]">{item.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  )}
                 </div>
                 {features.generation && recId && (
                   <Link

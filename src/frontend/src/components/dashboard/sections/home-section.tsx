@@ -64,6 +64,10 @@ export function HomeSection({ report, features }: { report: AnalysisReport; feat
         </p>
       )}
 
+      {report.summary && (
+        <p className="mt-8 max-w-[46rem] text-[19px] leading-relaxed text-[#d9dcea]">{report.summary}</p>
+      )}
+
       <PostSky report={report} best={best} />
 
       <div className="mt-14 flex flex-wrap gap-x-16 gap-y-12">

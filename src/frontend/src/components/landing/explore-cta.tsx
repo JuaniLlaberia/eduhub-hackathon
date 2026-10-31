@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { HandleForm } from "./handle-form";
 import { container, lead, section, sectionTitle } from "./styles";
 
 // Real accounts the backend serves in DEMO_MODE (docs/teams/backend.md). Their reports open the dashboard.
@@ -8,8 +9,6 @@ const EXAMPLE_ACCOUNTS = [
   { handle: "demo_finanzas", name: "Finanzas sin vueltas", note: "Cuenta de demostración, 40 posts" },
 ];
 
-// TODO: add the @handle form here (components/landing/handle-form.tsx) once its tests are approved and it
-// starts real analyses. Until then, only link to what works.
 export function ExploreCta() {
   return (
     <section id="explorar" aria-labelledby="explorar-title" className={section}>
@@ -39,6 +38,10 @@ export function ExploreCta() {
               </Link>
             </li>
           ))}
+          <li className="mt-4">
+            <p className="text-muted-foreground mb-2 text-sm">¿Y tu cuenta? Escribí tu @ y te guiamos.</p>
+            <HandleForm />
+          </li>
         </ul>
       </div>
     </section>
