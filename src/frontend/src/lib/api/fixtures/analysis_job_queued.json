@@ -1,0 +1,11 @@
+{
+  "id": "job-demo-1",
+  "handle": "demo_finanzas",
+  "status": "queued",
+  "progress": 0.0,
+  "message": "En cola",
+  "created_at": "2026-10-30T12:00:00Z",
+  "updated_at": "2026-10-30T12:00:00Z",
+  "report_id": null,
+  "error": null
+}

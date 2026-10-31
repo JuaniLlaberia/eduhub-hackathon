@@ -29,7 +29,7 @@ npx openapi-typescript ../shared/contracts/openapi.json -o src/lib/api/schema.d.
 
 ## Open questions
 
-- [ ] Product name, logo and color palette.
+- [x] Product name, logo and color palette: **NOVA** (NOVA brand brief, 2026-10-31). Palette tokens in `src/frontend/src/app/globals.css`, wordmark in `components/brand/nova-logo.tsx`.
 - [ ] Desktop first (the judges use computers), with responsive layout as a bonus?
 - [ ] Mock mode switch (e.g. `NEXT_PUBLIC_API_MOCK=1`) for development and as a demo fallback.
 - [ ] Who records the ~20-second backup demo video?
