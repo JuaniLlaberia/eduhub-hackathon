@@ -164,6 +164,8 @@ def segment_value(item: AnalyzedPost, dimension: SegmentDimension) -> str | None
         SegmentDimension.LENGTH_BUCKET: features.length_bucket.value,
         SegmentDimension.TONE: features.tone,
         SegmentDimension.POST_KIND: item.post.kind.value,
+        SegmentDimension.HOOK: features.hook,
+        SegmentDimension.CTA: features.cta,
     }
     return values[dimension]
 

@@ -22,6 +22,8 @@ class SegmentDimension(StrEnum):
     LENGTH_BUCKET = "length_bucket"
     TONE = "tone"
     POST_KIND = "post_kind"
+    HOOK = "hook"
+    CTA = "cta"
 
 class InsightCategory(StrEnum):
     """
@@ -33,6 +35,8 @@ class InsightCategory(StrEnum):
     LENGTH = "length"
     TONE = "tone"
     TREND = "trend"
+    HOOK = "hook"
+    CTA = "cta"
     OTHER = "other"
 
 class Impact(StrEnum):
@@ -56,7 +60,7 @@ class PostRates(ContractModel):
 
 class PostFeatures(ContractModel):
     """
-    Features extracted from a post. Semantic fields (topic, tone, sentiment) may be None.
+    Features extracted from a post. Semantic fields (topic, tone, sentiment, hook, cta) may be None.
     """
     char_count: NonNegativeInt
     word_count: NonNegativeInt
@@ -72,6 +76,8 @@ class PostFeatures(ContractModel):
     topic: str | None = None
     tone: str | None = None
     sentiment: float | None = Field(default=None, ge=-1, le=1)
+    hook: str | None = Field(default=None, description="How the post opens (label set defined by eduhub_ai).")
+    cta: str | None = Field(default=None, description="What the post asks the reader to do (label set by eduhub_ai).")
     matches_trend: bool | None = None
 
 class AnalyzedPost(ContractModel):

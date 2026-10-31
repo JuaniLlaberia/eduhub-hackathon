@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "EduHub Creator Analytics API",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Contract C4. Generated from eduhub_shared; do not edit by hand."
   },
   "paths": {
@@ -1354,6 +1354,8 @@
           "length",
           "tone",
           "trend",
+          "hook",
+          "cta",
           "other"
         ],
         "title": "InsightCategory",
@@ -1630,7 +1632,7 @@
       },
       "PostFeatures": {
         "additionalProperties": false,
-        "description": "Features extracted from a post. Semantic fields (topic, tone, sentiment) may be None.",
+        "description": "Features extracted from a post. Semantic fields (topic, tone, sentiment, hook, cta) may be None.",
         "properties": {
           "char_count": {
             "minimum": 0,
@@ -1730,6 +1732,32 @@
             "default": null,
             "title": "Sentiment"
           },
+          "hook": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "How the post opens (label set defined by eduhub_ai).",
+            "title": "Hook"
+          },
+          "cta": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "What the post asks the reader to do (label set by eduhub_ai).",
+            "title": "Cta"
+          },
           "matches_trend": {
             "anyOf": [
               {
@@ -1758,6 +1786,8 @@
           "topic",
           "tone",
           "sentiment",
+          "hook",
+          "cta",
           "matches_trend"
         ],
         "title": "PostFeatures",
@@ -2138,7 +2168,9 @@
           "media_type",
           "length_bucket",
           "tone",
-          "post_kind"
+          "post_kind",
+          "hook",
+          "cta"
         ],
         "title": "SegmentDimension",
         "type": "string"
