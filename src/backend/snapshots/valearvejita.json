@@ -1,0 +1,3217 @@
+{
+  "profile": {
+    "platform": "x",
+    "handle": "valearvejita",
+    "display_name": "Valeria Edelsztein",
+    "bio": "Química y Educación. Investigo. Escribo libros. Tengo un podcast de ciencia y otras cosas. La salida es colectiva. Nadie se salva solo. No, vos tampoco.",
+    "followers_count": 69403,
+    "following_count": 1454,
+    "posts_count": 37693,
+    "verified": false,
+    "avatar_url": "https://pbs.twimg.com/profile_images/1175082376747241473/X13-J2Gz_normal.jpg",
+    "created_at": "2009-06-28T16:53:11Z"
+  },
+  "posts": [
+    {
+      "id": "2115147949684441522",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@trophon85 @Exactas_UBA ¡Yo me acuerdo de la primera edición! 🌼🌹🌷\nQué maravilla 🥰",
+      "created_at": "2026-10-27T18:25:43Z",
+      "url": "https://x.com/ValeArvejita/status/2115147949684441522",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "trophon85",
+        "exactas_uba"
+      ],
+      "conversation_id": "2115105972041502881",
+      "metrics": {
+        "impressions": 7837,
+        "likes": 77,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2113689338940985847",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@Daiannnnax Me muero muerta. Voy a llorar. Es precioso 🥰💜💜💜",
+      "created_at": "2026-10-23T17:49:43Z",
+      "url": "https://x.com/ValeArvejita/status/2113689338940985847",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "daiannnnax"
+      ],
+      "conversation_id": "2113318446603636883",
+      "metrics": {
+        "impressions": 26,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2112991104497066416",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@brunodij https://t.co/r1J8WnQvgs",
+      "created_at": "2026-10-21T19:35:11Z",
+      "url": "https://x.com/ValeArvejita/status/2112991104497066416",
+      "lang": "qme",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "brunodij"
+      ],
+      "conversation_id": "2112627088897298585",
+      "metrics": {
+        "impressions": 46,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2112912903913218121",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@KateLupe67924 Por lo que veo, tus neuronas también se adhirieron.",
+      "created_at": "2026-10-21T14:24:26Z",
+      "url": "https://x.com/ValeArvejita/status/2112912903913218121",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "katelupe67924"
+      ],
+      "conversation_id": "2112627088897298585",
+      "metrics": {
+        "impressions": 34,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2112912415918539156",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@MartinColicigno Pero el Congreso no va a dejarlo hacUN MOMENTO.",
+      "created_at": "2026-10-21T14:22:30Z",
+      "url": "https://x.com/ValeArvejita/status/2112912415918539156",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "martincolicigno"
+      ],
+      "conversation_id": "2112627088897298585",
+      "metrics": {
+        "impressions": 62,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2112912270292594814",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@GuidoAmante Mucho más clasistas que la CGT, sin dudas.",
+      "created_at": "2026-10-21T14:21:55Z",
+      "url": "https://x.com/ValeArvejita/status/2112912270292594814",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "guidoamante"
+      ],
+      "conversation_id": "2112627088897298585",
+      "metrics": {
+        "impressions": 87,
+        "likes": 3,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2112630521104633868",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@LaCremonna 🥰 ¡Gracias!",
+      "created_at": "2026-10-20T19:42:21Z",
+      "url": "https://x.com/ValeArvejita/status/2112630521104633868",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "lacremonna"
+      ],
+      "conversation_id": "2112250584510402710",
+      "metrics": {
+        "impressions": 6,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2112627088897298585",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "No entiendo por qué se sorprenden de la ausencia sináptica en un tipo que soplaba una bengala en su torta de cumpleaños. Esas neuronas ya habían adherido al retiro voluntario hace rato.",
+      "created_at": "2026-10-20T19:28:43Z",
+      "url": "https://x.com/ValeArvejita/status/2112627088897298585",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2112627088897298585",
+      "metrics": {
+        "impressions": 24756,
+        "likes": 3315,
+        "reposts": 336,
+        "quotes": 5,
+        "replies": 17,
+        "bookmarks": 29,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2111422539092082763",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@EvanVlacho ¡Por Plátonas y Aristoteles! 😂\n@ClaudioJavierCM",
+      "created_at": "2026-10-17T11:42:16Z",
+      "url": "https://x.com/ValeArvejita/status/2111422539092082763",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "evanvlacho",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "1705181827818758595",
+      "metrics": {
+        "impressions": 46,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2110875024584536472",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@aleli @Ladob @CientificasAca ¡Gracias! 🥰",
+      "created_at": "2026-10-15T23:26:38Z",
+      "url": "https://x.com/ValeArvejita/status/2110875024584536472",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "aleli",
+        "ladob",
+        "cientificasaca"
+      ],
+      "conversation_id": "2110862964500648209",
+      "metrics": {
+        "impressions": 15,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2107181399623249927",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Lo que lograron con la optogenética es un flash.\n#NobelMedicina2026 https://t.co/UjISQ766CL",
+      "created_at": "2026-10-05T18:49:29Z",
+      "url": "https://x.com/ValeArvejita/status/2107181399623249927",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [
+        "NobelMedicina2026"
+      ],
+      "mentions": [],
+      "conversation_id": "2107181399623249927",
+      "metrics": {
+        "impressions": 2100,
+        "likes": 19,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2105418629206646857",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@GreccoHernan 🫶",
+      "created_at": "2026-09-30T22:04:52Z",
+      "url": "https://x.com/ValeArvejita/status/2105418629206646857",
+      "lang": "qme",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "greccohernan"
+      ],
+      "conversation_id": "2105350572354510856",
+      "metrics": {
+        "impressions": 102,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2105350572354510856",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Ayer se cumplieron 15 años de la muerte de Eli Jares y la recuerdo con muchísimo cariño, como tantas otras personas que pudieron compartir un poco de su camino con ella 💜",
+      "created_at": "2026-09-30T17:34:26Z",
+      "url": "https://x.com/ValeArvejita/status/2105350572354510856",
+      "lang": "es",
+      "kind": "quote",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2105350572354510856",
+      "metrics": {
+        "impressions": 9969,
+        "likes": 71,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 3,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2102013462800994620",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@danceanddestroy Preocupante que no puedas entender un chiste. Saludos.",
+      "created_at": "2026-09-21T12:33:57Z",
+      "url": "https://x.com/ValeArvejita/status/2102013462800994620",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "danceanddestroy"
+      ],
+      "conversation_id": "2102003144255246339",
+      "metrics": {
+        "impressions": 234,
+        "likes": 5,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2101706156523577777",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Menos mal que existe chatGPT y convierte mis \"Esto es un espanto, no sé en qué estabas pensando cuando escribiste semejante barbaridad\" en \"Creo que habría que revisar la formulación. Me parece que podríamos encontrar una manera más adecuada para expresarlo\". https://t.co/oSOsXfGX6L",
+      "created_at": "2026-09-20T16:12:50Z",
+      "url": "https://x.com/ValeArvejita/status/2101706156523577777",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2101706156523577777",
+      "metrics": {
+        "impressions": 3030,
+        "likes": 42,
+        "reposts": 2,
+        "quotes": 2,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2099598285300195539",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@JEBonnin @chaquetumate @Tia_MaGui Nosotros tenemos uno en evaluación hace DOS AÑOS, ¿no @ClaudioJavierCM? ¿Quién da más?",
+      "created_at": "2026-09-14T20:36:54Z",
+      "url": "https://x.com/ValeArvejita/status/2099598285300195539",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "jebonnin",
+        "chaquetumate",
+        "tia_magui",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2099520338799243698",
+      "metrics": {
+        "impressions": 32,
+        "likes": 3,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2097704226738540930",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Se cumplen 3 años de espera de las altas de ingresantes. Vení al Polo que este cumpleañito está lleno de payasos 🤡 https://t.co/YDJsV0PXcx",
+      "created_at": "2026-09-09T15:10:35Z",
+      "url": "https://x.com/ValeArvejita/status/2097704226738540930",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2097704226738540930",
+      "metrics": {
+        "impressions": 6387,
+        "likes": 367,
+        "reposts": 53,
+        "quotes": 2,
+        "replies": 0,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2096352250285195722",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@lucas_pierre_M @ClaudioJavierCM ¡Gracias a ustedes! Y esperamos ansiosos saber cómo fue la conversación con sus estudiantes 🥰",
+      "created_at": "2026-09-05T21:38:19Z",
+      "url": "https://x.com/ValeArvejita/status/2096352250285195722",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "lucas_pierre_m",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2095896853820645652",
+      "metrics": {
+        "impressions": 119,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2093006568291742168",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Si no sabían qué hacer los viernes de septiembre y octubre de 13 a 16 h, ¡les traigo la solución! \nVoy a estar dando una materia electiva virtual en la UNR abierta a todo público y pueden anotarse🥰 https://t.co/l9tfg1UWjn",
+      "created_at": "2026-08-27T16:03:46Z",
+      "url": "https://x.com/ValeArvejita/status/2093006568291742168",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2093006568291742168",
+      "metrics": {
+        "impressions": 2085,
+        "likes": 36,
+        "reposts": 12,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2092329297407025511",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "En modo Tana Ferro. https://t.co/FeehiU9I8Z",
+      "created_at": "2026-08-25T19:12:32Z",
+      "url": "https://x.com/ValeArvejita/status/2092329297407025511",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2092329297407025511",
+      "metrics": {
+        "impressions": 2858,
+        "likes": 35,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2091573087128953046",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@Tolstoi666 Dado que fui a muchísimos eventos contra el genocidio palestino, quizás simplemente estás diciendo cosas por decir. Porque a veces hay que poner el cuerpo más que decirlo por redes. Ojalá te mejores.",
+      "created_at": "2026-08-23T17:07:38Z",
+      "url": "https://x.com/ValeArvejita/status/2091573087128953046",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "tolstoi666"
+      ],
+      "conversation_id": "2091529758127411633",
+      "metrics": {
+        "impressions": 1111,
+        "likes": 91,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2091551184033136723",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@Shibajenius https://t.co/W1hbJh5r95",
+      "created_at": "2026-08-23T15:40:36Z",
+      "url": "https://x.com/ValeArvejita/status/2091551184033136723",
+      "lang": "qme",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "shibajenius"
+      ],
+      "conversation_id": "2091529758127411633",
+      "metrics": {
+        "impressions": 3782,
+        "likes": 95,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2091551027778424833",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@perucalinuxero Las maravillosas preguntas que te hacen cuando querés enviar un paper. https://t.co/Twk3MarVHf",
+      "created_at": "2026-08-23T15:39:58Z",
+      "url": "https://x.com/ValeArvejita/status/2091551027778424833",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "gif"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2091529758127411633",
+      "metrics": {
+        "impressions": 3442,
+        "likes": 39,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2091550891878846604",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@agus3260 Envío de paper. Las pocas pulgas que me quedan están preparando antorchas y bidones a esta altura.",
+      "created_at": "2026-08-23T15:39:26Z",
+      "url": "https://x.com/ValeArvejita/status/2091550891878846604",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "agus3260"
+      ],
+      "conversation_id": "2091529758127411633",
+      "metrics": {
+        "impressions": 2796,
+        "likes": 64,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2091529758127411633",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "HARTA https://t.co/rRdBFP9KIT",
+      "created_at": "2026-08-23T14:15:27Z",
+      "url": "https://x.com/ValeArvejita/status/2091529758127411633",
+      "lang": "eu",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2091529758127411633",
+      "metrics": {
+        "impressions": 37537,
+        "likes": 2504,
+        "reposts": 73,
+        "quotes": 16,
+        "replies": 33,
+        "bookmarks": 58,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2088338504237326659",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@julielffman @ClaudioJavierCM https://t.co/0wU6n7WM6V",
+      "created_at": "2026-08-14T18:54:33Z",
+      "url": "https://x.com/ValeArvejita/status/2088338504237326659",
+      "lang": "qme",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "julielffman",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 28,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2088271314322678045",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@julielffman @ClaudioJavierCM Suicidación es lo que dan ganas de hacer cuando te enterás de que ahí decía \"sensación\".",
+      "created_at": "2026-08-14T14:27:34Z",
+      "url": "https://x.com/ValeArvejita/status/2088271314322678045",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "julielffman",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 69,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087978049631330615",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@florsiflopino @Tia_MaGui Respondieron reculando en chancletas (\"Reculating in chanclettes\", por las dudas) diciendo que por favor, que ellos jamás dirían algo así (como lo que dijeron), que \"you just translate the names into English\" y que \"We really value a global look at science education\".",
+      "created_at": "2026-08-13T19:02:14Z",
+      "url": "https://x.com/ValeArvejita/status/2087978049631330615",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "florsiflopino",
+        "tia_magui"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 160,
+        "likes": 10,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087667026286313819",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@santidepresivos https://t.co/jgz8LCqLLu",
+      "created_at": "2026-08-12T22:26:20Z",
+      "url": "https://x.com/ValeArvejita/status/2087667026286313819",
+      "lang": "qme",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "santidepresivos"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 4032,
+        "likes": 11,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087666799777083543",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@AgustinaTo52532 ¡Dale, dale! 😄",
+      "created_at": "2026-08-12T22:25:26Z",
+      "url": "https://x.com/ValeArvejita/status/2087666799777083543",
+      "lang": "it",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "agustinato52532"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 4994,
+        "likes": 60,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087656709271486952",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@mmcLondon No, no: \"You may leave one or two non-English references that are necessary to the understanding of your study and do not have English equivalents. For non-English references you choose to keep, please provide an English translation of the article titles\".",
+      "created_at": "2026-08-12T21:45:20Z",
+      "url": "https://x.com/ValeArvejita/status/2087656709271486952",
+      "lang": "en",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "mmclondon"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 3325,
+        "likes": 52,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087618041680908450",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Vení al Obelisco a defender la ciencia, la tecnología y la universidad públicas 💪🇦🇷 https://t.co/ajYDALWIb8",
+      "created_at": "2026-08-12T19:11:41Z",
+      "url": "https://x.com/ValeArvejita/status/2087618041680908450",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2087618041680908450",
+      "metrics": {
+        "impressions": 5373,
+        "likes": 726,
+        "reposts": 89,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 4,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087590285819641942",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@Tia_MaGui Lo es. Le respondí un mail larguísimo con bastante pocas pulgas que, entre otras cosas dice: \"Since this is the International Journal of..., rather than the English-speaking Journal of...\".",
+      "created_at": "2026-08-12T17:21:24Z",
+      "url": "https://x.com/ValeArvejita/status/2087590285819641942",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "tia_magui"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 3874,
+        "likes": 446,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 4,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087589625678234040",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@Tia_MaGui No quieren que la use: \"You may leave one or two non-English references that are necessary to the understanding of your study and do not have English equivalents. For non-English references you choose to keep, please provide an English translation of the article titles\".",
+      "created_at": "2026-08-12T17:18:46Z",
+      "url": "https://x.com/ValeArvejita/status/2087589625678234040",
+      "lang": "en",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "tia_magui"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 6813,
+        "likes": 188,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087584207669178637",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@JEBonnin Estoy a 5 segundos de mandar algo así.",
+      "created_at": "2026-08-12T16:57:15Z",
+      "url": "https://x.com/ValeArvejita/status/2087584207669178637",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "jebonnin"
+      ],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 7488,
+        "likes": 160,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 3,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087580366831771778",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Me devolvieron un paper para que vuelva a mandarlo porque: \"Your manuscript includes references that are not originally in English (...). Please remove non-English references, and where possible, please replace non-English references with citations in English\".\nES UNA VERGÜENZA. https://t.co/E5ZGfoc6h8",
+      "created_at": "2026-08-12T16:41:59Z",
+      "url": "https://x.com/ValeArvejita/status/2087580366831771778",
+      "lang": "en",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2087580366831771778",
+      "metrics": {
+        "impressions": 72860,
+        "likes": 5329,
+        "reposts": 140,
+        "quotes": 18,
+        "replies": 67,
+        "bookmarks": 88,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2087116539472364011",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@Polyetileno11 @ClaudioJavierCM @UbaAgd @ateconicet Lamento mucho que te hayan dejado caer de cabeza al piso cuando eras chiquito.",
+      "created_at": "2026-08-11T09:58:54Z",
+      "url": "https://x.com/ValeArvejita/status/2087116539472364011",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "polyetileno11",
+        "claudiojaviercm",
+        "ubaagd",
+        "ateconicet"
+      ],
+      "conversation_id": "2086908046479921414",
+      "metrics": {
+        "impressions": 31,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2086908046479921414",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Audiencia en Diputados contra los despidos en Conicet. \nLa lucha es colectiva 💪 https://t.co/d5dv6Ttae3",
+      "created_at": "2026-08-10T20:10:25Z",
+      "url": "https://x.com/ValeArvejita/status/2086908046479921414",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2086908046479921414",
+      "metrics": {
+        "impressions": 3768,
+        "likes": 372,
+        "reposts": 84,
+        "quotes": 0,
+        "replies": 4,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2085030108759200019",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Cada vez más convencida de que nos va a gobernar Conan en 2031.",
+      "created_at": "2026-08-05T15:48:10Z",
+      "url": "https://x.com/ValeArvejita/status/2085030108759200019",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2085030108759200019",
+      "metrics": {
+        "impressions": 2494,
+        "likes": 16,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2083228135504351294",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Si el domingo tienen criaturas a mano (si no, también, no vamos a estar discriminando), con @ClaudioJavierCM  tenemos este plan para ustedes 🥳 https://t.co/b6WtT70Ujf",
+      "created_at": "2026-07-31T16:27:46Z",
+      "url": "https://x.com/ValeArvejita/status/2083228135504351294",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2083228135504351294",
+      "metrics": {
+        "impressions": 1372,
+        "likes": 17,
+        "reposts": 6,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2082947417616347414",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "⚠️ ¡TE ESTAMOS BUSCANDO!\nVení a hacer tu tesis doctoral con el Combo Ñoño 🤓 https://t.co/YfeJcTHHGb",
+      "created_at": "2026-07-30T21:52:18Z",
+      "url": "https://x.com/ValeArvejita/status/2082947417616347414",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2082947417616347414",
+      "metrics": {
+        "impressions": 2662,
+        "likes": 42,
+        "reposts": 15,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2082483775519310223",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Conferencia de prensa.\nInvestigar es trabajar.\n¡Prórrogas ya! https://t.co/3rExmfiN7p",
+      "created_at": "2026-07-29T15:09:57Z",
+      "url": "https://x.com/ValeArvejita/status/2082483775519310223",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2082467475405340680",
+      "metrics": {
+        "impressions": 622,
+        "likes": 8,
+        "reposts": 2,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2082467475405340680",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "En 3 días, casi 400 trabajadores de la ciencia se quedan en la calle. \n¡Vení al Polo que al cientificidio lo frenamos colectivamente! 💪 https://t.co/2QLpWlzJ49",
+      "created_at": "2026-07-29T14:05:11Z",
+      "url": "https://x.com/ValeArvejita/status/2082467475405340680",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo",
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2082467475405340680",
+      "metrics": {
+        "impressions": 8457,
+        "likes": 697,
+        "reposts": 236,
+        "quotes": 3,
+        "replies": 4,
+        "bookmarks": 6,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2081780630409400376",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@AbelSHimself @12_de_copas No hay que gastarse en responder. Ni siquiera entendió el tuit, pobrecito.",
+      "created_at": "2026-07-27T16:35:54Z",
+      "url": "https://x.com/ValeArvejita/status/2081780630409400376",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "abelshimself",
+        "12_de_copas"
+      ],
+      "conversation_id": "2081428241361899825",
+      "metrics": {
+        "impressions": 14,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2081739217491591429",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@PabloCapanna Nadie tergiversó nada. Fue clarísimo lo que dijo y me parece repulsivo. Saludos.",
+      "created_at": "2026-07-27T13:51:20Z",
+      "url": "https://x.com/ValeArvejita/status/2081739217491591429",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "pablocapanna"
+      ],
+      "conversation_id": "2081428241361899825",
+      "metrics": {
+        "impressions": 138,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2081490833811898577",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@earthguido No, estoy pensando en dichos específicos de personajes públicos que fueron muy discutidos en redes en estos días y que me parecen repudiables.",
+      "created_at": "2026-07-26T21:24:21Z",
+      "url": "https://x.com/ValeArvejita/status/2081490833811898577",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "earthguido"
+      ],
+      "conversation_id": "2081428241361899825",
+      "metrics": {
+        "impressions": 396,
+        "likes": 6,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2081490712458080538",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@ClaudioUribeR Pero Lucho, por supuesto.",
+      "created_at": "2026-07-26T21:23:52Z",
+      "url": "https://x.com/ValeArvejita/status/2081490712458080538",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "claudiouriber"
+      ],
+      "conversation_id": "2081428241361899825",
+      "metrics": {
+        "impressions": 412,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2081428241361899825",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "¿En serio prefieren a un empresario 🇦🇷 antes que los trabajadores de 🇵🇾 que explota?\n\n¿A homofóbicos 🇦🇷 antes que un activista gay de 🇧🇷?\n\n¿A un eclesiástico reaccionario 🇦🇷 antes que una militante de 🇨🇱 por el derecho al aborto?\n\n Después no digan que estamos del mismo lado, eh.",
+      "created_at": "2026-07-26T17:15:38Z",
+      "url": "https://x.com/ValeArvejita/status/2081428241361899825",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2081428241361899825",
+      "metrics": {
+        "impressions": 7979,
+        "likes": 205,
+        "reposts": 15,
+        "quotes": 2,
+        "replies": 14,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2079999960532062624",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Los próceres de Argentina en la marcha de apoyo a jubilados 💪 https://t.co/6AeDhyZVLm",
+      "created_at": "2026-07-22T18:40:09Z",
+      "url": "https://x.com/ValeArvejita/status/2079999960532062624",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2079999960532062624",
+      "metrics": {
+        "impressions": 2151,
+        "likes": 33,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2079343651507802495",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Si ya no sabés cómo entretener a las criaturas en estas vacaciones y querés alejarlas un rato de las pantallas, junto con @ClaudioJavierCM te traemos una solución: \nhttps://t.co/BuOx8t9mJu https://t.co/Sw6PSJfDpA",
+      "created_at": "2026-07-20T23:12:13Z",
+      "url": "https://x.com/ValeArvejita/status/2079343651507802495",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": true,
+      "hashtags": [],
+      "mentions": [
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2079343651507802495",
+      "metrics": {
+        "impressions": 1591,
+        "likes": 13,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078912333162614793",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@carojankowski67 @ClaudioJavierCM Increíblemente, sí",
+      "created_at": "2026-07-19T18:38:19Z",
+      "url": "https://x.com/ValeArvejita/status/2078912333162614793",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "carojankowski67",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 98,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078886692207972557",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@carojankowski67 @ClaudioJavierCM No puedo creerlo 🫠",
+      "created_at": "2026-07-19T16:56:25Z",
+      "url": "https://x.com/ValeArvejita/status/2078886692207972557",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "carojankowski67",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 39,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078873315406500098",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@carojankowski67 @ClaudioJavierCM Esa era la parte fácil 😂\nYo sé cuál es la palabra y aún así no la veo.",
+      "created_at": "2026-07-19T16:03:16Z",
+      "url": "https://x.com/ValeArvejita/status/2078873315406500098",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "carojankowski67",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 32,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078478130382045288",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@carojankowski67 @ClaudioJavierCM Esto seguro que ayuda un montón 🫠 https://t.co/VJczOYBoR3",
+      "created_at": "2026-07-18T13:52:57Z",
+      "url": "https://x.com/ValeArvejita/status/2078478130382045288",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "carojankowski67",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 76,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078476732470817163",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@belucracia @ClaudioJavierCM Buen intento, pero no 😂",
+      "created_at": "2026-07-18T13:47:23Z",
+      "url": "https://x.com/ValeArvejita/status/2078476732470817163",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "belucracia",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 70,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078473884475768952",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Si un perro pekinés escribiera estoy segura de que lo haría así. No me pregunten por qué.\n\n¿Quién es capaz de entender lo que @ClaudioJavierCM escribió ahí? https://t.co/W5OQH4McEW",
+      "created_at": "2026-07-18T13:36:04Z",
+      "url": "https://x.com/ValeArvejita/status/2078473884475768952",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2078473884475768952",
+      "metrics": {
+        "impressions": 1989,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 3,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078170914164703264",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@GenesisYZW https://t.co/kKXLg0YHe2",
+      "created_at": "2026-07-17T17:32:11Z",
+      "url": "https://x.com/ValeArvejita/status/2078170914164703264",
+      "lang": "qme",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "genesisyzw"
+      ],
+      "conversation_id": "2078164734184923568",
+      "metrics": {
+        "impressions": 103,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078167194072989871",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Acá está: https://t.co/L94ddvT0JX",
+      "created_at": "2026-07-17T17:17:24Z",
+      "url": "https://x.com/ValeArvejita/status/2078167194072989871",
+      "lang": "es",
+      "kind": "quote",
+      "media": [],
+      "has_link": true,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2078164734184923568",
+      "metrics": {
+        "impressions": 1166,
+        "likes": 17,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078167087277580317",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@millienarrow Gracias 🙌",
+      "created_at": "2026-07-17T17:16:58Z",
+      "url": "https://x.com/ValeArvejita/status/2078167087277580317",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "millienarrow"
+      ],
+      "conversation_id": "2078164734184923568",
+      "metrics": {
+        "impressions": 93,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2078164734184923568",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Esta bolsa de tapa de tarta* es menos cipaya que el prófugo del ácido fólico que nos gobierna.\n\n*Perdí el tuit original que ponía la imagen. Créditos al patriota anónimo. https://t.co/a9x63FXqiX",
+      "created_at": "2026-07-17T17:07:37Z",
+      "url": "https://x.com/ValeArvejita/status/2078164734184923568",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2078164734184923568",
+      "metrics": {
+        "impressions": 7695,
+        "likes": 649,
+        "reposts": 66,
+        "quotes": 2,
+        "replies": 8,
+        "bookmarks": 6,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2077119590346191348",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@buen_conde Total, completa y absolutamente. Nunca mejor dicho. Archívese.",
+      "created_at": "2026-07-14T19:54:36Z",
+      "url": "https://x.com/ValeArvejita/status/2077119590346191348",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "buen_conde"
+      ],
+      "conversation_id": "2076770106940481946",
+      "metrics": {
+        "impressions": 416,
+        "likes": 4,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2077096012871503979",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@abuelajipi Nidaba estaría orgullosa 🫡",
+      "created_at": "2026-07-14T18:20:54Z",
+      "url": "https://x.com/ValeArvejita/status/2077096012871503979",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "abuelajipi"
+      ],
+      "conversation_id": "2077095550026138096",
+      "metrics": {
+        "impressions": 596,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076836991082090992",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "La criatura menor está manija con el Cuarteto de Nos y dibuja así. https://t.co/7jooMD7RFl",
+      "created_at": "2026-07-14T01:11:39Z",
+      "url": "https://x.com/ValeArvejita/status/2076836991082090992",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2076836991082090992",
+      "metrics": {
+        "impressions": 1979,
+        "likes": 33,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076832829871128980",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@pablovsky_bulzo Es bastante malo el transcriptor de Wapp. Si necesitás información importante no es confiable, menos que menos si los audios son largos. Pero lo más importante: tenemos escritura, una maravilla de la humanidad.",
+      "created_at": "2026-07-14T00:55:06Z",
+      "url": "https://x.com/ValeArvejita/status/2076832829871128980",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "pablovsky_bulzo"
+      ],
+      "conversation_id": "2076770106940481946",
+      "metrics": {
+        "impressions": 2998,
+        "likes": 148,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 3,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076825036715905387",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@pamesturm Una remera que diga 💅",
+      "created_at": "2026-07-14T00:24:08Z",
+      "url": "https://x.com/ValeArvejita/status/2076825036715905387",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "pamesturm"
+      ],
+      "conversation_id": "2076770106940481946",
+      "metrics": {
+        "impressions": 3546,
+        "likes": 30,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076803672470651276",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@GreccoHernan @ClaudioJavierCM Asbesto y sustancia para toda la vagancia  🫠",
+      "created_at": "2026-07-13T22:59:15Z",
+      "url": "https://x.com/ValeArvejita/status/2076803672470651276",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "greccohernan",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2076770106940481946",
+      "metrics": {
+        "impressions": 288,
+        "likes": 12,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076802622657376480",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@GreccoHernan Tengo una remera que dice \"Arveja conducción\" en Lineal B que  me mandó a hacer especialmente @ClaudioJavierCM. No puedo quejarme. Nosotros nos debemos un café.",
+      "created_at": "2026-07-13T22:55:05Z",
+      "url": "https://x.com/ValeArvejita/status/2076802622657376480",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "greccohernan",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2076770106940481946",
+      "metrics": {
+        "impressions": 3672,
+        "likes": 26,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076770106940481946",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "\"Te mando un audio porque es más fácil\".\nSerá más fácil para vos. \nYo voy a tener que escuchar tu podcast de 4 minutos cada vez que necesite un dato porque despreciás la gloriosa tecnología de registro de información conocida como escritura que nos legaron los sumerios. https://t.co/bVnH8GKDBJ",
+      "created_at": "2026-07-13T20:45:52Z",
+      "url": "https://x.com/ValeArvejita/status/2076770106940481946",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2076770106940481946",
+      "metrics": {
+        "impressions": 179538,
+        "likes": 15364,
+        "reposts": 2944,
+        "quotes": 192,
+        "replies": 113,
+        "bookmarks": 721,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2076434859472388423",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Solo quería recordarles que alguna vez hicimos esto.",
+      "created_at": "2026-07-12T22:33:43Z",
+      "url": "https://x.com/ValeArvejita/status/2076434859472388423",
+      "lang": "es",
+      "kind": "quote",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2076434859472388423",
+      "metrics": {
+        "impressions": 14118,
+        "likes": 234,
+        "reposts": 12,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 9,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2075322873183428751",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "¡Dos nuevos libros con @ClaudioJavierCM para grandes y peques!\n\n⏳ Contra el reloj: https://t.co/UQ8pO5V4uD\n🤔¿Cómo sabemos lo que sabemos?: https://t.co/BuOx8t9mJu\n\nToda difusión en estos tiempos tan difíciles nos ayuda un montón 🥰 https://t.co/rlYeK2OdCk",
+      "created_at": "2026-07-09T20:55:05Z",
+      "url": "https://x.com/ValeArvejita/status/2075322873183428751",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "video"
+      ],
+      "has_link": true,
+      "hashtags": [],
+      "mentions": [
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2075322873183428751",
+      "metrics": {
+        "impressions": 2332,
+        "likes": 13,
+        "reposts": 6,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2075316043891773862",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Un abrazo enorme, apretado y fuerte a @Malamadre 💜",
+      "created_at": "2026-07-09T20:27:57Z",
+      "url": "https://x.com/ValeArvejita/status/2075316043891773862",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "malamadre"
+      ],
+      "conversation_id": "2075316043891773862",
+      "metrics": {
+        "impressions": 3540,
+        "likes": 13,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2074562752736014617",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Si sobreviviste al partido, ya entendiste que el tiempo corre, se estira y se hace eterno.\n\nContra el reloj, nuestro nuevo libro con @ClaudioJavierCM, llegó justo a tiempo ⏳📖🇦🇷\n\nÚltimo día de preventa con envío gratis:\n https://t.co/UQ8pO5V4uD",
+      "created_at": "2026-07-07T18:34:38Z",
+      "url": "https://x.com/ValeArvejita/status/2074562752736014617",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": true,
+      "hashtags": [],
+      "mentions": [
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2074562752736014617",
+      "metrics": {
+        "impressions": 1483,
+        "likes": 31,
+        "reposts": 10,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 2,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2074517388163187089",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@leoysubrayo @ClaudioJavierCM ¡Gracias! Ojalá te guste 🥰",
+      "created_at": "2026-07-07T15:34:22Z",
+      "url": "https://x.com/ValeArvejita/status/2074517388163187089",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "leoysubrayo",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2074508668616184038",
+      "metrics": {
+        "impressions": 344,
+        "likes": 3,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072779096686202920",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Espero que, al menos, les estén pagando a los prófugos del ácido fólico que salen a decir imbecilidades sobre CNEA y CONICET. Porque la alternativa es que ese festival de neuronas en huelga sea ad honorem y, contra semejante vocación por la estupidez, no veo tratamiento posible.",
+      "created_at": "2026-07-02T20:27:01Z",
+      "url": "https://x.com/ValeArvejita/status/2072779096686202920",
+      "lang": "es",
+      "kind": "original",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072779096686202920",
+      "metrics": {
+        "impressions": 7425,
+        "likes": 486,
+        "reposts": 74,
+        "quotes": 3,
+        "replies": 6,
+        "bookmarks": 7,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072719496276533527",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "⏰️ ¡Estamos muy emocionados porque salió nuestro nuevo libro Contra el Reloj!\n\nPodés comprarlo en preventa con envío gratis en \nhttps://t.co/UQ8pO5V4uD\n\nHistorias de ciencia, filosofía, y muchas ñoñadas como las que nos gustan a @ClaudioJavierCM  y a mí 😊 \nAcá un bocadito... https://t.co/kZqNFgSiGh",
+      "created_at": "2026-07-02T16:30:11Z",
+      "url": "https://x.com/ValeArvejita/status/2072719496276533527",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "video"
+      ],
+      "has_link": true,
+      "hashtags": [],
+      "mentions": [
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2072719496276533527",
+      "metrics": {
+        "impressions": 1906,
+        "likes": 39,
+        "reposts": 12,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072369297502953833",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "https://t.co/H9fM6g7BRE",
+      "created_at": "2026-07-01T17:18:37Z",
+      "url": "https://x.com/ValeArvejita/status/2072369297502953833",
+      "lang": "zxx",
+      "kind": "reply",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072352299788197933",
+      "metrics": {
+        "impressions": 1027,
+        "likes": 44,
+        "reposts": 12,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072364481749876953",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "El Parque de las Ciencias enmarca a la Policía lista para reprimir a los trabajadores de la ciencia.\nVergüenza, asco, bronca. https://t.co/NLUw8tbZ2u",
+      "created_at": "2026-07-01T16:59:29Z",
+      "url": "https://x.com/ValeArvejita/status/2072364481749876953",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072364481749876953",
+      "metrics": {
+        "impressions": 13024,
+        "likes": 724,
+        "reposts": 274,
+        "quotes": 9,
+        "replies": 12,
+        "bookmarks": 5,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072359105121911218",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Así estamos país.\nLos trabajadores de ciencia de un lado, la cana represora del otro.\n\nFoto: @HallucigeniaOK https://t.co/AeU2ZQLeUr",
+      "created_at": "2026-07-01T16:38:07Z",
+      "url": "https://x.com/ValeArvejita/status/2072359105121911218",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "hallucigeniaok"
+      ],
+      "conversation_id": "2072359105121911218",
+      "metrics": {
+        "impressions": 40391,
+        "likes": 4490,
+        "reposts": 1405,
+        "quotes": 32,
+        "replies": 41,
+        "bookmarks": 48,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072355208022360291",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "https://t.co/WDi5G07ILH",
+      "created_at": "2026-07-01T16:22:38Z",
+      "url": "https://x.com/ValeArvejita/status/2072355208022360291",
+      "lang": "zxx",
+      "kind": "reply",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072352299788197933",
+      "metrics": {
+        "impressions": 2093,
+        "likes": 109,
+        "reposts": 38,
+        "quotes": 2,
+        "replies": 1,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072352299788197933",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Nos mandaron a la cana a reprimir.\n¡Difundan! https://t.co/HHW2b6sZiA",
+      "created_at": "2026-07-01T16:11:05Z",
+      "url": "https://x.com/ValeArvejita/status/2072352299788197933",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072352299788197933",
+      "metrics": {
+        "impressions": 25397,
+        "likes": 751,
+        "reposts": 530,
+        "quotes": 12,
+        "replies": 7,
+        "bookmarks": 9,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072351833478005237",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Mirá cómo mandan a la cana que se reprime encima. Que se sepa. https://t.co/onI1NMSDFX",
+      "created_at": "2026-07-01T16:09:14Z",
+      "url": "https://x.com/ValeArvejita/status/2072351833478005237",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072324554819576279",
+      "metrics": {
+        "impressions": 413,
+        "likes": 6,
+        "reposts": 3,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072347866446578003",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Contra los despidos, contra los salarios de miseria, contra el desfinanciamiento de la ciencia 💪 https://t.co/So3EuZk6g6",
+      "created_at": "2026-07-01T15:53:28Z",
+      "url": "https://x.com/ValeArvejita/status/2072347866446578003",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072324554819576279",
+      "metrics": {
+        "impressions": 612,
+        "likes": 14,
+        "reposts": 6,
+        "quotes": 2,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072333851381178434",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Somos un montón en lucha contra el ajuste, ¿y vos?\n¡Venite al Polo! 💪 https://t.co/8FTgXSMhYN",
+      "created_at": "2026-07-01T14:57:46Z",
+      "url": "https://x.com/ValeArvejita/status/2072333851381178434",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072324554819576279",
+      "metrics": {
+        "impressions": 786,
+        "likes": 56,
+        "reposts": 14,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072329895401701635",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "No nos van a amedrentar.\nLa lucha sigue 💪 https://t.co/zNEdytpLai",
+      "created_at": "2026-07-01T14:42:03Z",
+      "url": "https://x.com/ValeArvejita/status/2072329895401701635",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072324554819576279",
+      "metrics": {
+        "impressions": 712,
+        "likes": 50,
+        "reposts": 9,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2072324554819576279",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Por suerte acá al Polo mandaron un montón de Policía que se reprime encima ✨️✨️✨️\n¡¿Cómo se nos ocurre defender puestos de trabajo y a la ciencia y la tecnología argentinas?! https://t.co/ZaxvORoPci",
+      "created_at": "2026-07-01T14:20:50Z",
+      "url": "https://x.com/ValeArvejita/status/2072324554819576279",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2072324554819576279",
+      "metrics": {
+        "impressions": 4278,
+        "likes": 240,
+        "reposts": 78,
+        "quotes": 1,
+        "replies": 3,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2071417516425941434",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@TheMemily Felicidades 🥰\nQue venga con facturas, fosforitos y unos chocolates bajo el brazo.",
+      "created_at": "2026-06-29T02:16:35Z",
+      "url": "https://x.com/ValeArvejita/status/2071417516425941434",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "thememily"
+      ],
+      "conversation_id": "2071351876046426583",
+      "metrics": {
+        "impressions": 750,
+        "likes": 5,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2071246403125276694",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@aracalacana @ClaudioJavierCM @tiempoarg ¡Muchas gracias! 🥰",
+      "created_at": "2026-06-28T14:56:39Z",
+      "url": "https://x.com/ValeArvejita/status/2071246403125276694",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "aracalacana",
+        "claudiojaviercm",
+        "tiempoarg"
+      ],
+      "conversation_id": "2071246288935375335",
+      "metrics": {
+        "impressions": 338,
+        "likes": 2,
+        "reposts": 1,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070889684662657147",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@dianacastro1956 @ClaudioJavierCM Está pensando desde los 8 años, pero puede ser menos con acompañamiento. Y es para grandes también 😉",
+      "created_at": "2026-06-27T15:19:10Z",
+      "url": "https://x.com/ValeArvejita/status/2070889684662657147",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "dianacastro1956",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 27,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070546119558389998",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@carojankowski67 Avisanos cuando estés por acá que te debemos una cena caserita 🥰",
+      "created_at": "2026-06-26T16:33:58Z",
+      "url": "https://x.com/ValeArvejita/status/2070546119558389998",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "carojankowski67"
+      ],
+      "conversation_id": "2070544747609858485",
+      "metrics": {
+        "impressions": 30,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070545993951494603",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@rusosnith Desde la semana que viene en todas las librerías del país y en la tienda online de Planeta 😍",
+      "created_at": "2026-06-26T16:33:28Z",
+      "url": "https://x.com/ValeArvejita/status/2070545993951494603",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "rusosnith"
+      ],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 52,
+        "likes": 2,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070545017127551052",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@carojankowski67 Siempre haciéndonos el aguante 🫶",
+      "created_at": "2026-06-26T16:29:35Z",
+      "url": "https://x.com/ValeArvejita/status/2070545017127551052",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "carojankowski67"
+      ],
+      "conversation_id": "2070544747609858485",
+      "metrics": {
+        "impressions": 276,
+        "likes": 3,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070540275219321148",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Y las ilustraciones de @pupeilustra.\nDesmayada de amor 😍 https://t.co/k0d5o9ErBE",
+      "created_at": "2026-06-26T16:10:45Z",
+      "url": "https://x.com/ValeArvejita/status/2070540275219321148",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "pupeilustra"
+      ],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 430,
+        "likes": 8,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070535615951548719",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Pero miren lo que es este índice... ( y qué bien que salimos retratadas la criatura y yo, protagonistas del libro 💅) https://t.co/LNPjlidXBL",
+      "created_at": "2026-06-26T15:52:14Z",
+      "url": "https://x.com/ValeArvejita/status/2070535615951548719",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 850,
+        "likes": 19,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 2,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070535332802502816",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@valenzine @ClaudioJavierCM ¡Gracias! 😍",
+      "created_at": "2026-06-26T15:51:06Z",
+      "url": "https://x.com/ValeArvejita/status/2070535332802502816",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "valenzine",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 77,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070524471895539852",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@florenciaypunto @ClaudioJavierCM Esaaaa 💪",
+      "created_at": "2026-06-26T15:07:57Z",
+      "url": "https://x.com/ValeArvejita/status/2070524471895539852",
+      "lang": "und",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "florenciaypunto",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 55,
+        "likes": 0,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070518793281909202",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@m_u_l_d_e_r @ClaudioJavierCM ¡Gracias! 🥰",
+      "created_at": "2026-06-26T14:45:23Z",
+      "url": "https://x.com/ValeArvejita/status/2070518793281909202",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "m_u_l_d_e_r",
+        "claudiojaviercm"
+      ],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 41,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2070518070867579245",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "¡EMOCIÓN EN LAS TRIBUNAS! 🥳📚\n\nCalentito desde la imprenta y después de mucho trabajo... ¡llegó nuestro nuevo libro para chicos (y grandes también)!\n\nUn viaje por una de las preguntas más fascinantes: ¿cómo sabemos lo que sabemos? \nCon desafíos, preguntas, experimentos y más 🤗 https://t.co/rQVEtQPiEu",
+      "created_at": "2026-06-26T14:42:31Z",
+      "url": "https://x.com/ValeArvejita/status/2070518070867579245",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "video"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2070518070867579245",
+      "metrics": {
+        "impressions": 4218,
+        "likes": 75,
+        "reposts": 11,
+        "quotes": 2,
+        "replies": 5,
+        "bookmarks": 5,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2066299403934306753",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Qué sensación de orfandad 💔\nFueron 30.000 🤍\nMemoria, Verdad y Justicia. https://t.co/GGqpO8A5eb",
+      "created_at": "2026-06-14T23:19:02Z",
+      "url": "https://x.com/ValeArvejita/status/2066299403934306753",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2066299403934306753",
+      "metrics": {
+        "impressions": 5566,
+        "likes": 636,
+        "reposts": 67,
+        "quotes": 1,
+        "replies": 3,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2065208845828538767",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@UbaAgd @ClaudioJavierCM @carbonilau @IleanaCelotto Acá estamos. La lucha no se abandona 💪 https://t.co/qbFou0Ygfu",
+      "created_at": "2026-06-11T23:05:33Z",
+      "url": "https://x.com/ValeArvejita/status/2065208845828538767",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "ubaagd",
+        "claudiojaviercm",
+        "carbonilau",
+        "ileanacelotto"
+      ],
+      "conversation_id": "2065101275289505895",
+      "metrics": {
+        "impressions": 877,
+        "likes": 27,
+        "reposts": 9,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2065101275289505895",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Un \"acuerdo\" que es más bien una rendición. \nUn aumento que no saca a nadie del pluriempleo, no frena las renuncias y le regala una victoria a un gobierno que no podía imponer su propia ley. \n\nSi ellos celebran es porque nosotros perdemos. \nHagamos ruido donde quieren silencio. https://t.co/SglYGHB2iI",
+      "created_at": "2026-06-11T15:58:06Z",
+      "url": "https://x.com/ValeArvejita/status/2065101275289505895",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2065101275289505895",
+      "metrics": {
+        "impressions": 2678,
+        "likes": 141,
+        "reposts": 47,
+        "quotes": 1,
+        "replies": 5,
+        "bookmarks": 3,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2063024216023142719",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "✨️ Un altar pagano en la UNQ ✨️ https://t.co/KYwAvjcSmu",
+      "created_at": "2026-06-05T22:24:36Z",
+      "url": "https://x.com/ValeArvejita/status/2063024216023142719",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo",
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2063024216023142719",
+      "metrics": {
+        "impressions": 4907,
+        "likes": 155,
+        "reposts": 9,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 1,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2061415157645922600",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Es el día de la marmota.\nPero sin marmotas y con femicidas, funcionarios encubridores y periodistas cómplices. https://t.co/58yji8Txdi",
+      "created_at": "2026-06-01T11:50:47Z",
+      "url": "https://x.com/ValeArvejita/status/2061415157645922600",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2061415157645922600",
+      "metrics": {
+        "impressions": 931,
+        "likes": 40,
+        "reposts": 5,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2055335142600688033",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@oxenfordbrx_ Me los quiero llevar a todos a mi casa 😍",
+      "created_at": "2026-05-15T17:10:58Z",
+      "url": "https://x.com/ValeArvejita/status/2055335142600688033",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "oxenfordbrx_"
+      ],
+      "conversation_id": "2054951421703836005",
+      "metrics": {
+        "impressions": 17,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2055334192062304743",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "Es reconfortante saber que el destino de millones depende de un prófugo del ácido fólico absolutamente sereno y para nada tomado por un brote permanente. https://t.co/EmHxeGavt8",
+      "created_at": "2026-05-15T17:07:12Z",
+      "url": "https://x.com/ValeArvejita/status/2055334192062304743",
+      "lang": "es",
+      "kind": "original",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [],
+      "conversation_id": "2055334192062304743",
+      "metrics": {
+        "impressions": 1110,
+        "likes": 71,
+        "reposts": 5,
+        "quotes": 0,
+        "replies": 1,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2055303919887114283",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@mbaerliean2023 Solo llegué a sacarle a Antonia 🫶 https://t.co/YwurOOoJWu",
+      "created_at": "2026-05-15T15:06:54Z",
+      "url": "https://x.com/ValeArvejita/status/2055303919887114283",
+      "lang": "es",
+      "kind": "reply",
+      "media": [
+        "photo"
+      ],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "mbaerliean2023"
+      ],
+      "conversation_id": "2054951421703836005",
+      "metrics": {
+        "impressions": 102,
+        "likes": 10,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    },
+    {
+      "id": "2055292103404437914",
+      "platform": "x",
+      "author_handle": "valearvejita",
+      "text": "@MLaura_Lastres Gracias 💜",
+      "created_at": "2026-05-15T14:19:57Z",
+      "url": "https://x.com/ValeArvejita/status/2055292103404437914",
+      "lang": "es",
+      "kind": "reply",
+      "media": [],
+      "has_link": false,
+      "hashtags": [],
+      "mentions": [
+        "mlaura_lastres"
+      ],
+      "conversation_id": "2054951421703836005",
+      "metrics": {
+        "impressions": 145,
+        "likes": 1,
+        "reposts": 0,
+        "quotes": 0,
+        "replies": 0,
+        "bookmarks": 0,
+        "detail_expands": null,
+        "profile_clicks": null,
+        "link_clicks": null
+      }
+    }
+  ],
+  "trends": [
+    {
+      "name": "Central",
+      "rank": 1,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Merlos",
+      "rank": 2,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Sarmiento",
+      "rank": 3,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Halloween",
+      "rank": 4,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "#mcrla4",
+      "rank": 5,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Aldosivi",
+      "rank": 6,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Copetti",
+      "rank": 7,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "gerard",
+      "rank": 8,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "frank iero",
+      "rank": 9,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Ávila",
+      "rank": 10,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "rojas",
+      "rank": 11,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Luka",
+      "rank": 12,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Curry",
+      "rank": 13,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "harry styles",
+      "rank": 14,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Doncic",
+      "rank": 15,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Junín",
+      "rank": 16,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Lakers",
+      "rank": 17,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Di María",
+      "rank": 18,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Spiderman",
+      "rank": 19,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Lawson",
+      "rank": 20,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "#Racing",
+      "rank": 21,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Nacho",
+      "rank": 22,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Yeon",
+      "rank": 23,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    },
+    {
+      "name": "Morgan",
+      "rank": 24,
+      "post_count": null,
+      "location": "Argentina",
+      "observed_at": "2026-10-31T07:45:39.321000Z"
+    }
+  ],
+  "source": "twitterapi.io",
+  "collected_at": "2026-10-31T07:45:39.376194Z"
+}

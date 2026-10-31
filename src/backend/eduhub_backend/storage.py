@@ -1,11 +1,13 @@
 """
 Persistence for analysis jobs, snapshots and reports. Models are stored as JSON documents in SQLite.
 """
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Protocol
 import aiosqlite
-from eduhub_shared.models import AccountSnapshot, AnalysisJob, AnalysisReport
+from eduhub_shared.models import AccountSnapshot, AnalysisJob, AnalysisReport, ApiError, JobStatus
 
+UNFINISHED = (JobStatus.QUEUED, JobStatus.FETCHING, JobStatus.ANALYZING)
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS jobs (
     id TEXT PRIMARY KEY,
@@ -74,6 +76,12 @@ class Store(Protocol):
     async def get_latest_report(self, handle: str) -> AnalysisReport | None:
         """
         Return the most recently stored report of handle, or None.
+        """
+        ...
+
+    async def fail_unfinished_jobs(self, error: ApiError) -> int:
+        """
+        Mark every queued, fetching or analyzing job as failed with error; return how many changed.
         """
         ...
 
@@ -170,3 +178,18 @@ class SqliteStore:
         sql = "SELECT data FROM reports WHERE handle = ? ORDER BY seq DESC LIMIT 1"
         data = await self._read_one(sql, (handle,))
         return AnalysisReport.model_validate_json(data) if data else None
+
+    async def fail_unfinished_jobs(self, error: ApiError) -> int:
+        """
+        Mark every queued, fetching or analyzing job as failed with error; return how many changed.
+        """
+        async with self.db.execute("SELECT data FROM jobs") as cursor:
+            rows = await cursor.fetchall()
+        jobs = [AnalysisJob.model_validate_json(row[0]) for row in rows]
+        stale = [j for j in jobs if j.status in UNFINISHED]
+        now = datetime.now(UTC)
+        for job in stale:
+            failed = job.model_copy(update={"status": JobStatus.FAILED, "error": error, "updated_at": now})
+            await self.db.execute("UPDATE jobs SET data = ? WHERE id = ?", (failed.model_dump_json(), job.id))
+        await self.db.commit()
+        return len(stale)

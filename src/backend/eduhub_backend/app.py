@@ -11,8 +11,10 @@ from eduhub_backend.errors import install_error_handlers
 from eduhub_backend.jobs import JobRunner
 from eduhub_backend.settings import Settings
 from eduhub_backend.sources.fixture import load_demo_reports
+from eduhub_shared.models import ApiError, ErrorCode
 from eduhub_shared.version import CONTRACT_VERSION
 
+INTERRUPTED_ERROR = ApiError(code=ErrorCode.INTERNAL_ERROR, message="El análisis se interrumpió. Iniciá uno nuevo.")
 ROUTERS = (health, analyses, reports, trends, drafts, publications, simulations)
 
 async def seed_demo_reports(settings: Settings, deps: Deps) -> None:
@@ -32,6 +34,7 @@ def create_app(settings: Settings, deps: Deps) -> FastAPI:
         Open the store (and seed it in DEMO_MODE) on startup; wait for jobs and close it on shutdown.
         """
         await deps.store.init()
+        await deps.store.fail_unfinished_jobs(INTERRUPTED_ERROR)
         if settings.demo_mode:
             await seed_demo_reports(settings, deps)
         try:

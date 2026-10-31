@@ -49,6 +49,11 @@
     "approved_by": "mark",
     "sha256": "c6f062132ce5636d5ce75f86297bdce516ce22d26cc161f8270ddb30134e9024"
   },
+  "src/backend/tests/test_stale_jobs.py": {
+    "approved_at": "2026-10-31T07:46:23.878709+00:00",
+    "approved_by": "mark",
+    "sha256": "ac22c6dba1a082d955c71dfaf5dafc4bc7b05a4c334af495a73f3ca6e00e2655"
+  },
   "src/backend/tests/test_startup.py": {
     "approved_at": "2026-10-31T04:22:20.688558+00:00",
     "approved_by": "mark",
