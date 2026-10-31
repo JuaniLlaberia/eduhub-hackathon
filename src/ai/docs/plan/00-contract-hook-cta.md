@@ -1,6 +1,6 @@
 # Stage 00: Contract v1.1.0 (hook + CTA labels)
 
-- **Status:** todo
+- **Status:** done (committed to `main` as `a143189`, included in `ai`)
 - **Priority:** MUST
 - **Depends on:** none
 - **Touches:** `src/shared/`. This is a **contract change**, so the guard hook will ask for confirmation. Follow root `CLAUDE.md` §3.
@@ -18,7 +18,7 @@ Add two optional semantic features to the contract so the AI can label how a pos
 
 ## Pre-conditions (human)
 
-- [ ] The developer confirms the other teams agreed (or will be notified right after). This change is **additive** (optional fields, new enum values), so it is minor version **1.1.0**.
+- [x] The developer confirms the other teams agreed (or will be notified right after). This change is **additive** (optional fields, new enum values), so it is minor version **1.1.0**.
 - [ ] **Front heads-up:** new `SegmentDimension` / `InsightCategory` values appear in the generated TS types. Any exhaustive label map needs two new entries.
 
 ## Change spec
@@ -45,10 +45,10 @@ Add two optional semantic features to the contract so the AI can label how a pos
 
 ## Definition of done
 
-- [ ] `pytest src/shared` green, `ruff check`, `python scripts/check_style.py`
-- [ ] Version 1.1.0 + CHANGELOG entry (author, who agreed, Breaks: none / front labels)
-- [ ] Committed on `ai` with a message starting with `contract:`
-- [ ] Merged into `dev` as soon as possible, and the other teams notified (they merge `dev` and run `check_contracts.py --ack`)
+- [x] `pytest src/shared` green, `ruff check`, `python scripts/check_style.py`
+- [x] Version 1.1.0 + CHANGELOG entry (author, who agreed, Breaks: none / front labels)
+- [x] Committed with a message starting with `contract:` (on `main`, before the team branches split; `ai` contains it)
+- [ ] Merged into `dev` as soon as possible (no `dev` branch on the remote yet; the backend already codes against v1.1.0), and the other teams notified (they merge `dev` and run `check_contracts.py --ack`)
 
 ## Handoff notes
 
@@ -57,3 +57,4 @@ Add two optional semantic features to the contract so the AI can label how a pos
 - Changed: `models/analysis.py` (`PostFeatures.hook`/`cta`, `SegmentDimension.HOOK`/`CTA`, `InsightCategory.HOOK`/`CTA`), `fakes.py` (`segment_value`), `version.py` + `pyproject.toml` → 1.1.0, CHANGELOG, regenerated `openapi.json` and fixtures.
 - `FakeAnalyzer` still leaves hook/CTA as `None`. The real labels arrive in stage 03.
 - Follow-up: the other teams merge `main`/`dev` and run `check_contracts.py --ack`. The front adds Spanish labels for the new enum values.
+- Re-verified on 2026-10-31 on `ai`: `check_contracts.py` clean (v1.1.0 acked), 64 shared tests green, ruff, style and approved-tests checks clean. Still open: front heads-up about the new enum labels, and the merge into `dev` once it exists.

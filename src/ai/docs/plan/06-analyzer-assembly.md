@@ -32,6 +32,16 @@ Assemble the full pipeline into `HybridAnalyzer`, which implements the contract 
 - **Error mapping:** labeling and writer failures never raise. Only "not enough data" raises (`AnalysisError`). Unexpected exceptions are wrapped in `AnalysisError("No pudimos analizar la cuenta. Probá de nuevo.")`, with logging.
 - **`eduhub_ai/__init__.py`:** `create_analyzer()` builds the settings, then `OpenRouterClient` (or `None` when `AI_ENABLE_LLM=0` or there's no key), then `HybridAnalyzer`. Without a key it still works, in template mode, and logs a warning.
 
+### Backend integration notes (from the back team, 2026-10-31, contract v1.1.0)
+
+- With `EDUHUB_FAKE_AI=0`, the backend calls **all three** factories at startup, and any exception (including `NotImplementedError`) stops the server. So when this stage ships, `create_generator()` must **not raise** either: until stage 08, return a working stand-in (e.g. `eduhub_shared.fakes.FakeDraftGenerator`).
+- **Tell the back team before merging this stage into `dev`.** They have a test that currently expects the `NotImplementedError`, and they'll change it at the same time.
+- `create_simulator()` returning `None` disables the sandbox (`/features` → false, `/simulations` → 501). That's fine until stage 09.
+- **`report.id` is the backend's `report_id`.** It must be unique on every run. `handle + timestamp` (as in the fake) is fine.
+- `on_progress(value, message)`: the backend maps 0–1 to the job's 0.10–0.99 range and shows `message` (es-AR) as the job message.
+- Errors: the `message` of `AnalysisError` / `GenerationError` / `SimulationError` reaches the user (es-AR). `RateLimitedError` → 429. Any other exception → generic 500, with the text hidden. So wrap unexpected failures, as described above.
+- `generate()` (stage 08) receives the account's latest report plus current Argentine trends (from twitterapi.io).
+
 ## Tests to write first (`src/ai/tests/test_stage_06_analyzer.py`) → STOP for approval
 
 - `await check_analyzer(HybridAnalyzer(..., client=ScriptedLLMClient(<taxonomy, label batches, texts>)))` passes on the shared fixture snapshot. This is **the contract test**.
