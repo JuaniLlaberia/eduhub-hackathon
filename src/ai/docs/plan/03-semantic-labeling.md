@@ -1,6 +1,6 @@
 # Stage 03: Semantic labeling (topic, tone, sentiment, hook, CTA)
 
-- **Status:** todo
+- **Status:** done
 - **Priority:** MUST
 - **Depends on:** 01 (LLM client), 02 (features to fill in)
 
@@ -58,11 +58,22 @@ All tests use `ScriptedLLMClient`, with no network.
 
 ## Definition of done
 
-- [ ] Tests green, plus ruff and style
-- [ ] The label sets are documented in `labeling/schemas.py` and match this file
-- [ ] Optional manual check: label the 40 fixture posts with the real model (the developer runs it) and skim the results
-- [ ] Commit `ai: stage 03 semantic labeling`
+- [x] Tests green, plus ruff and style (163 passed: shared + stages 01–03)
+- [x] The label sets are documented in `labeling/schemas.py` and match this file (asserted by a test)
+- [ ] Optional manual check: label the 40 fixture posts with the real model (the developer runs it) and skim the results → `python src/ai/scripts/label_snapshot.py [snapshot.json] [max_posts]`
+- [x] Commit `ai: stage 03 semantic labeling`
 
 ## Handoff notes
 
-_(fill in when done)_
+- Built on 2026-10-31: `labeling/schemas.py` (label sets, `TaxonomyResponse`, `PostLabel`, `LabelBatchResponse`, `label_batch_schema(taxonomy)` with a topic enum via `create_model`), `labeling/prompts.py` (stable es-AR system prompts; account data only in user messages), `labeling/labeler.py` (`sample_for_taxonomy`, `normalize_taxonomy`, `build_taxonomy`, `label_posts`, `apply_labels`, `label_account` → `LabelingResult`), `src/ai/scripts/label_snapshot.py` (manual real-model check).
+- Tests: `src/ai/tests/test_stage_03_labeling.py`. Approved by Juan (code was written before approval at the developer's request).
+- API for stage 06: `await label_account(posts, features, client, settings, batch_size=25)`. Pass the posts you want labeled (the scorable ones are enough for stats; labeling replies costs more calls). `client=None` or `AI_ENABLE_LLM=0` → no calls, `coverage=0`.
+- Decisions beyond the plan:
+  - `TaxonomyResponse` accepts **3–8** topics (the prompt asks for 5–8), so a narrow account doesn't fail validation; after normalization the list is capped at 8 + `otros`.
+  - Batch retry: the second attempt only resends the posts that came back missing (or the whole batch if the call failed). The LLM client's own one-retry-on-invalid-JSON still applies inside each attempt.
+  - Rate limits (`RateLimitedError`) are swallowed like `LLMError`: recorded in `errors`, posts keep `None` labels.
+  - Taxonomy failure → labeling still runs with topics `["otros"]` for tone/sentiment/hook/CTA, then topic is replaced by the first hashtag (lowercased) or `None`; `taxonomy=[]`.
+  - Prompt format: each post in a batch is one JSON line `{"id": ..., "texto": ...}`; the tests parse ids from it.
+  - Temperatures: 0.2 for the taxonomy, 0.0 for labels.
+- 2026-10-31 real run (bilinkis, 40 posts): OpenRouter answered **402 Insufficient credits** on every call; the key authenticates but the account has no balance. Degradation worked as designed (no exception, `coverage=0`, errors recorded, hashtag fallback topic). Follow-up idea: treat 401/402 as fatal for the run (skip the batch retry and remaining calls).
+- Open: the real-model check (needs the key; the strict schema uses `enum`, `minimum`/`maximum` and `minItems`/`maxItems`; if a routed DeepSeek endpoint rejects any of them, relax the schema or set fallback models).

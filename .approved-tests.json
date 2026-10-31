@@ -9,6 +9,26 @@
     "approved_by": "Juan",
     "sha256": "d58e2fb7b616266b3e00b1833716194326041cfedb0f39516779c401beaba606"
   },
+  "src/ai/tests/test_stage_03_labeling.py": {
+    "approved_at": "2026-10-31T11:11:56.807358+00:00",
+    "approved_by": "Juan",
+    "sha256": "423d92210a54622ca5d30ac6c113d7df235d6a6544de286c12d001427ab496bf"
+  },
+  "src/ai/tests/test_stage_04_stats.py": {
+    "approved_at": "2026-10-31T10:57:18.369369+00:00",
+    "approved_by": "Juan",
+    "sha256": "965d5312a1893c650fe5a893905b0a3aabd26de45a0bc86af04bc19220aaa951"
+  },
+  "src/ai/tests/test_stage_05_insights.py": {
+    "approved_at": "2026-10-31T11:11:56.807358+00:00",
+    "approved_by": "Juan",
+    "sha256": "8c5ba3ed35482b0ecc162dff16a91b6bb11bc9fd41014049c1548482247c68e5"
+  },
+  "src/ai/tests/test_stage_06_analyzer.py": {
+    "approved_at": "2026-10-31T11:12:26.243871+00:00",
+    "approved_by": "Juan",
+    "sha256": "c47bff9baa00a0673d3f3ba647e284fd87c651f2119594db5895fa256ce6cc7b"
+  },
   "src/shared/tests/test_contract_v1_1.py": {
     "approved_at": "2026-10-31T01:53:00.765194+00:00",
     "approved_by": "Juan",

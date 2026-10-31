@@ -29,10 +29,10 @@ Every stage is a separate `.md` file, written so a **fresh Claude Code session**
 | 00 | [Contract v1.1.0: hook + CTA](00-contract-hook-cta.md) | MUST | none | done (committed to `main`) |
 | 01 | [Foundations: settings + LLM client](01-foundations-llm-client.md) | MUST | none | done |
 | 02 | [Deterministic features, post selection, score](02-features-selection-score.md) | MUST | 00 | done |
-| 03 | [Semantic labeling (topic, tone, sentiment, hook, CTA)](03-semantic-labeling.md) | MUST | 01, 02 | todo |
-| 04 | [Stats engine (KPIs, heatmap, segments, significance)](04-stats-engine.md) | MUST | 02 | todo |
-| 05 | [Insight writer (grounded es-AR texts)](05-insight-writer.md) | MUST | 01, 04 | todo |
-| 06 | [HybridAnalyzer + `create_analyzer()`: **milestone, hand-off to backend**](06-analyzer-assembly.md) | MUST | 02–05 | todo |
+| 03 | [Semantic labeling (topic, tone, sentiment, hook, CTA)](03-semantic-labeling.md) | MUST | 01, 02 | done |
+| 04 | [Stats engine (KPIs, heatmap, segments, significance)](04-stats-engine.md) | MUST | 02 | done |
+| 05 | [Insight writer (grounded es-AR texts)](05-insight-writer.md) | MUST | 01, 04 | done |
+| 06 | [HybridAnalyzer + `create_analyzer()`: **milestone, hand-off to backend**](06-analyzer-assembly.md) | MUST | 02–05 | done (not merged into `dev`; real-model run pending) |
 | 07 | [Ridge pattern model (optional per account)](07-ridge-pattern-model.md) | MUST (quality) | 06 | todo |
 | 08 | [Draft generator + `create_generator()`](08-draft-generator.md) | WANTED | 06 (07 optional) | todo |
 | 09 | [Audience sandbox + `create_simulator()`](09-audience-sandbox.md) | STRETCH | 01 | todo |

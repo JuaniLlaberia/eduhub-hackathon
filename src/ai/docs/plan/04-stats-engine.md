@@ -1,6 +1,6 @@
 # Stage 04: Stats engine (KPIs, heatmap, segments, significance)
 
-- **Status:** todo
+- **Status:** done
 - **Priority:** MUST
 - **Depends on:** 02 (features + scores). Labels from stage 03 are optional inputs, and every function works with `None` labels.
 
@@ -51,10 +51,18 @@ Exact, deterministic statistics that become the dashboard numbers **and** the ev
 
 ## Definition of done
 
-- [ ] Tests green, plus ruff and style
-- [ ] Every function is pure and deterministic (no clock, seeded randomness)
-- [ ] Commit `ai: stage 04 stats engine`
+- [x] Tests green, plus ruff and style
+- [x] Every function is pure and deterministic (no clock, seeded randomness; asserted by a test)
+- [x] Commit `ai: stage 04 stats engine`
 
 ## Handoff notes
 
-_(fill in when done)_
+- Built on 2026-10-31: `stats/kpis.py` (`build_kpis`, same formulas as the fake), `stats/timing.py` (`build_heatmap`, `hour_block_stats`, `best_time_slots`, `day_type`), `stats/segments.py` (`build_segments`, `segment_details`, `segment_value`, `details_for`), `stats/significance.py` (`SegmentDetail`, `bootstrap_ci`, `mann_whitney`, `is_significant`). Adds `numpy` and `scipy`.
+- Tests: `src/ai/tests/test_stage_04_stats.py`, approved by Juan (code was written before approval; the approved tests were unchanged).
+- API for stages 05/06: build `list[AnalyzedPost]` with `score=None` for unscorable posts; `build_kpis` takes `list[Post]` (pass all posts, as the fake does). `SegmentStat.avg_score` and `TimeSlotStat.avg_score` hold the **median** score.
+- Decisions beyond the plan:
+  - `SegmentDetail.dimension` is a `str`: a `SegmentDimension` value, or `hour_block`, `day_type` (`semana` / `fin de semana`) and `hour_block_day_type` (e.g. `noche, fin de semana`).
+  - `lift_vs_rest` = median / median of the other posts of that dimension; `None` (and `p_value=None`) when the segment is the only value of its dimension.
+  - Mann-Whitney returns 1.0 for empty sides and all-ties (scipy gives NaN).
+  - `SegmentDetail` lives in `significance.py` (avoids a circular import) and is re-exported from `segments.py`.
+- Real data (2026-10-31 snapshots): the filter finds believable patterns, e.g. paulina_cocina video n=144 median 1.09 vs photo 0.43 / text 0.19 (p<0.001); bilinkis mañana median 1.76 (n=9, p=0.017). `is_significant` is fairly permissive (CI excludes 1.0 **or** p<0.1); stage 05 should rank evidence by n and p, not just this flag.

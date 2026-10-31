@@ -6,6 +6,8 @@ requires-python = ">=3.12"
 dependencies = [
     "eduhub-shared",
     "openai>=1.40",
+    "numpy>=2.1",
+    "scipy>=1.14",
 ]
 
 [build-system]

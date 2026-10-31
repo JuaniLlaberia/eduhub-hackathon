@@ -1,6 +1,6 @@
 # Stage 05: Insight writer (grounded es-AR texts)
 
-- **Status:** todo
+- **Status:** done
 - **Priority:** MUST
 - **Depends on:** 01 (LLM client), 04 (stats evidence)
 
@@ -55,11 +55,23 @@ Turn the computed evidence into the report texts (`Insight[]`, `Recommendation[]
 
 ## Definition of done
 
-- [ ] Tests green, plus ruff and style
-- [ ] The prompt has no clock or date values (cache stability)
-- [ ] Optional manual check: run on the fixture with the real model and read the texts with the developer
-- [ ] Commit `ai: stage 05 insight writer`
+- [x] Tests green, plus ruff and style (209 passed: shared + stages 01–05)
+- [x] The prompt has no clock or date values (cache stability; asserted by a test)
+- [ ] Optional manual check: run on the fixture with the real model and read the texts with the developer → `python src/ai/scripts/write_insights.py [snapshot.json]` (template-only without a key or with `AI_ENABLE_LLM=0`)
+- [x] Commit `ai: stage 05 insight writer`
 
 ## Handoff notes
 
-_(fill in when done)_
+- Built on 2026-10-31: `insights/evidence.py` (`EvidenceItem`, `PostEvidence`, `EvidencePack`, `build_evidence`, `confidence_for`, es-AR formatters `fmt_x`/`fmt_pct`/`fmt_int`/`fmt_dec`), `insights/grounding.py` (`extract_numbers`, `ungrounded`), `insights/prompts.py` (`WRITER_SYSTEM`, `writer_user`, `retry_note`), `insights/writer.py` (`WriterResponse` + drafts, `write_texts`, `assemble`), `insights/fallback.py` (`WrittenTexts`, `template_texts`, `template_explanation`, `template_summary`), `src/ai/scripts/write_insights.py` (manual end-to-end check up to the writer).
+- Tests: `src/ai/tests/test_stage_05_insights.py`. Approved by Juan (code was written before approval at the developer's request).
+- API for stage 06: `pack = build_evidence(profile, kpis, posts, best_slots)` then `texts = await write_texts(pack, client, settings)` → `texts.insights`, `.recommendations`, `.explanations` (post id → text, every top/bottom post), `.summary`, `.source` (`llm`/`template`), `.errors`. Never raises on LLM failures.
+- Evidence ids: `kpi:account:<key>`, `seg:<dimension>:<value>`, `time:<hour_block|day_type|hour_block_day_type>:<value>`, `slot:<weekday>:<hour>`. Findings = significant details **with a comparison** (`lift_vs_rest` not None), sorted by p-value then n, max 12. `allowed_numbers` = every number token in the prompt JSON.
+- Decisions beyond the plan:
+  - `direction` comes from `lift_vs_rest` (vs the other posts), not from median vs 1.0; template titles lead with the comparison ("Tus posts con video rinden 3,5x vs. el resto"), descriptions add the typical-post multiplier.
+  - Long LLM lists are **capped in code** (6 insights / 6 recommendations) instead of rejected by the schema.
+  - Insights need at least one valid `evidence_id`; ones without are dropped (count as dropped for the retry rule). Recommendations that only pointed at dropped insights are dropped; priorities are renumbered 1..n.
+  - Grounding allows bare small integers ≤ 7 and the bare number of an allowed token ("21" if "21 h" is allowed); es-AR thousands dots are normalized ("3.386" → "3386").
+  - Templates keep **one finding per (family, direction)** (all timing dimensions are one family), so the fallback doesn't repeat "noche" and "noche, semana". So the template may produce fewer insights than there are significant findings.
+  - `confidence` = `0.2 + 0.5·min(n,30)/30 + 0.3/(1 + CI width / median)`, from the stats only.
+  - Writer temperature 0.4. The prompt JSON is ~7–8k chars for 200-post accounts.
+- Follow-up for stage 06: without LLM labels, topics are `None`, so templates can't talk about topics (the fixture's "presupuesto" story only shows up with labels or hashtag topics). Consider the hashtag fallback (`labeling.labeler.hashtag_topics`) when labeling is skipped.

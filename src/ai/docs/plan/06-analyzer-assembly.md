@@ -1,6 +1,6 @@
 # Stage 06: HybridAnalyzer + `create_analyzer()` (milestone)
 
-- **Status:** todo
+- **Status:** done (not merged into `dev` yet; real-model run pending)
 - **Priority:** MUST
 - **Depends on:** 02, 03, 04, 05
 
@@ -56,11 +56,20 @@ Assemble the full pipeline into `HybridAnalyzer`, which implements the contract 
 
 ## Definition of done
 
-- [ ] Tests green, plus ruff and style
+- [x] Tests green, plus ruff and style (227 passed: shared + stages 01–06)
 - [ ] Manual end-to-end run (developer has a key): fixture snapshot → real model → read the report together; record the latency and token cost in the handoff notes (target under 60 s, about $0.005)
 - [ ] **Merge `ai` into `dev`**, tell Mark that `create_analyzer()` is ready, and confirm the backend runs with `EDUHUB_FAKE_AI=0`
-- [ ] Commit `ai: stage 06 hybrid analyzer`
+- [x] Commit `ai: stage 06 hybrid analyzer`
 
 ## Handoff notes
 
-_(fill in when done: latency, cost, observations about text quality)_
+- Built on 2026-10-31: `eduhub_ai/analyzer.py` (`HybridAnalyzer`, `ENGINE = "hybrid-v1"`, `Progress`), `eduhub_ai/__init__.py` (`create_analyzer` → `HybridAnalyzer` with `OpenRouterClient` or template mode; `create_generator` → `FakeDraftGenerator` until stage 08; `create_simulator` → `None`).
+- Tests: `src/ai/tests/test_stage_06_analyzer.py` (incl. `check_analyzer` with a scripted LLM and in template mode, `check_generator`, real snapshots locally). Approved by Juan (code was written before approval at the developer's request).
+- Pipeline: select (now = `snapshot.collected_at`) → features + scores → label **scorable posts only** (replies keep `None` labels) → stats → evidence → writer → report. Progress: 0.10 "Leyendo tus posts", 0.30 "Clasificando temas y estilo", 0.60 "Calculando patrones", 0.80 "Escribiendo tus insights", 1.0 "Análisis listo". Each step's duration is logged.
+- Report id: `uuid5(namespace, "hybrid-v1|handle|generated_at")`, unique per run with the real clock, identical for identical input and clock.
+- Decisions beyond the plan:
+  - When there is no LLM taxonomy (template mode or taxonomy failure), topics fall back to the first hashtag (`hashtag_topics`). So the plan's "labeling failure → topic segments absent" became "tone/hook/CTA segments absent, topic from hashtags" (the fixture keeps its "presupuesto" story in template mode).
+  - The pattern-model step is `_pattern_effects()` returning `[]`; stage 07 fills `EvidencePack.pattern_effects` there.
+  - Only `ContractError`s pass through; anything else becomes `AnalysisError("No pudimos analizar la cuenta. Probá de nuevo.")` with the traceback logged.
+- **Integration gotcha (back team):** the backend reads `.env` with pydantic-settings, which does **not** export values to `os.environ`, while `load_settings()` reads `os.environ`. Start the backend with the env exported (e.g. `uvicorn ... --env-file .env`, or `set -a; source .env; set +a`), or the analyzer silently runs in template mode (it logs a warning).
+- Still open: the manual real-model run (needs OpenRouter credits; record latency and cost here), the merge into `dev` coordinated with Mark (their `test_real_ai_fails_until_eduhub_ai_is_delivered` must change at the same time).
