@@ -44,6 +44,11 @@
     "approved_by": "mark",
     "sha256": "ee2dad6c4ce8f7ed4862d6c8566e560ad2d51262fccf172f5a05e9e7f96d84c9"
   },
+  "src/backend/tests/test_snapshot_tool.py": {
+    "approved_at": "2026-10-31T07:25:10.121525+00:00",
+    "approved_by": "mark",
+    "sha256": "c6f062132ce5636d5ce75f86297bdce516ce22d26cc161f8270ddb30134e9024"
+  },
   "src/backend/tests/test_startup.py": {
     "approved_at": "2026-10-31T04:22:20.688558+00:00",
     "approved_by": "mark",
