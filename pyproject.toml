@@ -1,0 +1,39 @@
+# Repo-wide tooling config only (not a package). Packages live in src/shared, src/backend and src/ai.
+# NOTE: do not use `ruff format` or `black`: house style is ONE blank line between functions/classes.
+
+[tool.ruff]
+target-version = "py314"
+line-length = 120
+extend-exclude = ["src/frontend", "node_modules"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "ANN", "D", "N", "SIM", "ASYNC", "RUF"]
+ignore = [
+    "D100",  # module docstrings are optional
+    "D104",  # package docstrings are optional
+    "D200",  # house style: docstring text always on its own line, even when short
+    "D203",  # conflicts with D211
+    "D204",  # house style: NO blank line after a class docstring
+    "D205",  # free-form multi-line docstrings allowed
+    "D212",  # house style: summary starts on the SECOND line (D213)
+    "D400",  # no trailing-period rule
+    "D401",  # no imperative-mood rule
+    "D415",  # no trailing-punctuation rule
+    "ANN401",  # Any allowed when justified
+    "RUF001",  # Spanish text may contain ambiguous unicode
+    "RUF002",
+    "RUF003",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["eduhub_shared", "eduhub_ai", "eduhub_backend", "repo"]
+lines-after-imports = 1
+no-lines-before = ["standard-library", "third-party", "first-party", "local-folder"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/tests/**" = ["D", "ANN"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+addopts = "-q"

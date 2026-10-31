@@ -1,0 +1,14 @@
+{
+  "id": "job-demo-1",
+  "handle": "demo_finanzas",
+  "status": "failed",
+  "progress": 0.2,
+  "message": null,
+  "created_at": "2026-10-30T12:00:00Z",
+  "updated_at": "2026-10-30T12:00:08Z",
+  "report_id": null,
+  "error": {
+    "code": "source_unavailable",
+    "message": "No pudimos obtener los posts. Probá de nuevo en unos minutos."
+  }
+}

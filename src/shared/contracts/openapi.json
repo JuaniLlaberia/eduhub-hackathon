@@ -1,0 +1,2496 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "EduHub Creator Analytics API",
+    "version": "1.0.0",
+    "description": "Contract C4. Generated from eduhub_shared; do not edit by hand."
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "operationId": "getHealth",
+        "summary": "Liveness and contract version",
+        "tags": [
+          "must"
+        ],
+        "x-priority": "must",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/features": {
+      "get": {
+        "operationId": "getFeatures",
+        "summary": "Enabled optional features",
+        "tags": [
+          "must"
+        ],
+        "x-priority": "must",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FeatureFlags"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/analyses": {
+      "post": {
+        "operationId": "createAnalysis",
+        "summary": "Start analyzing an account (async job)",
+        "tags": [
+          "must"
+        ],
+        "x-priority": "must",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AnalysisRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisJob"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limited",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Data source unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/analyses/{job_id}": {
+      "get": {
+        "operationId": "getAnalysis",
+        "summary": "Poll an analysis job",
+        "tags": [
+          "must"
+        ],
+        "x-priority": "must",
+        "parameters": [
+          {
+            "name": "job_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisJob"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/reports/{report_id}": {
+      "get": {
+        "operationId": "getReport",
+        "summary": "Get an analysis report",
+        "tags": [
+          "must"
+        ],
+        "x-priority": "must",
+        "parameters": [
+          {
+            "name": "report_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisReport"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/accounts/{handle}/report": {
+      "get": {
+        "operationId": "getLatestReport",
+        "summary": "Latest report of an account",
+        "tags": [
+          "must"
+        ],
+        "x-priority": "must",
+        "parameters": [
+          {
+            "name": "handle",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AnalysisReport"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/trends": {
+      "get": {
+        "operationId": "getTrends",
+        "summary": "Current trends in Argentina",
+        "tags": [
+          "nice"
+        ],
+        "x-priority": "nice",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrendsResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Data source unavailable",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/drafts": {
+      "post": {
+        "operationId": "createDrafts",
+        "summary": "Generate drafts in the creator's voice",
+        "tags": [
+          "wanted"
+        ],
+        "x-priority": "wanted",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DraftRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DraftsResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limited",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Feature disabled",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/publications": {
+      "post": {
+        "operationId": "createPublication",
+        "summary": "Publish or schedule a post",
+        "tags": [
+          "wanted"
+        ],
+        "x-priority": "wanted",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PublishRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Feature disabled",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/simulations": {
+      "post": {
+        "operationId": "createSimulation",
+        "summary": "Test variants with a synthetic audience",
+        "tags": [
+          "stretch"
+        ],
+        "x-priority": "stretch",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SimulationRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SimulationResult"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Rate limited",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "501": {
+            "description": "Feature disabled",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccountKPIs": {
+        "additionalProperties": false,
+        "description": "Account-level KPIs. Rates are aggregated as sum(interactions) / sum(impressions).",
+        "properties": {
+          "post_count": {
+            "minimum": 0,
+            "title": "Post Count",
+            "type": "integer"
+          },
+          "period_start": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Period Start"
+          },
+          "period_end": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Period End"
+          },
+          "posts_per_week": {
+            "minimum": 0,
+            "title": "Posts Per Week",
+            "type": "number"
+          },
+          "avg_impressions": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Impressions"
+          },
+          "median_impressions": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Median Impressions"
+          },
+          "rates": {
+            "$ref": "#/components/schemas/PostRates"
+          }
+        },
+        "required": [
+          "post_count",
+          "period_start",
+          "period_end",
+          "posts_per_week",
+          "avg_impressions",
+          "median_impressions",
+          "rates"
+        ],
+        "title": "AccountKPIs",
+        "type": "object"
+      },
+      "AccountProfile": {
+        "additionalProperties": false,
+        "description": "Public profile of a creator account.",
+        "properties": {
+          "platform": {
+            "$ref": "#/components/schemas/Platform",
+            "default": "x"
+          },
+          "handle": {
+            "description": "Without '@', lowercase.",
+            "title": "Handle",
+            "type": "string"
+          },
+          "display_name": {
+            "title": "Display Name",
+            "type": "string"
+          },
+          "bio": {
+            "default": "",
+            "title": "Bio",
+            "type": "string"
+          },
+          "followers_count": {
+            "minimum": 0,
+            "title": "Followers Count",
+            "type": "integer"
+          },
+          "following_count": {
+            "minimum": 0,
+            "title": "Following Count",
+            "type": "integer"
+          },
+          "posts_count": {
+            "minimum": 0,
+            "title": "Posts Count",
+            "type": "integer"
+          },
+          "verified": {
+            "default": false,
+            "title": "Verified",
+            "type": "boolean"
+          },
+          "avatar_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Avatar Url"
+          },
+          "created_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Created At"
+          }
+        },
+        "required": [
+          "platform",
+          "handle",
+          "display_name",
+          "bio",
+          "followers_count",
+          "following_count",
+          "posts_count",
+          "verified",
+          "avatar_url",
+          "created_at"
+        ],
+        "title": "AccountProfile",
+        "type": "object"
+      },
+      "AnalysisJob": {
+        "additionalProperties": false,
+        "description": "Status of an analysis job. report_id is set when status is 'done'; error when 'failed'.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "handle": {
+            "title": "Handle",
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/JobStatus"
+          },
+          "progress": {
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Progress",
+            "type": "number"
+          },
+          "message": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "es-AR label of the current step.",
+            "title": "Message"
+          },
+          "created_at": {
+            "format": "date-time",
+            "title": "Created At",
+            "type": "string"
+          },
+          "updated_at": {
+            "format": "date-time",
+            "title": "Updated At",
+            "type": "string"
+          },
+          "report_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Report Id"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ApiError"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "id",
+          "handle",
+          "status",
+          "progress",
+          "message",
+          "created_at",
+          "updated_at",
+          "report_id",
+          "error"
+        ],
+        "title": "AnalysisJob",
+        "type": "object"
+      },
+      "AnalysisReport": {
+        "additionalProperties": false,
+        "description": "Full analysis of an account. This is the AI output contract and the dashboard's data.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "profile": {
+            "$ref": "#/components/schemas/AccountProfile"
+          },
+          "generated_at": {
+            "format": "date-time",
+            "title": "Generated At",
+            "type": "string"
+          },
+          "kpis": {
+            "$ref": "#/components/schemas/AccountKPIs"
+          },
+          "posts": {
+            "description": "Every snapshot post exactly once, newest first.",
+            "items": {
+              "$ref": "#/components/schemas/AnalyzedPost"
+            },
+            "title": "Posts",
+            "type": "array"
+          },
+          "heatmap": {
+            "description": "Only slots with at least one post.",
+            "items": {
+              "$ref": "#/components/schemas/TimeSlotStat"
+            },
+            "title": "Heatmap",
+            "type": "array"
+          },
+          "segments": {
+            "items": {
+              "$ref": "#/components/schemas/SegmentStat"
+            },
+            "title": "Segments",
+            "type": "array"
+          },
+          "best_time_slots": {
+            "items": {
+              "$ref": "#/components/schemas/TimeSlotStat"
+            },
+            "maxItems": 5,
+            "title": "Best Time Slots",
+            "type": "array"
+          },
+          "insights": {
+            "items": {
+              "$ref": "#/components/schemas/Insight"
+            },
+            "title": "Insights",
+            "type": "array"
+          },
+          "recommendations": {
+            "items": {
+              "$ref": "#/components/schemas/Recommendation"
+            },
+            "title": "Recommendations",
+            "type": "array"
+          },
+          "summary": {
+            "description": "es-AR, 2-4 sentences.",
+            "title": "Summary",
+            "type": "string"
+          },
+          "engine": {
+            "description": "Which analyzer produced it, e.g. 'fake' or 'hybrid-v1'.",
+            "title": "Engine",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "profile",
+          "generated_at",
+          "kpis",
+          "posts",
+          "heatmap",
+          "segments",
+          "best_time_slots",
+          "insights",
+          "recommendations",
+          "summary",
+          "engine"
+        ],
+        "title": "AnalysisReport",
+        "type": "object"
+      },
+      "AnalysisRequest": {
+        "additionalProperties": false,
+        "description": "Start analyzing an account.",
+        "properties": {
+          "handle": {
+            "title": "Handle",
+            "type": "string"
+          },
+          "max_posts": {
+            "default": 200,
+            "maximum": 500,
+            "minimum": 10,
+            "title": "Max Posts",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "handle"
+        ],
+        "title": "AnalysisRequest",
+        "type": "object"
+      },
+      "AnalyzedPost": {
+        "additionalProperties": false,
+        "description": "A post with its features, rates, relative score and optional explanation.",
+        "properties": {
+          "post": {
+            "$ref": "#/components/schemas/Post"
+          },
+          "features": {
+            "$ref": "#/components/schemas/PostFeatures"
+          },
+          "rates": {
+            "$ref": "#/components/schemas/PostRates"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Performance vs the account's typical post (1.0 = typical).",
+            "title": "Score"
+          },
+          "explanation": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "es-AR: why it performed so (at least top/bottom posts).",
+            "title": "Explanation"
+          }
+        },
+        "required": [
+          "post",
+          "features",
+          "rates",
+          "score",
+          "explanation"
+        ],
+        "title": "AnalyzedPost",
+        "type": "object"
+      },
+      "ApiError": {
+        "additionalProperties": false,
+        "description": "Error details. message is human readable (es-AR) and safe to show in the UI.",
+        "properties": {
+          "code": {
+            "$ref": "#/components/schemas/ErrorCode"
+          },
+          "message": {
+            "title": "Message",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "ApiError",
+        "type": "object"
+      },
+      "AudienceDimension": {
+        "description": "Persona attribute used to break down simulation results.",
+        "enum": [
+          "age_group",
+          "gender",
+          "province",
+          "socioeconomic_level"
+        ],
+        "title": "AudienceDimension",
+        "type": "string"
+      },
+      "AudienceFilters": {
+        "additionalProperties": false,
+        "description": "Restrict the simulated audience. Empty lists mean no restriction.",
+        "properties": {
+          "age_groups": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Age Groups",
+            "type": "array"
+          },
+          "genders": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Genders",
+            "type": "array"
+          },
+          "provinces": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Provinces",
+            "type": "array"
+          }
+        },
+        "title": "AudienceFilters",
+        "type": "object"
+      },
+      "Draft": {
+        "additionalProperties": false,
+        "description": "A generated post draft in the creator's voice (es-AR).",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "text": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Text",
+            "type": "string"
+          },
+          "rationale": {
+            "title": "Rationale",
+            "type": "string"
+          },
+          "suggested_time": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Suggested Time"
+          },
+          "estimated_score": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Same scale as AnalyzedPost.score.",
+            "title": "Estimated Score"
+          },
+          "based_on_insight_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Based On Insight Ids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "text",
+          "rationale",
+          "suggested_time",
+          "estimated_score",
+          "based_on_insight_ids"
+        ],
+        "title": "Draft",
+        "type": "object"
+      },
+      "DraftRequest": {
+        "additionalProperties": false,
+        "description": "Ask for drafts for an already analyzed account, optionally based on a topic or a recommendation.",
+        "properties": {
+          "handle": {
+            "title": "Handle",
+            "type": "string"
+          },
+          "topic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Topic"
+          },
+          "recommendation_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Recommendation Id"
+          },
+          "instructions": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Instructions"
+          },
+          "count": {
+            "default": 3,
+            "maximum": 5,
+            "minimum": 1,
+            "title": "Count",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "handle"
+        ],
+        "title": "DraftRequest",
+        "type": "object"
+      },
+      "DraftsResponse": {
+        "additionalProperties": false,
+        "description": "Drafts generated for a request.",
+        "properties": {
+          "drafts": {
+            "items": {
+              "$ref": "#/components/schemas/Draft"
+            },
+            "title": "Drafts",
+            "type": "array"
+          }
+        },
+        "required": [
+          "drafts"
+        ],
+        "title": "DraftsResponse",
+        "type": "object"
+      },
+      "ErrorCode": {
+        "description": "Machine-readable error codes returned by the HTTP API.",
+        "enum": [
+          "invalid_request",
+          "not_found",
+          "account_not_found",
+          "source_unavailable",
+          "rate_limited",
+          "analysis_failed",
+          "generation_failed",
+          "simulation_failed",
+          "feature_disabled",
+          "internal_error"
+        ],
+        "title": "ErrorCode",
+        "type": "string"
+      },
+      "ErrorResponse": {
+        "additionalProperties": false,
+        "description": "Body of every non-2xx response.",
+        "properties": {
+          "error": {
+            "$ref": "#/components/schemas/ApiError"
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "title": "ErrorResponse",
+        "type": "object"
+      },
+      "Evidence": {
+        "additionalProperties": false,
+        "description": "A displayable data point backing an insight, e.g. label \"Tasa de guardados\", value \"2,1% vs 0,8%\".",
+        "properties": {
+          "label": {
+            "title": "Label",
+            "type": "string"
+          },
+          "value": {
+            "title": "Value",
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "value"
+        ],
+        "title": "Evidence",
+        "type": "object"
+      },
+      "FeatureFlags": {
+        "additionalProperties": false,
+        "description": "Which optional features are enabled. The frontend hides disabled ones.",
+        "properties": {
+          "generation": {
+            "title": "Generation",
+            "type": "boolean"
+          },
+          "publishing": {
+            "title": "Publishing",
+            "type": "boolean"
+          },
+          "simulation": {
+            "title": "Simulation",
+            "type": "boolean"
+          },
+          "demo_mode": {
+            "title": "Demo Mode",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "generation",
+          "publishing",
+          "simulation",
+          "demo_mode"
+        ],
+        "title": "FeatureFlags",
+        "type": "object"
+      },
+      "HealthResponse": {
+        "additionalProperties": false,
+        "description": "Liveness response, including the contract version the backend implements.",
+        "properties": {
+          "status": {
+            "const": "ok",
+            "default": "ok",
+            "title": "Status",
+            "type": "string"
+          },
+          "contract_version": {
+            "title": "Contract Version",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "contract_version"
+        ],
+        "title": "HealthResponse",
+        "type": "object"
+      },
+      "Impact": {
+        "description": "Estimated impact of acting on an insight.",
+        "enum": [
+          "high",
+          "medium",
+          "low"
+        ],
+        "title": "Impact",
+        "type": "string"
+      },
+      "Insight": {
+        "additionalProperties": false,
+        "description": "A pattern found in the account's data, explained in es-AR.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "category": {
+            "$ref": "#/components/schemas/InsightCategory"
+          },
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "evidence": {
+            "items": {
+              "$ref": "#/components/schemas/Evidence"
+            },
+            "title": "Evidence",
+            "type": "array"
+          },
+          "impact": {
+            "$ref": "#/components/schemas/Impact"
+          },
+          "confidence": {
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Confidence",
+            "type": "number"
+          },
+          "related_post_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Related Post Ids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "category",
+          "title",
+          "description",
+          "evidence",
+          "impact",
+          "confidence",
+          "related_post_ids"
+        ],
+        "title": "Insight",
+        "type": "object"
+      },
+      "InsightCategory": {
+        "description": "What an insight or recommendation is about.",
+        "enum": [
+          "timing",
+          "topic",
+          "format",
+          "length",
+          "tone",
+          "trend",
+          "other"
+        ],
+        "title": "InsightCategory",
+        "type": "string"
+      },
+      "JobStatus": {
+        "description": "Lifecycle of an analysis job: queued -> fetching -> analyzing -> done | failed.",
+        "enum": [
+          "queued",
+          "fetching",
+          "analyzing",
+          "done",
+          "failed"
+        ],
+        "title": "JobStatus",
+        "type": "string"
+      },
+      "LengthBucket": {
+        "description": "Post length bucket. Thresholds live in eduhub_shared.metrics.length_bucket.",
+        "enum": [
+          "short",
+          "medium",
+          "long"
+        ],
+        "title": "LengthBucket",
+        "type": "string"
+      },
+      "MediaType": {
+        "description": "Type of media attached to a post.",
+        "enum": [
+          "photo",
+          "video",
+          "gif"
+        ],
+        "title": "MediaType",
+        "type": "string"
+      },
+      "Persona": {
+        "additionalProperties": false,
+        "description": "A synthetic audience member, sampled from real survey respondents (ENCC 2022-23 via OpenARG).",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "age_group": {
+            "title": "Age Group",
+            "type": "string"
+          },
+          "gender": {
+            "title": "Gender",
+            "type": "string"
+          },
+          "province": {
+            "title": "Province",
+            "type": "string"
+          },
+          "socioeconomic_level": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Socioeconomic Level"
+          },
+          "platforms": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Platforms",
+            "type": "array"
+          },
+          "traits": {
+            "description": "Short es-AR descriptors.",
+            "items": {
+              "type": "string"
+            },
+            "title": "Traits",
+            "type": "array"
+          },
+          "weight": {
+            "description": "Survey expansion weight.",
+            "exclusiveMinimum": 0,
+            "title": "Weight",
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "age_group",
+          "gender",
+          "province",
+          "socioeconomic_level",
+          "platforms",
+          "traits",
+          "weight"
+        ],
+        "title": "Persona",
+        "type": "object"
+      },
+      "PersonaReaction": {
+        "additionalProperties": false,
+        "description": "One persona's reaction to one variant.",
+        "properties": {
+          "persona_id": {
+            "title": "Persona Id",
+            "type": "string"
+          },
+          "variant_index": {
+            "minimum": 0,
+            "title": "Variant Index",
+            "type": "integer"
+          },
+          "reaction": {
+            "$ref": "#/components/schemas/ReactionType"
+          },
+          "comment": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Comment"
+          },
+          "sentiment": {
+            "anyOf": [
+              {
+                "maximum": 1,
+                "minimum": -1,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Sentiment"
+          }
+        },
+        "required": [
+          "persona_id",
+          "variant_index",
+          "reaction",
+          "comment",
+          "sentiment"
+        ],
+        "title": "PersonaReaction",
+        "type": "object"
+      },
+      "Platform": {
+        "description": "Social platform a profile or post belongs to. Only X is implemented for the hackathon.",
+        "enum": [
+          "x"
+        ],
+        "title": "Platform",
+        "type": "string"
+      },
+      "Post": {
+        "additionalProperties": false,
+        "description": "A single post with its metrics, normalized independently of the data source.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "platform": {
+            "$ref": "#/components/schemas/Platform",
+            "default": "x"
+          },
+          "author_handle": {
+            "title": "Author Handle",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "created_at": {
+            "format": "date-time",
+            "title": "Created At",
+            "type": "string"
+          },
+          "url": {
+            "title": "Url",
+            "type": "string"
+          },
+          "lang": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Lang"
+          },
+          "kind": {
+            "$ref": "#/components/schemas/PostKind",
+            "default": "original"
+          },
+          "media": {
+            "items": {
+              "$ref": "#/components/schemas/MediaType"
+            },
+            "title": "Media",
+            "type": "array"
+          },
+          "has_link": {
+            "default": false,
+            "title": "Has Link",
+            "type": "boolean"
+          },
+          "hashtags": {
+            "description": "Without '#'.",
+            "items": {
+              "type": "string"
+            },
+            "title": "Hashtags",
+            "type": "array"
+          },
+          "mentions": {
+            "description": "Handles without '@'.",
+            "items": {
+              "type": "string"
+            },
+            "title": "Mentions",
+            "type": "array"
+          },
+          "conversation_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Thread/conversation id, if any.",
+            "title": "Conversation Id"
+          },
+          "metrics": {
+            "$ref": "#/components/schemas/PostMetrics"
+          }
+        },
+        "required": [
+          "id",
+          "platform",
+          "author_handle",
+          "text",
+          "created_at",
+          "url",
+          "lang",
+          "kind",
+          "media",
+          "has_link",
+          "hashtags",
+          "mentions",
+          "conversation_id",
+          "metrics"
+        ],
+        "title": "Post",
+        "type": "object"
+      },
+      "PostFeatures": {
+        "additionalProperties": false,
+        "description": "Features extracted from a post. Semantic fields (topic, tone, sentiment) may be None.",
+        "properties": {
+          "char_count": {
+            "minimum": 0,
+            "title": "Char Count",
+            "type": "integer"
+          },
+          "word_count": {
+            "minimum": 0,
+            "title": "Word Count",
+            "type": "integer"
+          },
+          "length_bucket": {
+            "$ref": "#/components/schemas/LengthBucket"
+          },
+          "hour_local": {
+            "description": "Hour in America/Argentina/Buenos_Aires.",
+            "maximum": 23,
+            "minimum": 0,
+            "title": "Hour Local",
+            "type": "integer"
+          },
+          "weekday": {
+            "description": "0 = Monday … 6 = Sunday, Argentina time.",
+            "maximum": 6,
+            "minimum": 0,
+            "title": "Weekday",
+            "type": "integer"
+          },
+          "media_type": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MediaType"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "First media item; None = text only."
+          },
+          "has_link": {
+            "title": "Has Link",
+            "type": "boolean"
+          },
+          "hashtag_count": {
+            "minimum": 0,
+            "title": "Hashtag Count",
+            "type": "integer"
+          },
+          "mention_count": {
+            "minimum": 0,
+            "title": "Mention Count",
+            "type": "integer"
+          },
+          "is_question": {
+            "title": "Is Question",
+            "type": "boolean"
+          },
+          "has_emoji": {
+            "title": "Has Emoji",
+            "type": "boolean"
+          },
+          "topic": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Topic"
+          },
+          "tone": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Tone"
+          },
+          "sentiment": {
+            "anyOf": [
+              {
+                "maximum": 1,
+                "minimum": -1,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Sentiment"
+          },
+          "matches_trend": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Matches Trend"
+          }
+        },
+        "required": [
+          "char_count",
+          "word_count",
+          "length_bucket",
+          "hour_local",
+          "weekday",
+          "media_type",
+          "has_link",
+          "hashtag_count",
+          "mention_count",
+          "is_question",
+          "has_emoji",
+          "topic",
+          "tone",
+          "sentiment",
+          "matches_trend"
+        ],
+        "title": "PostFeatures",
+        "type": "object"
+      },
+      "PostKind": {
+        "description": "Kind of post: original, reply, quote or plain repost.",
+        "enum": [
+          "original",
+          "reply",
+          "quote",
+          "repost"
+        ],
+        "title": "PostKind",
+        "type": "string"
+      },
+      "PostMetrics": {
+        "additionalProperties": false,
+        "description": "Raw counters of a post. Private metrics are only available with the official API on own posts.",
+        "properties": {
+          "impressions": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Views. None when the source does not provide them.",
+            "title": "Impressions"
+          },
+          "likes": {
+            "minimum": 0,
+            "title": "Likes",
+            "type": "integer"
+          },
+          "reposts": {
+            "minimum": 0,
+            "title": "Reposts",
+            "type": "integer"
+          },
+          "quotes": {
+            "minimum": 0,
+            "title": "Quotes",
+            "type": "integer"
+          },
+          "replies": {
+            "minimum": 0,
+            "title": "Replies",
+            "type": "integer"
+          },
+          "bookmarks": {
+            "minimum": 0,
+            "title": "Bookmarks",
+            "type": "integer"
+          },
+          "detail_expands": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Private metric (optional).",
+            "title": "Detail Expands"
+          },
+          "profile_clicks": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Private metric (optional).",
+            "title": "Profile Clicks"
+          },
+          "link_clicks": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Private metric (optional).",
+            "title": "Link Clicks"
+          }
+        },
+        "required": [
+          "impressions",
+          "likes",
+          "reposts",
+          "quotes",
+          "replies",
+          "bookmarks",
+          "detail_expands",
+          "profile_clicks",
+          "link_clicks"
+        ],
+        "title": "PostMetrics",
+        "type": "object"
+      },
+      "PostRates": {
+        "additionalProperties": false,
+        "description": "Rates of a post over impressions (see eduhub_shared.metrics). None when impressions are missing or zero.",
+        "properties": {
+          "engagement_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Engagement Rate"
+          },
+          "save_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Save Rate"
+          },
+          "share_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Share Rate"
+          },
+          "reply_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reply Rate"
+          },
+          "like_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Like Rate"
+          },
+          "passive_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Passive Rate"
+          }
+        },
+        "required": [
+          "engagement_rate",
+          "save_rate",
+          "share_rate",
+          "reply_rate",
+          "like_rate",
+          "passive_rate"
+        ],
+        "title": "PostRates",
+        "type": "object"
+      },
+      "PublishRequest": {
+        "additionalProperties": false,
+        "description": "Publish a text now, or schedule it when scheduled_for is set.",
+        "properties": {
+          "handle": {
+            "title": "Handle",
+            "type": "string"
+          },
+          "text": {
+            "maxLength": 4000,
+            "minLength": 1,
+            "title": "Text",
+            "type": "string"
+          },
+          "scheduled_for": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Scheduled For"
+          }
+        },
+        "required": [
+          "handle",
+          "text"
+        ],
+        "title": "PublishRequest",
+        "type": "object"
+      },
+      "PublishResult": {
+        "additionalProperties": false,
+        "description": "Result of a publish request.",
+        "properties": {
+          "status": {
+            "$ref": "#/components/schemas/PublishStatus"
+          },
+          "post_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Post Id"
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Published post URL, or compose URL when status is 'intent'.",
+            "title": "Url"
+          },
+          "scheduled_for": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Scheduled For"
+          },
+          "error": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Error"
+          }
+        },
+        "required": [
+          "status",
+          "post_id",
+          "url",
+          "scheduled_for",
+          "error"
+        ],
+        "title": "PublishResult",
+        "type": "object"
+      },
+      "PublishStatus": {
+        "description": "Outcome of a publish request. INTENT means the user must confirm in X via the returned compose URL.",
+        "enum": [
+          "published",
+          "scheduled",
+          "intent",
+          "failed"
+        ],
+        "title": "PublishStatus",
+        "type": "string"
+      },
+      "ReactionType": {
+        "description": "What a simulated persona does with a post. IGNORE and READ are passive.",
+        "enum": [
+          "ignore",
+          "read",
+          "like",
+          "reply",
+          "repost",
+          "bookmark"
+        ],
+        "title": "ReactionType",
+        "type": "string"
+      },
+      "Recommendation": {
+        "additionalProperties": false,
+        "description": "A concrete action for the creator, in es-AR. Priority 1 is the most important.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "category": {
+            "$ref": "#/components/schemas/InsightCategory"
+          },
+          "action": {
+            "title": "Action",
+            "type": "string"
+          },
+          "rationale": {
+            "title": "Rationale",
+            "type": "string"
+          },
+          "priority": {
+            "minimum": 1,
+            "title": "Priority",
+            "type": "integer"
+          },
+          "based_on_insight_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Based On Insight Ids",
+            "type": "array"
+          }
+        },
+        "required": [
+          "id",
+          "category",
+          "action",
+          "rationale",
+          "priority",
+          "based_on_insight_ids"
+        ],
+        "title": "Recommendation",
+        "type": "object"
+      },
+      "SegmentDimension": {
+        "description": "Dimension used to group posts in segment stats.",
+        "enum": [
+          "topic",
+          "media_type",
+          "length_bucket",
+          "tone",
+          "post_kind"
+        ],
+        "title": "SegmentDimension",
+        "type": "string"
+      },
+      "SegmentReaction": {
+        "additionalProperties": false,
+        "description": "Interaction rate of one audience segment for one variant.",
+        "properties": {
+          "dimension": {
+            "$ref": "#/components/schemas/AudienceDimension"
+          },
+          "value": {
+            "title": "Value",
+            "type": "string"
+          },
+          "variant_index": {
+            "minimum": 0,
+            "title": "Variant Index",
+            "type": "integer"
+          },
+          "persona_count": {
+            "minimum": 0,
+            "title": "Persona Count",
+            "type": "integer"
+          },
+          "interaction_rate": {
+            "minimum": 0,
+            "title": "Interaction Rate",
+            "type": "number"
+          }
+        },
+        "required": [
+          "dimension",
+          "value",
+          "variant_index",
+          "persona_count",
+          "interaction_rate"
+        ],
+        "title": "SegmentReaction",
+        "type": "object"
+      },
+      "SegmentStat": {
+        "additionalProperties": false,
+        "description": "Performance of posts sharing a value of one dimension (e.g. topic = \"ahorro\").",
+        "properties": {
+          "dimension": {
+            "$ref": "#/components/schemas/SegmentDimension"
+          },
+          "value": {
+            "title": "Value",
+            "type": "string"
+          },
+          "post_count": {
+            "minimum": 0,
+            "title": "Post Count",
+            "type": "integer"
+          },
+          "avg_score": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Score"
+          },
+          "engagement_rate": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Engagement Rate"
+          }
+        },
+        "required": [
+          "dimension",
+          "value",
+          "post_count",
+          "avg_score",
+          "engagement_rate"
+        ],
+        "title": "SegmentStat",
+        "type": "object"
+      },
+      "SimulationRequest": {
+        "additionalProperties": false,
+        "description": "Test 1-3 text variants against a synthetic audience.",
+        "properties": {
+          "handle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Handle"
+          },
+          "variants": {
+            "items": {
+              "type": "string"
+            },
+            "maxItems": 3,
+            "minItems": 1,
+            "title": "Variants",
+            "type": "array"
+          },
+          "audience_size": {
+            "default": 50,
+            "maximum": 200,
+            "minimum": 5,
+            "title": "Audience Size",
+            "type": "integer"
+          },
+          "filters": {
+            "$ref": "#/components/schemas/AudienceFilters"
+          }
+        },
+        "required": [
+          "variants"
+        ],
+        "title": "SimulationRequest",
+        "type": "object"
+      },
+      "SimulationResult": {
+        "additionalProperties": false,
+        "description": "Result of a simulation. Orientative only: it compares variants, it does not predict real engagement.",
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "personas": {
+            "items": {
+              "$ref": "#/components/schemas/Persona"
+            },
+            "title": "Personas",
+            "type": "array"
+          },
+          "reactions": {
+            "items": {
+              "$ref": "#/components/schemas/PersonaReaction"
+            },
+            "title": "Reactions",
+            "type": "array"
+          },
+          "variants": {
+            "items": {
+              "$ref": "#/components/schemas/VariantResult"
+            },
+            "title": "Variants",
+            "type": "array"
+          },
+          "segments": {
+            "items": {
+              "$ref": "#/components/schemas/SegmentReaction"
+            },
+            "title": "Segments",
+            "type": "array"
+          },
+          "best_variant_index": {
+            "minimum": 0,
+            "title": "Best Variant Index",
+            "type": "integer"
+          },
+          "summary": {
+            "title": "Summary",
+            "type": "string"
+          },
+          "disclaimer": {
+            "title": "Disclaimer",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "personas",
+          "reactions",
+          "variants",
+          "segments",
+          "best_variant_index",
+          "summary",
+          "disclaimer"
+        ],
+        "title": "SimulationResult",
+        "type": "object"
+      },
+      "TimeSlotStat": {
+        "additionalProperties": false,
+        "description": "Performance of posts published in a weekday/hour slot (Argentina time).",
+        "properties": {
+          "weekday": {
+            "maximum": 6,
+            "minimum": 0,
+            "title": "Weekday",
+            "type": "integer"
+          },
+          "hour": {
+            "maximum": 23,
+            "minimum": 0,
+            "title": "Hour",
+            "type": "integer"
+          },
+          "post_count": {
+            "minimum": 0,
+            "title": "Post Count",
+            "type": "integer"
+          },
+          "avg_score": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Avg Score"
+          }
+        },
+        "required": [
+          "weekday",
+          "hour",
+          "post_count",
+          "avg_score"
+        ],
+        "title": "TimeSlotStat",
+        "type": "object"
+      },
+      "Trend": {
+        "additionalProperties": false,
+        "description": "A trending topic observed at a given time and location.",
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "rank": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Rank"
+          },
+          "post_count": {
+            "anyOf": [
+              {
+                "minimum": 0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Post Count"
+          },
+          "location": {
+            "default": "Argentina",
+            "title": "Location",
+            "type": "string"
+          },
+          "observed_at": {
+            "format": "date-time",
+            "title": "Observed At",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "rank",
+          "post_count",
+          "location",
+          "observed_at"
+        ],
+        "title": "Trend",
+        "type": "object"
+      },
+      "TrendsResponse": {
+        "additionalProperties": false,
+        "description": "Current trends.",
+        "properties": {
+          "trends": {
+            "items": {
+              "$ref": "#/components/schemas/Trend"
+            },
+            "title": "Trends",
+            "type": "array"
+          }
+        },
+        "required": [
+          "trends"
+        ],
+        "title": "TrendsResponse",
+        "type": "object"
+      },
+      "VariantResult": {
+        "additionalProperties": false,
+        "description": "Aggregated reactions to one variant. interaction_rate = weighted share of active reactions.",
+        "properties": {
+          "variant_index": {
+            "minimum": 0,
+            "title": "Variant Index",
+            "type": "integer"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "interaction_rate": {
+            "minimum": 0,
+            "title": "Interaction Rate",
+            "type": "number"
+          },
+          "reaction_counts": {
+            "additionalProperties": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/ReactionType"
+            },
+            "title": "Reaction Counts",
+            "type": "object"
+          }
+        },
+        "required": [
+          "variant_index",
+          "text",
+          "interaction_rate",
+          "reaction_counts"
+        ],
+        "title": "VariantResult",
+        "type": "object"
+      }
+    }
+  }
+}

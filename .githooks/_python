@@ -1,0 +1,4 @@
+#!/bin/sh
+# Resolve the Python interpreter for git hooks: the repo venv if present, else python3.
+ROOT="$(git rev-parse --show-toplevel)"
+if [ -x "$ROOT/.venv/bin/python" ]; then echo "$ROOT/.venv/bin/python"; else echo python3; fi

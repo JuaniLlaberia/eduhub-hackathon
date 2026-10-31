@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(python scripts/approve_tests.py:*)",
+      "Bash(python3 scripts/approve_tests.py:*)",
+      "Bash(.venv/bin/python scripts/approve_tests.py:*)",
+      "Bash(git commit --no-verify:*)",
+      "Bash(git commit -n:*)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [{ "type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/guard_edits.py\"" }]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [{ "type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/check_contracts.py\" --hook SessionStart" }]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [{ "type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/check_contracts.py\" --hook UserPromptSubmit" }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [{ "type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/scripts/check_contracts.py\" --hook PostToolUse" }]
+      }
+    ]
+  }
+}

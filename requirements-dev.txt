@@ -1,0 +1,8 @@
+# One virtualenv for all Python code (Python 3.14):
+#   python3.14 -m venv .venv && source .venv/bin/activate && pip install -r requirements-dev.txt
+-e src/shared
+-e src/ai
+-e src/backend
+pytest>=8.4
+pytest-asyncio>=1.2
+ruff>=0.14

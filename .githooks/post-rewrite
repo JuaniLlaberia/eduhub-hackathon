@@ -1,0 +1,5 @@
+#!/bin/sh
+# After git pull/merge: warn if the contracts changed since you last acknowledged them.
+ROOT="$(git rev-parse --show-toplevel)"
+"$("$ROOT/.githooks/_python")" "$ROOT/scripts/check_contracts.py" || echo "\n>>> Review the contract change, run your tests, then: python scripts/check_contracts.py --ack\n"
+exit 0

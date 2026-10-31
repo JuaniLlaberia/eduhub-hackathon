@@ -1,0 +1,11 @@
+{
+  "id": "job-demo-1",
+  "handle": "demo_finanzas",
+  "status": "analyzing",
+  "progress": 0.6,
+  "message": "Calculando métricas y patrones",
+  "created_at": "2026-10-30T12:00:00Z",
+  "updated_at": "2026-10-30T12:00:24Z",
+  "report_id": null,
+  "error": null
+}
