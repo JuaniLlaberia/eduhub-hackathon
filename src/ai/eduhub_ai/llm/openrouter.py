@@ -5,6 +5,7 @@ import asyncio
 import copy
 import logging
 import time
+from dataclasses import dataclass
 from typing import Any
 import openai
 from pydantic import BaseModel
@@ -13,12 +14,26 @@ from eduhub_ai.llm.client import LLMCall, LLMError, complete_with_retry
 from eduhub_shared.errors import RateLimitedError
 
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+SDK_MAX_RETRIES = 0
 RATE_LIMITED_MESSAGE = "Estamos recibiendo muchas consultas a la IA. Probá de nuevo en un minuto."
 logger = logging.getLogger(__name__)
+
+@dataclass
+class Usage:
+    """
+    Running totals for one client: successful calls, failed calls, tokens and cost in USD (as OpenRouter reports
+    it; 0 when it doesn't).
+    """
+    calls: int = 0
+    failures: int = 0
+    prompt_tokens: int = 0
+    completion_tokens: int = 0
+    cost: float = 0.0
 
 class OpenRouterClient:
     """
     Structured-output calls via OpenRouter, with fallback models, a per-call timeout and a concurrency limit.
+    The SDK never retries on its own (a timed-out call would otherwise double the wait); our callers decide.
     """
     def __init__(self, settings: AISettings, client: Any = None) -> None:
         """
@@ -28,9 +43,10 @@ class OpenRouterClient:
             if not settings.openrouter_api_key:
                 raise ValueError("OPENROUTER_API_KEY is not set")
             client = openai.AsyncOpenAI(
-                api_key=settings.openrouter_api_key, base_url=OPENROUTER_BASE_URL, max_retries=1
+                api_key=settings.openrouter_api_key, base_url=OPENROUTER_BASE_URL, max_retries=SDK_MAX_RETRIES
             )
         self.settings = settings
+        self.usage = Usage()
         self._client = client
         self._semaphore = asyncio.Semaphore(settings.max_concurrency)
 
@@ -51,7 +67,7 @@ class OpenRouterClient:
         async with self._semaphore:
             started = time.perf_counter()
             try:
-                response = await self._client.chat.completions.create(**request)
+                response = await self._request(request)
             except openai.RateLimitError as error:
                 raise RateLimitedError(RATE_LIMITED_MESSAGE) from error
             except openai.APIConnectionError as error:
@@ -61,16 +77,26 @@ class OpenRouterClient:
                 raise LLMError(f"OpenRouter returned {error.status_code}: {error}", retryable=retryable) from error
             except openai.OpenAIError as error:
                 raise LLMError(f"OpenRouter call failed: {error}") from error
-        self._log(call, response, time.perf_counter() - started)
+        self._record(call, response, time.perf_counter() - started)
         if not response.choices:
             return None
         return response.choices[0].message.content
+
+    async def _request(self, request: dict[str, Any]) -> Any:
+        """
+        Send one request, counting it as a failure if it raises.
+        """
+        try:
+            return await self._client.chat.completions.create(**request)
+        except Exception:
+            self.usage.failures += 1
+            raise
 
     def _build_request(self, call: LLMCall) -> dict[str, Any]:
         """
         Build the keyword arguments for chat.completions.create.
         """
-        extra_body: dict[str, Any] = {"provider": self._provider_preferences()}
+        extra_body: dict[str, Any] = {"provider": self._provider_preferences(), "usage": {"include": True}}
         reasoning = reasoning_body(call.reasoning)
         if reasoning is not None:
             extra_body["reasoning"] = reasoning
@@ -102,12 +128,16 @@ class OpenRouterClient:
             provider["order"] = list(self.settings.providers)
         return provider
 
-    def _log(self, call: LLMCall, response: Any, latency_s: float) -> None:
+    def _record(self, call: LLMCall, response: Any, latency_s: float) -> None:
         """
-        Log the model and provider that answered (OpenRouter adds "provider" to the response), token usage
-        and latency.
+        Add the call to the usage totals and log the model and provider that answered (OpenRouter adds
+        "provider" to the response), token usage, cost and latency.
         """
         usage = getattr(response, "usage", None)
+        self.usage.calls += 1
+        self.usage.prompt_tokens += getattr(usage, "prompt_tokens", None) or 0
+        self.usage.completion_tokens += getattr(usage, "completion_tokens", None) or 0
+        self.usage.cost += float(getattr(usage, "cost", None) or 0.0)
         logger.info(
             "llm call schema=%s requested=%s answered=%s provider=%s reasoning=%s prompt_tokens=%s "
             "completion_tokens=%s latency=%.2fs",
