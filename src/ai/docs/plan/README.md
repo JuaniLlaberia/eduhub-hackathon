@@ -27,8 +27,8 @@ Every stage is a separate `.md` file, written so a **fresh Claude Code session**
 | # | Stage | Priority | Depends on | Status |
 |---|---|---|---|---|
 | 00 | [Contract v1.1.0: hook + CTA](00-contract-hook-cta.md) | MUST | none | done (committed to `main`) |
-| 01 | [Foundations: settings + LLM client](01-foundations-llm-client.md) | MUST | none | todo |
-| 02 | [Deterministic features, post selection, score](02-features-selection-score.md) | MUST | 00 | todo |
+| 01 | [Foundations: settings + LLM client](01-foundations-llm-client.md) | MUST | none | done |
+| 02 | [Deterministic features, post selection, score](02-features-selection-score.md) | MUST | 00 | done |
 | 03 | [Semantic labeling (topic, tone, sentiment, hook, CTA)](03-semantic-labeling.md) | MUST | 01, 02 | todo |
 | 04 | [Stats engine (KPIs, heatmap, segments, significance)](04-stats-engine.md) | MUST | 02 | todo |
 | 05 | [Insight writer (grounded es-AR texts)](05-insight-writer.md) | MUST | 01, 04 | todo |

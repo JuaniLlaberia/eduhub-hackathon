@@ -5,6 +5,7 @@ description = "AI team: analysis, insights, draft generation and audience sandbo
 requires-python = ">=3.12"
 dependencies = [
     "eduhub-shared",
+    "openai>=1.40",
 ]
 
 [build-system]

@@ -1,6 +1,6 @@
 # Stage 02: Deterministic features, post selection, score
 
-- **Status:** todo
+- **Status:** done
 - **Priority:** MUST
 - **Depends on:** 00 (for the `hook`/`cta` fields; the code here leaves them `None`)
 
@@ -53,10 +53,17 @@ Pure, deterministic functions (no LLM) that decide **which posts are scorable**,
 
 ## Definition of done
 
-- [ ] Tests green, plus ruff and style
-- [ ] No LLM imports in `features/`
-- [ ] Commit `ai: stage 02 features, selection, score`
+- [x] Tests green, plus ruff and style (141 passed: shared + stages 01–02)
+- [x] No LLM imports in `features/` (asserted by a test)
+- [x] Commit `ai: stage 02 features, selection, score`
 
 ## Handoff notes
 
-_(fill in when done)_
+- Built on 2026-10-31: `features/selection.py` (`select_scorable`, `SelectionResult`, `ExclusionReason`, `MIN_SCORABLE_POSTS = 20`), `features/deterministic.py` (`extract_deterministic`, `hour_block`, `is_question`, `matches_any_trend`), `features/scoring.py` (`score_posts`, formula in the module docstring).
+- Tests: `src/ai/tests/test_stage_02_features.py`, approved by Juan. The real-snapshot test runs only when `tests/data/real/*.json` exist locally (git-ignored).
+- Decisions beyond the plan:
+  - Exclusion precedence: kind (reply/repost) → too_recent → no_impressions. Zero impressions count as no impressions.
+  - `score_posts` takes the **scorable posts** (pass `selection.scorable`); medians come from those with impressions. Posts not passed in get no score (the analyzer sets `score=None` for them).
+  - `is_question` ignores `?` inside URLs and also accepts an opening `¿`.
+  - `matches_trend` is `None` when the snapshot has no trends; otherwise a whole-word, case/accent-insensitive match (so "Paro" does not match "comparo").
+- Real data (collected 2026-10-31, `now = collected_at`): scorable posts bilinkis 70, mercadolibre 50, paulina_cocina 164, valearvejita 40 (all exclusions are replies). Median score 0.90–1.04, p90 1.8–5.9, max 3.5–13.3. Trend matches are ~0 because trends are from collection day and posts are older; don't expect `matches_trend` to drive insights.

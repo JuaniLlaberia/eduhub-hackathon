@@ -1,6 +1,6 @@
 # Stage 01: Foundations (settings + LLM client)
 
-- **Status:** todo
+- **Status:** done
 - **Priority:** MUST
 - **Depends on:** none
 
@@ -44,11 +44,20 @@ A small, swappable LLM layer: one `complete_json` call that returns a **validate
 
 ## Definition of done
 
-- [ ] All tests green, plus ruff and style
-- [ ] `AI_*` vars added to the root `.env.example` (repo-wide file: confirm with the developer)
-- [ ] Optional manual smoke test (not in CI): a tiny script `src/ai/scripts/smoke_llm.py` that makes one real call with a 2-field schema, printing the model, latency and validated output. Run it only when the developer provides `OPENROUTER_API_KEY`.
-- [ ] Commit `ai: stage 01 foundations`
+- [x] All tests green, plus ruff and style (92 passed: 64 shared + 28 AI)
+- [x] `AI_*` vars added to the root `.env.example` (developer asked for models in env)
+- [x] Optional manual smoke test (not in CI): a tiny script `src/ai/scripts/smoke_llm.py` that makes one real call with a 2-field schema, printing the model, latency and validated output. Run it only when the developer provides `OPENROUTER_API_KEY`.
+- [x] Commit `ai: stage 01 foundations`
 
 ## Handoff notes
 
-_(fill in when done)_
+- Built on 2026-10-31: `eduhub_ai/config.py` (`AISettings`, `load_settings`), `eduhub_ai/llm/` (`client.py`: `LLMClient`, `LLMError`, `LLMCall`, `parse_or_raise`, `complete_with_retry`; `scripted.py`: `ScriptedLLMClient`; `openrouter.py`: `OpenRouterClient`, `strict_schema`), `src/ai/scripts/smoke_llm.py`.
+- Tests: `src/ai/tests/test_stage_01_foundations.py` (28 incl. parametrized). Approved by Juan (code was written before approval at the developer's request; the approved tests were unchanged).
+- Deviations:
+  - The installed `openai` is 3.42, built on **`httpx2`** (not `httpx`); tests build provider errors with `httpx2`.
+  - `strict_schema()` adds `additionalProperties: false` to every object (strict mode requires it). Schemas for strict calls should also have no optional/defaulted fields, since strict mode wants every property in `required`.
+  - Only invalid *output* is retried (once, by `complete_with_retry`). Transport errors are not retried here; the SDK client is built with `max_retries=1`.
+  - Error mapping: 429 → `RateLimitedError` (es-AR message); connection/timeout and 5xx → `LLMError(retryable=True)`; other 4xx → `LLMError(retryable=False)`.
+  - `AI_ENABLE_LLM` also accepts true/false, yes/no, on/off; `AI_MAX_CONCURRENCY` and `AI_LLM_TIMEOUT_S` must be > 0.
+  - `OpenRouterClient` without a key raises `ValueError`; stage 06 should check `settings.openrouter_api_key` / `enable_llm` first and pass `client=None` to the analyzer.
+- Open: smoke script not run (needs `OPENROUTER_API_KEY`); verify the model slugs on openrouter.ai then.
