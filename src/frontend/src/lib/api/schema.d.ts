@@ -316,6 +316,11 @@ export interface components {
              * @description Which analyzer produced it, e.g. 'fake' or 'hybrid-v1'.
              */
             engine: string;
+            /**
+             * @description The creator brief the report was made with.
+             * @default null
+             */
+            context: components["schemas"]["CreatorContext"] | null;
         };
         /**
          * AnalysisRequest
@@ -329,6 +334,11 @@ export interface components {
              * @default 200
              */
             max_posts: number;
+            /**
+             * @description Optional creator brief ("el para qué").
+             * @default null
+             */
+            context: components["schemas"]["CreatorContext"] | null;
         };
         /**
          * AnalyzedPost
@@ -377,6 +387,48 @@ export interface components {
             /** Provinces */
             provinces?: string[];
         };
+        /**
+         * CreatorContext
+         * @description The creator's brief ("el para qué"): goal, offering, audience, voice. Every field is optional, free text is
+         *     es-AR. The AI uses it to frame and prioritize; it never changes computed numbers.
+         *     It travels in requests and responses, so it keeps one OpenAPI schema (no -Input/-Output split).
+         */
+        CreatorContext: {
+            /** @default null */
+            goal: components["schemas"]["CreatorGoal"] | null;
+            /**
+             * Goal Detail
+             * @default null
+             */
+            goal_detail: string | null;
+            /**
+             * Offering
+             * @description Product, service or campaign.
+             * @default null
+             */
+            offering: string | null;
+            /**
+             * Target Audience
+             * @default null
+             */
+            target_audience: string | null;
+            audience_filters?: components["schemas"]["AudienceFilters"];
+            /**
+             * Brand Voice
+             * @default null
+             */
+            brand_voice: string | null;
+            /** Avoid Topics */
+            avoid_topics?: string[];
+            /** @default null */
+            preferred_cta: components["schemas"]["PreferredCta"] | null;
+        };
+        /**
+         * CreatorGoal
+         * @description What the creator publishes for. es-AR labels live in the frontend.
+         * @enum {string}
+         */
+        CreatorGoal: "sell" | "traffic" | "reach" | "community" | "launch" | "other";
         /**
          * Draft
          * @description A generated post draft in the creator's voice (es-AR).
@@ -429,6 +481,11 @@ export interface components {
              * @default 3
              */
             count: number;
+            /**
+             * @description Overrides report.context for these drafts.
+             * @default null
+             */
+            context: components["schemas"]["CreatorContext"] | null;
         };
         /**
          * DraftsResponse
@@ -778,6 +835,12 @@ export interface components {
             passive_rate: number | null;
         };
         /**
+         * PreferredCta
+         * @description What the creator wants readers to do.
+         * @enum {string}
+         */
+        PreferredCta: "link" | "reply" | "save" | "share" | "follow" | "none";
+        /**
          * PublishRequest
          * @description Publish a text now, or schedule it when scheduled_for is set.
          */
@@ -903,6 +966,11 @@ export interface components {
              */
             audience_size: number;
             filters?: components["schemas"]["AudienceFilters"];
+            /**
+             * @description Optional creator brief (product, audience).
+             * @default null
+             */
+            context: components["schemas"]["CreatorContext"] | null;
         };
         /**
          * SimulationResult
