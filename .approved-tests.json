@@ -29,6 +29,11 @@
     "approved_by": "Juan",
     "sha256": "c47bff9baa00a0673d3f3ba647e284fd87c651f2119594db5895fa256ce6cc7b"
   },
+  "src/ai/tests/test_stage_07_ridge.py": {
+    "approved_at": "2026-10-31T11:23:43.771921+00:00",
+    "approved_by": "Juan",
+    "sha256": "271db4d4b47a2311761244ee9a5246da6da75faf28cc2e0474464b3aac98abbe"
+  },
   "src/shared/tests/test_contract_v1_1.py": {
     "approved_at": "2026-10-31T01:53:00.765194+00:00",
     "approved_by": "Juan",

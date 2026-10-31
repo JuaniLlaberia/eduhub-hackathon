@@ -177,9 +177,11 @@ def build_evidence(
     best_slots: list[TimeSlotStat],
     max_findings: int = MAX_FINDINGS,
     top_n: int = TOP_POSTS,
+    pattern_effects: list[EvidenceItem] | None = None,
 ) -> EvidencePack:
     """
-    Build the evidence pack: KPIs, significant segment and timing findings, best slots and top/bottom posts.
+    Build the evidence pack: KPIs, significant segment and timing findings, best slots, top/bottom posts and
+    the pattern model's effects (stage 07) when given.
     """
     scored = sorted((p for p in posts if p.score is not None), key=lambda p: (-(p.score or 0), p.post.id))
     top = scored[:top_n]
@@ -192,6 +194,7 @@ def build_evidence(
         best_slots=[slot_item(slot, scored) for slot in best_slots],
         top_posts=[post_evidence(p, "top") for p in top],
         bottom_posts=[post_evidence(p, "bottom") for p in bottom],
+        pattern_effects=list(pattern_effects or []),
         post_ids={p.post.id for p in posts},
     )
     return pack.model_copy(update={"allowed_numbers": extract_numbers(pack.prompt_json())})

@@ -23,6 +23,9 @@ calcules, no redondees y no inventes números nuevos.
 - "1,0x" es el post típico de la cuenta: "2,0x" rinde el doble y "0,5x" la mitad.
 - Basate en la evidencia de esta cuenta. Nada de consejos genéricos de redes sociales.
 - Los findings con direction "down" son cosas que rinden menos: contalas como algo a evitar o cambiar.
+- efectos_modelo son efectos ajustados por un modelo estadístico ("a igualdad de lo demás"): separan, por \
+ejemplo, el efecto del tema del efecto del horario. Si un finding y un efecto del modelo dicen lo mismo, es la \
+evidencia más fuerte; si el modelo no lo confirma, sé más prudente.
 - No repitas el mismo insight con otras palabras.
 Respondé solo con el JSON pedido."""
 

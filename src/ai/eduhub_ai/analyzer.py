@@ -10,10 +10,10 @@ from datetime import UTC, datetime
 from eduhub_ai.config import AISettings
 from eduhub_ai.features import MIN_SCORABLE_POSTS, extract_deterministic, score_posts, select_scorable
 from eduhub_ai.insights import build_evidence, write_texts
-from eduhub_ai.insights.evidence import EvidenceItem
 from eduhub_ai.labeling import label_account
 from eduhub_ai.labeling.labeler import hashtag_topics
 from eduhub_ai.llm.client import LLMClient
+from eduhub_ai.patterns import PatternModel, adjust_confidence, effect_items, fit_from_posts
 from eduhub_ai.stats import best_time_slots, build_heatmap, build_kpis, build_segments
 from eduhub_shared.errors import AnalysisError, ContractError
 from eduhub_shared.interfaces import ProgressCallback
@@ -59,7 +59,7 @@ class HybridAnalyzer:
 
     async def _analyze(self, snapshot: AccountSnapshot, on_progress: ProgressCallback | None) -> AnalysisReport:
         """
-        The pipeline: features + scores → labels → stats → (pattern model) → texts → report.
+        The pipeline: features + scores → labels → stats → pattern model → texts → report.
         """
         progress = Progress(on_progress, snapshot.profile.handle)
         await progress.step(0.10, "Leyendo tus posts")
@@ -80,8 +80,11 @@ class HybridAnalyzer:
         heatmap = build_heatmap(posts)
         slots = best_time_slots(heatmap)
         segments = build_segments(posts)
-        pack = build_evidence(snapshot.profile, kpis, posts, slots)
-        pack = pack.model_copy(update={"pattern_effects": self._pattern_effects(posts)})
+        model = self.pattern_model(posts)
+        effects = effect_items(model, posts) if model is not None else []
+        pack = build_evidence(snapshot.profile, kpis, posts, slots, pattern_effects=effects)
+        if model is not None:
+            pack = adjust_confidence(pack, model)
         await progress.step(0.80, "Escribiendo tus insights")
         texts = await write_texts(pack, self.client, self.settings)
         for error in [*labeling.errors, *texts.errors]:
@@ -106,11 +109,16 @@ class HybridAnalyzer:
                     labeling.coverage * 100, texts.source)
         return report
 
-    def _pattern_effects(self, posts: list[AnalyzedPost]) -> list[EvidenceItem]:
+    def pattern_model(self, posts: list[AnalyzedPost]) -> PatternModel | None:
         """
-        Pattern-model evidence (stage 07 plugs the ridge model in here); none for now.
+        The per-account ridge model, or None when the account lacks data for it (fewer than 30 scorable posts
+        or no usable feature). Model failures never fail the analysis.
         """
-        return []
+        try:
+            return fit_from_posts(posts)
+        except (ValueError, ArithmeticError) as error:
+            logger.warning("pattern model skipped: %s", error)
+            return None
 
 class Progress:
     """
