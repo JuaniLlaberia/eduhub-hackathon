@@ -1,6 +1,6 @@
 # Stage 08: Draft generator + `create_generator()`
 
-- **Status:** todo
+- **Status:** done (not merged into `dev` yet)
 - **Priority:** WANTED
 - **Depends on:** 06 (07 optional, for `estimated_score`)
 
@@ -46,11 +46,22 @@ Generate `count` post drafts **in the creator's voice**, based on their insights
 
 ## Definition of done
 
-- [ ] Tests green, plus ruff and style
-- [ ] Manual check with the developer: 3 drafts for the fixture account. Do they sound like the creator?
+- [x] Tests green, plus ruff and style (271 passed: shared + stages 01–08)
+- [x] Manual check with the developer: 3 drafts for the fixture account. Do they sound like the creator? → `python src/ai/scripts/generate_drafts.py [snapshot.json] [count] [topic]`
 - [ ] Merge into `dev`, and tell Mark that `create_generator()` is ready
-- [ ] Commit `ai: stage 08 draft generator`
+- [x] Commit `ai: stage 08 draft generator`
 
 ## Handoff notes
 
-_(fill in when done)_
+- Built on 2026-10-31: `generation/schemas.py` (`DraftItem` with topic/tone/hook/cta labels, `DraftsResponse`), `generation/prompts.py` (`GENERATOR_SYSTEM`, `generator_user`, `retry_note`), `generation/generator.py` (`LLMDraftGenerator`, `next_slot_after`, `default_scorer`, `draft_features`), `src/ai/scripts/generate_drafts.py` (analyze + generate, manual).
+- Tests: `src/ai/tests/test_stage_08_generator.py`, approved by Juan (code was written before approval at the developer's request).
+- `create_generator()`: `LLMDraftGenerator` when the LLM is available, **`FakeDraftGenerator` without a key or with `AI_ENABLE_LLM=0`** (the approved stage 06 test runs `check_generator(create_generator())` with no key, and the backend needs a working endpoint). Inside the LLM generator there is no template fallback: LLM failures → `GenerationError("No pudimos generar borradores…")`; `RateLimitedError` propagates (429).
+- Decisions beyond the plan:
+  - The scorer takes the draft's `PostFeatures` (deterministic features of the text as if posted at its suggested time, plus the LLM's topic/tone/hook/CTA labels), not just the text. Default: refit ridge from `report.posts` (`fit_from_report`) and `predict`; else the median score of the draft's topic segment; else `None`. Scorer errors give `None`, never a failed generation.
+  - Drafts are spread over the best slots: draft *i* gets `best_time_slots[i % n]` (draft 0 = best slot).
+  - Unknown `recommendation_id` falls back to the top-priority recommendation (no error). `based_on_insight_ids` = the recommendation's insights, else the top two.
+  - Trends: top 3 by rank; the prompt says to use one only if it fits.
+  - Writer model + `AI_WRITER_REASONING`, temperature 0.8. Dedupe is case/whitespace-insensitive; the single retry asks only for the missing drafts and lists the existing ones.
+- First real run (2026-10-31, paulina_cocina): analysis 22.6 s + drafts 10.9 s; voice close (voseo, her "Si hay X…" pattern). Fixed after it: (1) drafts declare their intended `media` (text/photo/video/gif) and the score uses it — before, video recipes were scored as text-only (0.7x on an account where text is 0.4x); (2) the default topic needs ≥ 3 posts (a 1-post topic had won, so all drafts were about vegetables instead of "postres dulces"); (3) the placeholder rule covers only statistics/studies/news/quotes, so practical details (cooking times) are no longer "[dato]".
+- Second real run after the fixes: all three drafts on desserts, her sign-off ("Bai los tkm 💞") and "Si tenés X, ya tenés hecha…" pattern, scores 1.4–1.9x for video desserts, no placeholders; analysis 13.0 s + drafts 14.1 s.
+- **Test caveat:** if `OPENROUTER_API_KEY` is exported in the shell that runs pytest, the stage 06 factory test builds the real generator and makes a real call. Run pytest without the env loaded.

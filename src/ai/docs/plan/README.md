@@ -34,7 +34,7 @@ Every stage is a separate `.md` file, written so a **fresh Claude Code session**
 | 05 | [Insight writer (grounded es-AR texts)](05-insight-writer.md) | MUST | 01, 04 | done |
 | 06 | [HybridAnalyzer + `create_analyzer()`: **milestone, hand-off to backend**](06-analyzer-assembly.md) | MUST | 02–05 | done (not merged into `dev`; real-model run pending) |
 | 07 | [Ridge pattern model (optional per account)](07-ridge-pattern-model.md) | MUST (quality) | 06 | done |
-| 08 | [Draft generator + `create_generator()`](08-draft-generator.md) | WANTED | 06 (07 optional) | todo |
+| 08 | [Draft generator + `create_generator()`](08-draft-generator.md) | WANTED | 06 (07 optional) | done (not merged into `dev`) |
 | 09 | [Audience sandbox + `create_simulator()`](09-audience-sandbox.md) | STRETCH | 01 | todo |
 | 10 | [Evaluation, bake-off and demo hardening](10-evaluation-demo-hardening.md) | MUST (before demo) | 06 | todo |
 
