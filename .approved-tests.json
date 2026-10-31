@@ -44,6 +44,11 @@
     "approved_by": "Juan",
     "sha256": "de654969559a1e98e4c6f58018b44a72c3704a7a7c81060c7fc038fd326a623c"
   },
+  "src/ai/tests/test_stage_09_sandbox.py": {
+    "approved_at": "2026-10-31T12:49:13.636175+00:00",
+    "approved_by": "Juan",
+    "sha256": "917b7d6a3f6a496750b43165536db12ea5beebb374dbf9ccabee34b18b6e684a"
+  },
   "src/ai/tests/test_stage_10_hardening.py": {
     "approved_at": "2026-10-31T12:36:55.016203+00:00",
     "approved_by": "Juan",
