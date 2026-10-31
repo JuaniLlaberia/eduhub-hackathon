@@ -3,6 +3,8 @@
 Owns `src/ai/` (the `eduhub_ai` package): features, analysis, insights, recommendations, draft generation and the audience sandbox.
 Implements the **C3** interfaces. The input is always an `AccountSnapshot`. **Never fetch X data yourselves.**
 
+> Research and decisions (approach, methods, models, costs): [`src/ai/docs/research.md`](../../src/ai/docs/research.md).
+
 ## What `eduhub_ai` must export (contract C3)
 
 ```python
