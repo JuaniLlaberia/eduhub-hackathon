@@ -144,6 +144,26 @@
     "approved_by": "mark",
     "sha256": "28ce2c1e1bbd67dbff9baf9b51303db165bf31b07f11916de677d65ecf8abe86"
   },
+  "src/frontend/src/components/dashboard/dashboard-screen.test.tsx": {
+    "approved_at": "2026-10-31T15:46:34.470950+00:00",
+    "approved_by": "python scripts/approve_tests.py src/frontend/src/components/dashboard/model.test.ts src/frontend/src/components/dashboard/dashboard-screen.test.tsx src/frontend/src/components/dashboard/onboarding/brief.test.ts src/frontend/src/components/dashboard/onboarding/onboarding-flow.test.tsx",
+    "sha256": "86b39f0bd0c649587d140ae95c85b39b5909a32981365f1ced96b58aed02ec0a"
+  },
+  "src/frontend/src/components/dashboard/model.test.ts": {
+    "approved_at": "2026-10-31T15:46:34.470950+00:00",
+    "approved_by": "python scripts/approve_tests.py src/frontend/src/components/dashboard/model.test.ts src/frontend/src/components/dashboard/dashboard-screen.test.tsx src/frontend/src/components/dashboard/onboarding/brief.test.ts src/frontend/src/components/dashboard/onboarding/onboarding-flow.test.tsx",
+    "sha256": "4d17a2ccb63bc768aeca8e80a18637f4ef2e2a076f09a32b10e5be8bb564325e"
+  },
+  "src/frontend/src/components/dashboard/onboarding/brief.test.ts": {
+    "approved_at": "2026-10-31T15:46:34.470950+00:00",
+    "approved_by": "python scripts/approve_tests.py src/frontend/src/components/dashboard/model.test.ts src/frontend/src/components/dashboard/dashboard-screen.test.tsx src/frontend/src/components/dashboard/onboarding/brief.test.ts src/frontend/src/components/dashboard/onboarding/onboarding-flow.test.tsx",
+    "sha256": "3852efbe7b6dd014291d12ab1ac0c3500df9f8a964ad48ecc5aa406bc17ce818"
+  },
+  "src/frontend/src/components/dashboard/onboarding/onboarding-flow.test.tsx": {
+    "approved_at": "2026-10-31T15:46:34.470950+00:00",
+    "approved_by": "python scripts/approve_tests.py src/frontend/src/components/dashboard/model.test.ts src/frontend/src/components/dashboard/dashboard-screen.test.tsx src/frontend/src/components/dashboard/onboarding/brief.test.ts src/frontend/src/components/dashboard/onboarding/onboarding-flow.test.tsx",
+    "sha256": "cda98b597e8adcfdc51afec9ab4e4d25260c88e59a8ee1ee8800bf74a0bb0501"
+  },
   "src/frontend/src/lib/api/errors.test.ts": {
     "approved_at": "2026-10-31T05:03:23.682650+00:00",
     "approved_by": "lupa",
