@@ -18,12 +18,43 @@ FastAPI · uvicorn · httpx (async) · pydantic-settings · tenacity (retries) �
 
 ## Open questions (research and write your answers here)
 
-- [ ] **Data source:** twitterapi.io vs scraping vs the official API. Check cost, reliability and ban risk. Whichever you pick, the rest of the system doesn't change.
-- [ ] Does the chosen source return **impressions (views)** and **bookmarks** for each tweet? Both are required for our rates. If something is missing, flag it so we can make the field optional in the contract.
-- [ ] Does any source provide **detail expands / profile clicks / link clicks**? (Probably only the official API with OAuth, for your own tweets.) These are optional fields in `PostMetrics`.
-- [ ] **Trends:** is there an endpoint for current trends in Argentina (WOEID 23424747)? Historical trends are out of scope.
-- [ ] **Posting:** options are the official API with OAuth 2.0 PKCE (~$0.015 per post), third-party write endpoints (usually need login cookies), or a **zero-cost fallback: the X intent URL** `https://x.com/intent/post?text=...`, which opens the composer pre-filled with no auth needed. Decide what the demo uses.
-- [ ] **Scheduling:** real scheduling (APScheduler + a running process) or simulated for the demo?
-- [ ] How many posts per analysis (default 200)? How long does fetching take, and what does it cost?
-- [ ] Hosting provider, and how secrets are set there.
-- [ ] Demo account: fetch it once and save the snapshot as a fixture.
+- [x] **Data source:** **twitterapi.io** (`TwitterApiIoSource`), used when `DEMO_MODE=0`. It only needs an API key, is cheap, and the ban risk sits with the provider. The official API is reliable but has paid tiers and strict read limits. Scraping is free but fragile and the riskiest for a live demo.
+- [x] **Impressions and bookmarks:** yes. `/twitter/user/last_tweets` returns `viewCount` and `bookmarkCount` on every tweet. All 190 posts of the demo account have impressions. No contract change needed.
+- [x] **Detail expands / profile clicks / link clicks:** not from twitterapi.io (only the official API with OAuth, on your own tweets). We leave them as `None`.
+- [x] **Trends:** yes, `/twitter/trends?woeid=23424747` returns about 25–30 current Argentina trends. If it fails, the analysis fails with `source_unavailable`.
+- [x] **Posting:** the demo uses the **X intent URL**. `POST /publications` answers `intent` with a pre-filled `https://x.com/intent/post?text=...` link. No auth, no cost; the user confirms in X.
+- [x] **Scheduling:** **simulated** for the demo. `scheduled_for` is echoed back as `scheduled`; nothing is stored or posted later. Real scheduling only makes sense together with an official-API publisher.
+- [x] **Posts per analysis:** default 200 (the API accepts 10–500). Pages hold 20 tweets and plain retweets are dropped, so paging stops at the limit, at the last page, or after `ceil(limit/20) * 2` pages, whichever comes first. Cost is about $0.15 per 1,000 tweets, so roughly $0.03–0.06 per 200-post analysis. Fetch time hasn't been measured yet. The free tier allows one request every 5 seconds, which is too slow for paging; any paid balance raises the limit (the account has been topped up).
+- [x] **Hosting:** **Render**, Free plan, one web service for backend + `eduhub_ai`, deployed from `dev` by the `render.yaml` Blueprint. Secrets are set in the Render dashboard (see "Deploying on Render" below).
+- [x] **Demo account:** **@bilinkis** (Santiago Bilinkis: tech, AI, critical thinking; 130k followers; 190 posts, 63% of them replies), plus the shared `demo_finanzas`. Both live in `src/backend/fixtures/` and are seeded in `DEMO_MODE`. Regenerate them with `set -a; source .env; set +a; EDUHUB_FAKE_AI=0 python -m eduhub_backend.tools.snapshot bilinkis --include-shared` (the AI reads `OPENROUTER_API_KEY` from the environment).
+
+## Running locally
+
+```bash
+source .venv/bin/activate          # Windows Git Bash: source .venv/Scripts/activate
+pip install -e src/backend && pip install --group src/backend/pyproject.toml:test
+DEMO_MODE=1 EDUHUB_FAKE_AI=0 uvicorn eduhub_backend.app:main --factory --env-file .env   # http://localhost:8000
+pytest src/shared src/backend
+```
+
+**Always pass `--env-file .env`.** Our `Settings` reads `.env` itself, but `eduhub_ai` reads `OPENROUTER_API_KEY` and `AI_*` only from the process environment. Without the flag the analyzer silently runs in template mode (no LLM), drafts use the fake generator and the sandbox is off; the only sign is a warning in the log. Variables set on the command line win over `.env`. `EDUHUB_FAKE_AI=1` stays as the emergency switch if OpenRouter fails during the demo.
+
+Settings (see `.env.example`): `DEMO_MODE` (1 = fixture source + seeded demo reports, 0 = twitterapi.io, needs `TWITTERAPI_IO_KEY`), `EDUHUB_FAKE_AI`, `FRONTEND_ORIGIN` (comma-separated), `DATABASE_PATH` (default `data/eduhub.sqlite3`), `FIXTURES_DIR` (default `src/backend/fixtures`).
+
+Real snapshots for the AI team's evaluation live in `src/backend/snapshots/` (not seeded in `DEMO_MODE`).
+
+## Deploying on Render
+
+`render.yaml` (repo root) defines one Python web service, `eduhub-api`: it installs the three packages, runs a single uvicorn process on `$PORT`, uses `/health` as the health check and redeploys on every push to `dev`. Render's default Python is 3.14, pinned with `PYTHON_VERSION`.
+
+First time:
+1. Render dashboard → **New → Blueprint** → pick this repo. Render reads `render.yaml` from the default branch, so push it to `main` too, or choose `dev` when it asks.
+2. Fill in the secrets it asks for (`sync: false`): `TWITTERAPI_IO_KEY`, `OPENROUTER_API_KEY`, and `FRONTEND_ORIGIN` (the Vercel URL, comma-separated if more than one; it can be updated later).
+3. When it's live, set the front's `NEXT_PUBLIC_API_URL` to `https://<service>.onrender.com`.
+
+Variables set in Render are real process env vars, so `eduhub_ai` sees `OPENROUTER_API_KEY` and `AI_*` without `--env-file`.
+
+Free plan caveats:
+- The service sleeps after 15 minutes without traffic and takes about a minute to wake up. **Open `/health` a couple of minutes before the pitch.**
+- The filesystem is ephemeral: the SQLite file (jobs and reports) is lost on every redeploy, restart or sleep. Reports must be re-run after a wake-up.
+- Emergency switches (dashboard → Environment, then save; Render redeploys): `DEMO_MODE=1` serves the saved snapshots and reports if X or twitterapi.io fail; `EDUHUB_FAKE_AI=1` uses the fakes if OpenRouter fails.

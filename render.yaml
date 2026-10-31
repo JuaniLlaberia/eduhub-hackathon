@@ -1,0 +1,28 @@
+# Render Blueprint: the Python service (backend + eduhub_ai). Owner: back team. Setup: docs/teams/backend.md.
+# Secrets use sync: false (Render asks for them when the Blueprint is created; never commit them).
+services:
+  - type: web
+    name: eduhub-api
+    runtime: python
+    plan: free
+    branch: dev
+    autoDeployTrigger: commit
+    buildCommand: pip install --upgrade pip && pip install -e src/shared -e src/ai -e src/backend
+    # One process only: analysis jobs run in-process (asyncio) and share the SQLite store.
+    startCommand: uvicorn eduhub_backend.app:main --factory --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.14.8
+      - key: EDUHUB_FAKE_AI
+        value: "0"
+      - key: DEMO_MODE
+        value: "0"
+      - key: DATABASE_PATH
+        value: data/eduhub.sqlite3
+      - key: TWITTERAPI_IO_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        sync: false

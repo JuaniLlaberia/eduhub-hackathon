@@ -1,0 +1,2 @@
+# Keep LF in every working copy, Windows included: approve_tests.py and check_approved_tests.py hash raw bytes.
+* text=auto eol=lf

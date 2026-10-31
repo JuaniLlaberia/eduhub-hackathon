@@ -1,0 +1,2831 @@
+{
+  "id": "a90b06de-df83-5b86-8885-9fc9e570a769",
+  "profile": {
+    "platform": "x",
+    "handle": "demo_finanzas",
+    "display_name": "Cami (demo) · Finanzas sin vueltas",
+    "bio": "Cuenta ficticia de ejemplo. Finanzas personales para gente que cobra en pesos 💸",
+    "followers_count": 18400,
+    "following_count": 612,
+    "posts_count": 2140,
+    "verified": false,
+    "avatar_url": null,
+    "created_at": "2021-03-14T15:00:00Z"
+  },
+  "generated_at": "2026-10-30T12:01:00Z",
+  "kpis": {
+    "post_count": 40,
+    "period_start": "2026-08-22T00:00:00Z",
+    "period_end": "2026-10-28T16:30:00Z",
+    "posts_per_week": 4.136657433056325,
+    "avg_impressions": 3572.975,
+    "median_impressions": 3386.0,
+    "rates": {
+      "engagement_rate": 0.049307649787641954,
+      "save_rate": 0.0074307824711899746,
+      "share_rate": 0.005457636843246874,
+      "reply_rate": 0.005289709555762355,
+      "like_rate": 0.031129520917442748,
+      "passive_rate": 0.9506923502123581
+    }
+  },
+  "posts": [
+    {
+      "post": {
+        "id": "1980000000000308841",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Error de novato con la tarjeta: confundir límite de compra con plata disponible. #tarjetas",
+        "created_at": "2026-10-28T16:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000308841",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1729,
+          "likes": 18,
+          "reposts": 3,
+          "quotes": 0,
+          "replies": 2,
+          "bookmarks": 4,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 90,
+        "word_count": 14,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.015615962984384037,
+        "save_rate": 0.002313475997686524,
+        "share_rate": 0.001735106998264893,
+        "reply_rate": 0.001156737998843262,
+        "like_rate": 0.010410641989589358,
+        "passive_rate": 0.9843840370156159
+      },
+      "score": 0.42269315653302847,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000300922",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Primer sueldo: la guía que me hubiera gustado leer a los 20. #sueldo",
+        "created_at": "2026-10-27T00:05:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000300922",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4876,
+          "likes": 140,
+          "reposts": 23,
+          "quotes": 4,
+          "replies": 19,
+          "bookmarks": 31,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 68,
+        "word_count": 13,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 0,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.04450369155045119,
+        "save_rate": 0.006357670221493027,
+        "share_rate": 0.005537325676784249,
+        "reply_rate": 0.003896636587366694,
+        "like_rate": 0.02871205906480722,
+        "passive_rate": 0.9554963084495488
+      },
+      "score": 1.2046266937007912,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000293003",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Interés compuesto explicado con un mate: un ejemplo simple que te va a cambiar la cabeza. #inversiones",
+        "created_at": "2026-10-25T18:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000293003",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1791,
+          "likes": 18,
+          "reposts": 3,
+          "quotes": 0,
+          "replies": 2,
+          "bookmarks": 4,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 102,
+        "word_count": 17,
+        "length_bucket": "medium",
+        "hour_local": 15,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.01507537688442211,
+        "save_rate": 0.002233389168062535,
+        "share_rate": 0.0016750418760469012,
+        "reply_rate": 0.0011166945840312675,
+        "like_rate": 0.010050251256281407,
+        "passive_rate": 0.9849246231155779
+      },
+      "score": 0.40806056261619555,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000285084",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¡Llegué a mi primer fondo de emergencia completo! Les cuento cómo lo hice en un hilo 🧵 #ahorro",
+        "created_at": "2026-10-23T11:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000285084",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": "1980000000000285084",
+        "metrics": {
+          "impressions": 3942,
+          "likes": 123,
+          "reposts": 15,
+          "quotes": 3,
+          "replies": 13,
+          "bookmarks": 33,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 94,
+        "word_count": 18,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 4,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": true,
+        "topic": "ahorro",
+        "tone": "entusiasta",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.04743784880771182,
+        "save_rate": 0.00837138508371385,
+        "share_rate": 0.0045662100456621,
+        "reply_rate": 0.003297818366311517,
+        "like_rate": 0.03120243531202435,
+        "passive_rate": 0.9525621511922882
+      },
+      "score": 1.2840485131605348,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000277165",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Infografía: cómo armar tu primer presupuesto si cobrás en negro o por proyecto. #presupuesto",
+        "created_at": "2026-10-22T00:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000277165",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 7089,
+          "likes": 450,
+          "reposts": 57,
+          "quotes": 11,
+          "replies": 48,
+          "bookmarks": 123,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 92,
+        "word_count": 14,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 2,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.09719283396811962,
+        "save_rate": 0.017350825222175202,
+        "share_rate": 0.009592326139088728,
+        "reply_rate": 0.006771053745239103,
+        "like_rate": 0.06347862886161659,
+        "passive_rate": 0.9028071660318804
+      },
+      "score": 2.630817313249127,
+      "explanation": "Rindió 2,6x tu promedio: salió en uno de tus mejores horarios, tema 'presupuesto', formato 'foto'."
+    },
+    {
+      "post": {
+        "id": "1980000000000269246",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Fecha de cierre y vencimiento: el truco para ganar casi 50 días de financiación. #tarjetas",
+        "created_at": "2026-10-20T16:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000269246",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1608,
+          "likes": 16,
+          "reposts": 2,
+          "quotes": 0,
+          "replies": 2,
+          "bookmarks": 3,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 90,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 1,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.014303482587064677,
+        "save_rate": 0.0018656716417910447,
+        "share_rate": 0.0012437810945273632,
+        "reply_rate": 0.0012437810945273632,
+        "like_rate": 0.009950248756218905,
+        "passive_rate": 0.9856965174129353
+      },
+      "score": 0.3871669144059551,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000261327",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Aumento de sueldo: subí el ahorro antes de subir el estilo de vida. #sueldo",
+        "created_at": "2026-10-19T00:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000261327",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3374,
+          "likes": 68,
+          "reposts": 11,
+          "quotes": 2,
+          "replies": 9,
+          "bookmarks": 15,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 75,
+        "word_count": 14,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.03112033195020747,
+        "save_rate": 0.004445761707172495,
+        "share_rate": 0.0038529934795494963,
+        "reply_rate": 0.0026674570243034974,
+        "like_rate": 0.02015411973918198,
+        "passive_rate": 0.9688796680497925
+      },
+      "score": 0.842365684238827,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000253408",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "La mejor inversión del año fue un curso de finanzas de 10 mil pesos. En serio. #inversiones",
+        "created_at": "2026-10-16T18:12:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000253408",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 2244,
+          "likes": 35,
+          "reposts": 5,
+          "quotes": 1,
+          "replies": 4,
+          "bookmarks": 7,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 91,
+        "word_count": 17,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 4,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.023172905525846704,
+        "save_rate": 0.0031194295900178253,
+        "share_rate": 0.00267379679144385,
+        "reply_rate": 0.0017825311942959,
+        "like_rate": 0.015597147950089126,
+        "passive_rate": 0.9768270944741533
+      },
+      "score": 0.6272446081331539,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000245489",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Ahorro automático: programá la transferencia para el día de cobro y olvidate. #ahorro",
+        "created_at": "2026-10-14T11:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000245489",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4800,
+          "likes": 133,
+          "reposts": 22,
+          "quotes": 4,
+          "replies": 18,
+          "bookmarks": 29,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 85,
+        "word_count": 13,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "ahorro",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.042916666666666665,
+        "save_rate": 0.0060416666666666665,
+        "share_rate": 0.005416666666666667,
+        "reply_rate": 0.00375,
+        "like_rate": 0.027708333333333335,
+        "passive_rate": 0.9570833333333333
+      },
+      "score": 1.161669076658911,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000237570",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "La regla de las 48 horas: antes de cualquier compra no planificada, esperá dos días. Te sorprende. #presupuesto",
+        "created_at": "2026-10-13T00:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000237570",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 6349,
+          "likes": 306,
+          "reposts": 39,
+          "quotes": 7,
+          "replies": 32,
+          "bookmarks": 83,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 111,
+        "word_count": 18,
+        "length_bucket": "medium",
+        "hour_local": 21,
+        "weekday": 0,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.07355489053394235,
+        "save_rate": 0.013072924870058277,
+        "share_rate": 0.00724523547015278,
+        "reply_rate": 0.005040163805323673,
+        "like_rate": 0.04819656638840762,
+        "passive_rate": 0.9264451094660576
+      },
+      "score": 1.9909850509587284,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000229651",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Tarjeta de débito vs. crédito para el día a día. #tarjetas",
+        "created_at": "2026-10-11T16:05:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000229651",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1021,
+          "likes": 7,
+          "reposts": 1,
+          "quotes": 0,
+          "replies": 1,
+          "bookmarks": 1,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 58,
+        "word_count": 11,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.009794319294809012,
+        "save_rate": 0.0009794319294809011,
+        "share_rate": 0.0009794319294809011,
+        "reply_rate": 0.0009794319294809011,
+        "like_rate": 0.0068560235063663075,
+        "passive_rate": 0.990205680705191
+      },
+      "score": 0.26511280431153417,
+      "explanation": "Rindió por debajo de tu promedio (0,3x): tema 'tarjetas', formato 'solo texto'."
+    },
+    {
+      "post": {
+        "id": "1980000000000221732",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¿Cuánto tiempo te dura el sueldo? Encuesta honesta 👇 #sueldo",
+        "created_at": "2026-10-10T00:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000221732",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4057,
+          "likes": 110,
+          "reposts": 18,
+          "quotes": 3,
+          "replies": 46,
+          "bookmarks": 24,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 60,
+        "word_count": 10,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 4,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": true,
+        "has_emoji": true,
+        "topic": "sueldo",
+        "tone": "conversacional",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.049543998028099584,
+        "save_rate": 0.005915701257086517,
+        "share_rate": 0.0051762385999507025,
+        "reply_rate": 0.011338427409415824,
+        "like_rate": 0.027113630761646537,
+        "passive_rate": 0.9504560019719004
+      },
+      "score": 1.3410577967369326,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000213813",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Hilo: cómo leer el rendimiento de una inversión sin marearte con los porcentajes 🧵 #inversiones",
+        "created_at": "2026-10-07T18:12:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000213813",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": "1980000000000213813",
+        "metrics": {
+          "impressions": 2202,
+          "likes": 30,
+          "reposts": 5,
+          "quotes": 1,
+          "replies": 4,
+          "bookmarks": 6,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 95,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": true,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.02089009990917348,
+        "save_rate": 0.0027247956403269754,
+        "share_rate": 0.0027247956403269754,
+        "reply_rate": 0.0018165304268846503,
+        "like_rate": 0.013623978201634877,
+        "passive_rate": 0.9791099000908265
+      },
+      "score": 0.5654535861623757,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000205894",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "5 gastos hormiga que me comían 30 mil pesos por mes y cómo los corté 🐜 #ahorro",
+        "created_at": "2026-10-06T11:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000205894",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3316,
+          "likes": 73,
+          "reposts": 12,
+          "quotes": 2,
+          "replies": 10,
+          "bookmarks": 16,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 78,
+        "word_count": 17,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 1,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": true,
+        "topic": "ahorro",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.03407720144752714,
+        "save_rate": 0.0048250904704463205,
+        "share_rate": 0.004221954161640531,
+        "reply_rate": 0.0030156815440289505,
+        "like_rate": 0.02201447527141134,
+        "passive_rate": 0.9659227985524729
+      },
+      "score": 0.9224022790058695,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000197975",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Checklist de fin de mes: revisar gastos hormiga, suscripciones que no usás y cuotas que vencen 🧾 #presupuesto",
+        "created_at": "2026-10-05T00:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000197975",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 6956,
+          "likes": 277,
+          "reposts": 46,
+          "quotes": 9,
+          "replies": 38,
+          "bookmarks": 61,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 109,
+        "word_count": 18,
+        "length_bucket": "medium",
+        "hour_local": 21,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": true,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.061960897067280044,
+        "save_rate": 0.008769407705577919,
+        "share_rate": 0.007906843013225992,
+        "reply_rate": 0.005462909718228867,
+        "like_rate": 0.03982173663024727,
+        "passive_rate": 0.93803910293272
+      },
+      "score": 1.677158634992739,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000190056",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Cómo salí de la deuda de la tarjeta en 8 meses, paso a paso. #tarjetas",
+        "created_at": "2026-10-02T16:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000190056",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1459,
+          "likes": 18,
+          "reposts": 2,
+          "quotes": 0,
+          "replies": 1,
+          "bookmarks": 5,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 70,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 4,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.01782042494859493,
+        "save_rate": 0.003427004797806717,
+        "share_rate": 0.0013708019191226869,
+        "reply_rate": 0.0006854009595613434,
+        "like_rate": 0.01233721727210418,
+        "passive_rate": 0.9821795750514051
+      },
+      "score": 0.4823635711620279,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000182137",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Si tu sueldo aumenta y tu ahorro no, el problema no es el sueldo. #sueldo",
+        "created_at": "2026-10-01T00:05:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000182137",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3398,
+          "likes": 81,
+          "reposts": 13,
+          "quotes": 2,
+          "replies": 11,
+          "bookmarks": 18,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 73,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.036786344908769864,
+        "save_rate": 0.00529723366686286,
+        "share_rate": 0.0044143613890523835,
+        "reply_rate": 0.003237198351971748,
+        "like_rate": 0.023837551500882872,
+        "passive_rate": 0.9632136550912301
+      },
+      "score": 0.9957334211377148,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000174218",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Diversificar no es tener 20 activos. Es no depender de uno solo. #inversiones",
+        "created_at": "2026-09-28T18:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000174218",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 2202,
+          "likes": 32,
+          "reposts": 5,
+          "quotes": 1,
+          "replies": 4,
+          "bookmarks": 7,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 77,
+        "word_count": 13,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 0,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.022252497729336965,
+        "save_rate": 0.003178928247048138,
+        "share_rate": 0.0027247956403269754,
+        "reply_rate": 0.0018165304268846503,
+        "like_rate": 0.014532243415077202,
+        "passive_rate": 0.977747502270663
+      },
+      "score": 0.6023309939555741,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000166299",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Ahorrar en pesos vs. en dólares: lo que nadie te explica de la inflación y el plazo. #ahorro",
+        "created_at": "2026-09-27T11:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000166299",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3849,
+          "likes": 95,
+          "reposts": 15,
+          "quotes": 3,
+          "replies": 13,
+          "bookmarks": 21,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 92,
+        "word_count": 18,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "ahorro",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.03819173811379579,
+        "save_rate": 0.005455962587685113,
+        "share_rate": 0.004676539360872954,
+        "reply_rate": 0.0033775006495193557,
+        "like_rate": 0.024681735515718367,
+        "passive_rate": 0.9618082618862042
+      },
+      "score": 1.0337746287530587,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000158380",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Si no sabés a dónde se va tu sueldo, no es falta de plata: es falta de registro. #presupuesto",
+        "created_at": "2026-09-26T00:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000158380",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 5238,
+          "likes": 201,
+          "reposts": 33,
+          "quotes": 6,
+          "replies": 27,
+          "bookmarks": 44,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 93,
+        "word_count": 19,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 4,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.05937380679648721,
+        "save_rate": 0.008400152730049638,
+        "share_rate": 0.0074455899198167235,
+        "reply_rate": 0.005154639175257732,
+        "like_rate": 0.03837342497136312,
+        "passive_rate": 0.9406261932035128
+      },
+      "score": 1.6071312307339778,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000150461",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Resumen de tarjeta: las 4 líneas que tenés que mirar siempre. #tarjetas",
+        "created_at": "2026-09-23T16:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000150461",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1544,
+          "likes": 14,
+          "reposts": 2,
+          "quotes": 0,
+          "replies": 1,
+          "bookmarks": 3,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 71,
+        "word_count": 12,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.012953367875647668,
+        "save_rate": 0.0019430051813471502,
+        "share_rate": 0.0012953367875647669,
+        "reply_rate": 0.0006476683937823834,
+        "like_rate": 0.009067357512953367,
+        "passive_rate": 0.9870466321243523
+      },
+      "score": 0.3506219860130523,
+      "explanation": "Rindió por debajo de tu promedio (0,4x): tema 'tarjetas', formato 'solo texto'."
+    },
+    {
+      "post": {
+        "id": "1980000000000142542",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Freelance y cobrás en dólares: tres cosas que tenés que ordenar sí o sí. #sueldo",
+        "created_at": "2026-09-23T00:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000142542",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3285,
+          "likes": 93,
+          "reposts": 12,
+          "quotes": 2,
+          "replies": 10,
+          "bookmarks": 25,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 80,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 1,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.04322678843226788,
+        "save_rate": 0.0076103500761035,
+        "share_rate": 0.00426179604261796,
+        "reply_rate": 0.0030441400304414,
+        "like_rate": 0.028310502283105023,
+        "passive_rate": 0.9567732115677321
+      },
+      "score": 1.1700634579815783,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000134623",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Qué es un FCI money market y por qué lo uso para la plata del mes. #inversiones",
+        "created_at": "2026-09-20T18:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000134623",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1961,
+          "likes": 25,
+          "reposts": 4,
+          "quotes": 0,
+          "replies": 3,
+          "bookmarks": 5,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 79,
+        "word_count": 17,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.018867924528301886,
+        "save_rate": 0.0025497195308516064,
+        "share_rate": 0.002039775624681285,
+        "reply_rate": 0.0015298317185109638,
+        "like_rate": 0.012748597654258032,
+        "passive_rate": 0.9811320754716981
+      },
+      "score": 0.5107173079284459,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000126704",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Mi truco para ahorrar: una cuenta separada que no veo en la app del banco. #ahorro",
+        "created_at": "2026-09-18T11:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000126704",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4016,
+          "likes": 96,
+          "reposts": 16,
+          "quotes": 3,
+          "replies": 13,
+          "bookmarks": 21,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 82,
+        "word_count": 16,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 4,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "ahorro",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.03710159362549801,
+        "save_rate": 0.005229083665338645,
+        "share_rate": 0.0047310756972111555,
+        "reply_rate": 0.0032370517928286854,
+        "like_rate": 0.02390438247011952,
+        "passive_rate": 0.962898406374502
+      },
+      "score": 1.0042665788622855,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000118785",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¿Llevás un presupuesto mensual? Contame qué app o método usás 👇 #presupuesto",
+        "created_at": "2026-09-17T00:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000118785",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 7785,
+          "likes": 388,
+          "reposts": 64,
+          "quotes": 12,
+          "replies": 162,
+          "bookmarks": 86,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 76,
+        "word_count": 12,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": true,
+        "has_emoji": true,
+        "topic": "presupuesto",
+        "tone": "conversacional",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.09145793192035967,
+        "save_rate": 0.011046885035324342,
+        "share_rate": 0.009762363519588953,
+        "reply_rate": 0.020809248554913295,
+        "like_rate": 0.04983943481053307,
+        "passive_rate": 0.9085420680796403
+      },
+      "score": 2.4755848852906666,
+      "explanation": "Rindió 2,5x tu promedio: salió en uno de tus mejores horarios, tema 'presupuesto', formato 'solo texto'."
+    },
+    {
+      "post": {
+        "id": "1980000000000110866",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¿Usás la tarjeta de crédito o la evitás? Debate. #tarjetas",
+        "created_at": "2026-09-14T16:12:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000110866",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1299,
+          "likes": 11,
+          "reposts": 1,
+          "quotes": 0,
+          "replies": 4,
+          "bookmarks": 2,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 58,
+        "word_count": 10,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 0,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": true,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "conversacional",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.013856812933025405,
+        "save_rate": 0.001539645881447267,
+        "share_rate": 0.0007698229407236335,
+        "reply_rate": 0.003079291762894534,
+        "like_rate": 0.008468052347959968,
+        "passive_rate": 0.9861431870669746
+      },
+      "score": 0.3750764524740089,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000102947",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Recibo de sueldo: qué es cada descuento y por qué te importa. #sueldo",
+        "created_at": "2026-09-14T00:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000102947",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3230,
+          "likes": 61,
+          "reposts": 10,
+          "quotes": 2,
+          "replies": 8,
+          "bookmarks": 13,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 69,
+        "word_count": 13,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.02910216718266254,
+        "save_rate": 0.004024767801857585,
+        "share_rate": 0.0037151702786377707,
+        "reply_rate": 0.002476780185758514,
+        "like_rate": 0.01888544891640867,
+        "passive_rate": 0.9708978328173374
+      },
+      "score": 0.7877379653558879,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000095028",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Antes de invertir: fondo de emergencia, deudas al día y objetivos claros. En ese orden. #inversiones",
+        "created_at": "2026-09-11T18:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000095028",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1849,
+          "likes": 27,
+          "reposts": 3,
+          "quotes": 0,
+          "replies": 2,
+          "bookmarks": 7,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 100,
+        "word_count": 16,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 4,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.021092482422931314,
+        "save_rate": 0.0037858301784748512,
+        "share_rate": 0.0016224986479177934,
+        "reply_rate": 0.001081665765278529,
+        "like_rate": 0.014602487831260141,
+        "passive_rate": 0.9789075175770687
+      },
+      "score": 0.57093167955008,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000087109",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Fondo de emergencia: 3 a 6 meses de gastos fijos. Empezá con uno, aunque tardes. #ahorro",
+        "created_at": "2026-09-09T11:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000087109",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3640,
+          "likes": 92,
+          "reposts": 15,
+          "quotes": 3,
+          "replies": 12,
+          "bookmarks": 20,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 88,
+        "word_count": 16,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "ahorro",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.03901098901098901,
+        "save_rate": 0.005494505494505495,
+        "share_rate": 0.004945054945054945,
+        "reply_rate": 0.0032967032967032967,
+        "like_rate": 0.025274725274725275,
+        "passive_rate": 0.960989010989011
+      },
+      "score": 1.0559501262278803,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000079190",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Presupuesto en 3 pasos: anotá todo una semana, separá fijos de variables, recortá lo que no te suma. #presupuesto",
+        "created_at": "2026-09-09T00:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000079190",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 7456,
+          "likes": 339,
+          "reposts": 56,
+          "quotes": 11,
+          "replies": 47,
+          "bookmarks": 75,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 113,
+        "word_count": 19,
+        "length_bucket": "medium",
+        "hour_local": 21,
+        "weekday": 1,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.07081545064377683,
+        "save_rate": 0.010059012875536481,
+        "share_rate": 0.008986051502145922,
+        "reply_rate": 0.006303648068669528,
+        "like_rate": 0.045466738197424895,
+        "passive_rate": 0.9291845493562232
+      },
+      "score": 1.9168338445640603,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000071271",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Cuotas sin interés: cuándo convienen y cuándo son una trampa. #tarjetas",
+        "created_at": "2026-09-06T16:12:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000071271",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1543,
+          "likes": 13,
+          "reposts": 2,
+          "quotes": 0,
+          "replies": 1,
+          "bookmarks": 3,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 71,
+        "word_count": 11,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.012313674659753726,
+        "save_rate": 0.0019442644199611147,
+        "share_rate": 0.0012961762799740765,
+        "reply_rate": 0.0006480881399870382,
+        "like_rate": 0.008425145819831496,
+        "passive_rate": 0.9876863253402463
+      },
+      "score": 0.33330675896561573,
+      "explanation": "Rindió por debajo de tu promedio (0,3x): tema 'tarjetas', formato 'solo texto'."
+    },
+    {
+      "post": {
+        "id": "1980000000000063352",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¿Negociaste tu sueldo alguna vez? Cuento cómo me fue la primera vez. #sueldo",
+        "created_at": "2026-09-05T00:12:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000063352",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4022,
+          "likes": 91,
+          "reposts": 15,
+          "quotes": 3,
+          "replies": 38,
+          "bookmarks": 20,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 76,
+        "word_count": 13,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 4,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": true,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "conversacional",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.04152163102933864,
+        "save_rate": 0.004972650422675286,
+        "share_rate": 0.0044753853804077575,
+        "reply_rate": 0.009448035803083043,
+        "like_rate": 0.022625559423172553,
+        "passive_rate": 0.9584783689706614
+      },
+      "score": 1.1239082278654091,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000055433",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¿Empezaste a invertir este año? ¿En qué? Leo todo 👇 #inversiones",
+        "created_at": "2026-09-02T18:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000055433",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 2025,
+          "likes": 29,
+          "reposts": 4,
+          "quotes": 0,
+          "replies": 12,
+          "bookmarks": 6,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 64,
+        "word_count": 11,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": true,
+        "has_emoji": true,
+        "topic": "inversiones",
+        "tone": "conversacional",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.025185185185185185,
+        "save_rate": 0.002962962962962963,
+        "share_rate": 0.0019753086419753087,
+        "reply_rate": 0.005925925925925926,
+        "like_rate": 0.014320987654320988,
+        "passive_rate": 0.9748148148148148
+      },
+      "score": 0.6817130288052294,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000047514",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "¿Cuánto de tu sueldo lográs ahorrar? Sin juzgar, quiero saber la realidad 👀 #ahorro",
+        "created_at": "2026-08-31T11:12:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000047514",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4211,
+          "likes": 152,
+          "reposts": 19,
+          "quotes": 3,
+          "replies": 48,
+          "bookmarks": 41,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 83,
+        "word_count": 14,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 0,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": true,
+        "has_emoji": true,
+        "topic": "ahorro",
+        "tone": "conversacional",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.06245547375920209,
+        "save_rate": 0.009736404654476371,
+        "share_rate": 0.005224412253621468,
+        "reply_rate": 0.01139871764426502,
+        "like_rate": 0.036095939206839234,
+        "passive_rate": 0.9375445262407979
+      },
+      "score": 1.6905458454558557,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000039595",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Mi planilla de presupuesto mensual, gratis. Guardala y usala el día que cobrás 📊 #presupuesto",
+        "created_at": "2026-08-31T00:05:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000039595",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 3942,
+          "likes": 150,
+          "reposts": 19,
+          "quotes": 3,
+          "replies": 16,
+          "bookmarks": 41,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 93,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 6,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": true,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.05809233891425672,
+        "save_rate": 0.010400811770674784,
+        "share_rate": 0.005580923389142567,
+        "reply_rate": 0.004058853373921867,
+        "like_rate": 0.0380517503805175,
+        "passive_rate": 0.9419076610857433
+      },
+      "score": 1.5724444359024732,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000031676",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Pagar el mínimo de la tarjeta es la deuda más cara que podés tener. #tarjetas",
+        "created_at": "2026-08-28T16:30:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000031676",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "tarjetas"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 1589,
+          "likes": 16,
+          "reposts": 2,
+          "quotes": 0,
+          "replies": 2,
+          "bookmarks": 3,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 77,
+        "word_count": 15,
+        "length_bucket": "short",
+        "hour_local": 13,
+        "weekday": 4,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "tarjetas",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.0144745122718691,
+        "save_rate": 0.0018879798615481435,
+        "share_rate": 0.0012586532410320957,
+        "reply_rate": 0.0012586532410320957,
+        "like_rate": 0.010069225928256766,
+        "passive_rate": 0.9855254877281309
+      },
+      "score": 0.3917963488765108,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000023757",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Cobraste el aguinaldo. Antes de gastarlo, pensá en estos 3 destinos. #sueldo",
+        "created_at": "2026-08-27T00:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000023757",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "sueldo"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4587,
+          "likes": 126,
+          "reposts": 21,
+          "quotes": 4,
+          "replies": 17,
+          "bookmarks": 28,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 76,
+        "word_count": 12,
+        "length_bucket": "short",
+        "hour_local": 21,
+        "weekday": 2,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "sueldo",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": true
+      },
+      "rates": {
+        "engagement_rate": 0.04272945280139525,
+        "save_rate": 0.006104207543056464,
+        "share_rate": 0.0054501853063004145,
+        "reply_rate": 0.003706126008284282,
+        "like_rate": 0.027468933943754086,
+        "passive_rate": 0.9572705471986047
+      },
+      "score": 1.1566015685111615,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000015838",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Plazo fijo, FCI o cuenta remunerada: diferencias explicadas en 1 minuto. #inversiones",
+        "created_at": "2026-08-25T18:45:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000015838",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "inversiones"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 2296,
+          "likes": 31,
+          "reposts": 5,
+          "quotes": 1,
+          "replies": 4,
+          "bookmarks": 7,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 85,
+        "word_count": 12,
+        "length_bucket": "short",
+        "hour_local": 15,
+        "weekday": 1,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "inversiones",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.020905923344947737,
+        "save_rate": 0.003048780487804878,
+        "share_rate": 0.002613240418118467,
+        "reply_rate": 0.0017421602787456446,
+        "like_rate": 0.013501742160278746,
+        "passive_rate": 0.9790940766550522
+      },
+      "score": 0.5658818951959785,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000007919",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "Ahorrar no es lo que sobra a fin de mes. Es lo primero que separás cuando cobrás. #ahorro",
+        "created_at": "2026-08-23T11:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000007919",
+        "lang": "es",
+        "kind": "original",
+        "media": [],
+        "has_link": false,
+        "hashtags": [
+          "ahorro"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 4162,
+          "likes": 101,
+          "reposts": 16,
+          "quotes": 3,
+          "replies": 14,
+          "bookmarks": 22,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 89,
+        "word_count": 18,
+        "length_bucket": "short",
+        "hour_local": 8,
+        "weekday": 6,
+        "media_type": null,
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "ahorro",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.03748197981739548,
+        "save_rate": 0.005285920230658337,
+        "share_rate": 0.004565112926477655,
+        "reply_rate": 0.003363767419509851,
+        "like_rate": 0.02426717924074964,
+        "passive_rate": 0.9625180201826045
+      },
+      "score": 1.0145628788929342,
+      "explanation": null
+    },
+    {
+      "post": {
+        "id": "1980000000000000000",
+        "platform": "x",
+        "author_handle": "demo_finanzas",
+        "text": "El método 50/30/20 adaptado a Argentina: 50% fijos, 30% vida, 20% a ahorro en lo que no se licúa. #presupuesto",
+        "created_at": "2026-08-22T00:00:00Z",
+        "url": "https://x.com/demo_finanzas/status/1980000000000000000",
+        "lang": "es",
+        "kind": "original",
+        "media": [
+          "photo"
+        ],
+        "has_link": false,
+        "hashtags": [
+          "presupuesto"
+        ],
+        "mentions": [],
+        "conversation_id": null,
+        "metrics": {
+          "impressions": 6977,
+          "likes": 363,
+          "reposts": 46,
+          "quotes": 9,
+          "replies": 38,
+          "bookmarks": 99,
+          "detail_expands": null,
+          "profile_clicks": null,
+          "link_clicks": null
+        }
+      },
+      "features": {
+        "char_count": 110,
+        "word_count": 20,
+        "length_bucket": "medium",
+        "hour_local": 21,
+        "weekday": 4,
+        "media_type": "photo",
+        "has_link": false,
+        "hashtag_count": 1,
+        "mention_count": 0,
+        "is_question": false,
+        "has_emoji": false,
+        "topic": "presupuesto",
+        "tone": "informativo",
+        "sentiment": null,
+        "hook": null,
+        "cta": null,
+        "matches_trend": false
+      },
+      "rates": {
+        "engagement_rate": 0.0795470832736133,
+        "save_rate": 0.014189479719076968,
+        "share_rate": 0.007883044288376093,
+        "reply_rate": 0.005446466962878028,
+        "like_rate": 0.05202809230328221,
+        "passive_rate": 0.9204529167263867
+      },
+      "score": 2.153181827822164,
+      "explanation": "Rindió 2,2x tu promedio: salió en uno de tus mejores horarios, tema 'presupuesto', formato 'foto'."
+    }
+  ],
+  "heatmap": [
+    {
+      "weekday": 0,
+      "hour": 8,
+      "post_count": 1,
+      "avg_score": 1.6905458454558557
+    },
+    {
+      "weekday": 0,
+      "hour": 13,
+      "post_count": 1,
+      "avg_score": 0.3750764524740089
+    },
+    {
+      "weekday": 0,
+      "hour": 15,
+      "post_count": 1,
+      "avg_score": 0.6023309939555741
+    },
+    {
+      "weekday": 0,
+      "hour": 21,
+      "post_count": 2,
+      "avg_score": 1.5978058723297597
+    },
+    {
+      "weekday": 1,
+      "hour": 8,
+      "post_count": 1,
+      "avg_score": 0.9224022790058695
+    },
+    {
+      "weekday": 1,
+      "hour": 13,
+      "post_count": 1,
+      "avg_score": 0.3871669144059551
+    },
+    {
+      "weekday": 1,
+      "hour": 15,
+      "post_count": 1,
+      "avg_score": 0.5658818951959785
+    },
+    {
+      "weekday": 1,
+      "hour": 21,
+      "post_count": 2,
+      "avg_score": 1.5434486512728194
+    },
+    {
+      "weekday": 2,
+      "hour": 8,
+      "post_count": 2,
+      "avg_score": 1.1088096014433957
+    },
+    {
+      "weekday": 2,
+      "hour": 13,
+      "post_count": 2,
+      "avg_score": 0.38665757127304035
+    },
+    {
+      "weekday": 2,
+      "hour": 15,
+      "post_count": 2,
+      "avg_score": 0.6235833074838026
+    },
+    {
+      "weekday": 2,
+      "hour": 21,
+      "post_count": 4,
+      "avg_score": 1.8146842970471675
+    },
+    {
+      "weekday": 4,
+      "hour": 8,
+      "post_count": 2,
+      "avg_score": 1.1441575460114102
+    },
+    {
+      "weekday": 4,
+      "hour": 13,
+      "post_count": 2,
+      "avg_score": 0.43707996001926935
+    },
+    {
+      "weekday": 4,
+      "hour": 15,
+      "post_count": 2,
+      "avg_score": 0.5990881438416169
+    },
+    {
+      "weekday": 4,
+      "hour": 21,
+      "post_count": 4,
+      "avg_score": 1.5563197707896208
+    },
+    {
+      "weekday": 6,
+      "hour": 8,
+      "post_count": 2,
+      "avg_score": 1.0241687538229964
+    },
+    {
+      "weekday": 6,
+      "hour": 13,
+      "post_count": 2,
+      "avg_score": 0.2992097816385749
+    },
+    {
+      "weekday": 6,
+      "hour": 15,
+      "post_count": 2,
+      "avg_score": 0.4593889352723207
+    },
+    {
+      "weekday": 6,
+      "hour": 21,
+      "post_count": 4,
+      "avg_score": 1.2199266801224817
+    }
+  ],
+  "segments": [
+    {
+      "dimension": "topic",
+      "value": "presupuesto",
+      "post_count": 8,
+      "avg_score": 2.003017152939242,
+      "engagement_rate": 0.07572598084646277
+    },
+    {
+      "dimension": "topic",
+      "value": "ahorro",
+      "post_count": 8,
+      "avg_score": 1.1459024908771662,
+      "engagement_rate": 0.042679108216432865
+    },
+    {
+      "dimension": "topic",
+      "value": "sueldo",
+      "post_count": 8,
+      "avg_score": 1.077761851941038,
+      "engagement_rate": 0.04044892795744267
+    },
+    {
+      "dimension": "topic",
+      "value": "inversiones",
+      "post_count": 8,
+      "avg_score": 0.5665417077933791,
+      "engagement_rate": 0.021062160531080266
+    },
+    {
+      "dimension": "topic",
+      "value": "tarjetas",
+      "post_count": 8,
+      "avg_score": 0.37601724909271667,
+      "engagement_rate": 0.014077340569877883
+    },
+    {
+      "dimension": "media_type",
+      "value": "photo",
+      "post_count": 9,
+      "avg_score": 1.5050424105825078,
+      "engagement_rate": 0.06641434161061811
+    },
+    {
+      "dimension": "media_type",
+      "value": "text",
+      "post_count": 31,
+      "avg_score": 0.8970497395453473,
+      "engagement_rate": 0.04286429837404639
+    },
+    {
+      "dimension": "length_bucket",
+      "value": "medium",
+      "post_count": 5,
+      "avg_score": 1.6292439841907775,
+      "engagement_rate": 0.06800094822039351
+    },
+    {
+      "dimension": "length_bucket",
+      "value": "short",
+      "post_count": 35,
+      "avg_score": 0.9487915342912701,
+      "engagement_rate": 0.04443954493341565
+    },
+    {
+      "dimension": "tone",
+      "value": "entusiasta",
+      "post_count": 1,
+      "avg_score": 1.2840485131605348,
+      "engagement_rate": 0.04743784880771182
+    },
+    {
+      "dimension": "tone",
+      "value": "conversacional",
+      "post_count": 6,
+      "avg_score": 1.2813143727713505,
+      "engagement_rate": 0.06034445916492158
+    },
+    {
+      "dimension": "tone",
+      "value": "informativo",
+      "post_count": 33,
+      "avg_score": 0.9812723900412029,
+      "engagement_rate": 0.04713699839069719
+    },
+    {
+      "dimension": "post_kind",
+      "value": "original",
+      "post_count": 40,
+      "avg_score": 1.0338480905287084,
+      "engagement_rate": 0.049307649787641954
+    }
+  ],
+  "best_time_slots": [
+    {
+      "weekday": 2,
+      "hour": 21,
+      "post_count": 4,
+      "avg_score": 1.8146842970471675
+    },
+    {
+      "weekday": 0,
+      "hour": 21,
+      "post_count": 2,
+      "avg_score": 1.5978058723297597
+    },
+    {
+      "weekday": 4,
+      "hour": 21,
+      "post_count": 4,
+      "avg_score": 1.5563197707896208
+    }
+  ],
+  "insights": [
+    {
+      "id": "ins-timing",
+      "category": "timing",
+      "title": "Tu mejor momento: miércoles a las 21 h",
+      "description": "Los posts publicados los miércoles a las 21 h rinden 1,8x tu post típico.",
+      "evidence": [
+        {
+          "label": "Rendimiento vs. tu promedio",
+          "value": "1,8x"
+        },
+        {
+          "label": "Posts en ese horario",
+          "value": "4"
+        }
+      ],
+      "impact": "high",
+      "confidence": 0.32,
+      "related_post_ids": [
+        "1980000000000277165",
+        "1980000000000182137",
+        "1980000000000118785",
+        "1980000000000023757"
+      ]
+    },
+    {
+      "id": "ins-topic",
+      "category": "topic",
+      "title": "El tema 'presupuesto' es el que mejor te funciona",
+      "description": "Tus posts de tema 'presupuesto' rinden 2,0x tu promedio, contra 0,4x de 'tarjetas'.",
+      "evidence": [
+        {
+          "label": "Engagement 'presupuesto'",
+          "value": "7,6%"
+        },
+        {
+          "label": "Engagement 'tarjetas'",
+          "value": "1,4%"
+        },
+        {
+          "label": "Posts analizados",
+          "value": "8"
+        }
+      ],
+      "impact": "high",
+      "confidence": 0.64,
+      "related_post_ids": [
+        "1980000000000277165",
+        "1980000000000237570",
+        "1980000000000197975",
+        "1980000000000158380",
+        "1980000000000118785",
+        "1980000000000079190",
+        "1980000000000039595",
+        "1980000000000000000"
+      ]
+    },
+    {
+      "id": "ins-media_type",
+      "category": "format",
+      "title": "El formato 'foto' es el que mejor te funciona",
+      "description": "Tus posts de formato 'foto' rinden 1,5x tu promedio, contra 0,9x de 'solo texto'.",
+      "evidence": [
+        {
+          "label": "Engagement 'foto'",
+          "value": "6,6%"
+        },
+        {
+          "label": "Engagement 'solo texto'",
+          "value": "4,3%"
+        },
+        {
+          "label": "Posts analizados",
+          "value": "9"
+        }
+      ],
+      "impact": "high",
+      "confidence": 0.72,
+      "related_post_ids": [
+        "1980000000000285084",
+        "1980000000000277165",
+        "1980000000000237570",
+        "1980000000000190056",
+        "1980000000000142542",
+        "1980000000000095028",
+        "1980000000000047514",
+        "1980000000000039595",
+        "1980000000000000000"
+      ]
+    },
+    {
+      "id": "ins-length_bucket",
+      "category": "length",
+      "title": "El largo 'medio' es el que mejor te funciona",
+      "description": "Tus posts de largo 'medio' rinden 1,6x tu promedio, contra 0,9x de 'corto'.",
+      "evidence": [
+        {
+          "label": "Engagement 'medio'",
+          "value": "6,8%"
+        },
+        {
+          "label": "Engagement 'corto'",
+          "value": "4,4%"
+        },
+        {
+          "label": "Posts analizados",
+          "value": "5"
+        }
+      ],
+      "impact": "high",
+      "confidence": 0.4,
+      "related_post_ids": [
+        "1980000000000293003",
+        "1980000000000237570",
+        "1980000000000197975",
+        "1980000000000079190",
+        "1980000000000000000"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec-1",
+      "category": "timing",
+      "action": "Programá tus próximos posts en ese horario",
+      "rationale": "Los posts publicados los miércoles a las 21 h rinden 1,8x tu post típico.",
+      "priority": 1,
+      "based_on_insight_ids": [
+        "ins-timing"
+      ]
+    },
+    {
+      "id": "rec-2",
+      "category": "topic",
+      "action": "Publicá más sobre tu tema más fuerte esta semana",
+      "rationale": "Tus posts de tema 'presupuesto' rinden 2,0x tu promedio, contra 0,4x de 'tarjetas'.",
+      "priority": 2,
+      "based_on_insight_ids": [
+        "ins-topic"
+      ]
+    },
+    {
+      "id": "rec-3",
+      "category": "format",
+      "action": "Repetí el formato que mejor te funciona",
+      "rationale": "Tus posts de formato 'foto' rinden 1,5x tu promedio, contra 0,9x de 'solo texto'.",
+      "priority": 3,
+      "based_on_insight_ids": [
+        "ins-media_type"
+      ]
+    },
+    {
+      "id": "rec-4",
+      "category": "length",
+      "action": "Ajustá el largo de tus posts al que mejor rinde",
+      "rationale": "Tus posts de largo 'medio' rinden 1,6x tu promedio, contra 0,9x de 'corto'.",
+      "priority": 4,
+      "based_on_insight_ids": [
+        "ins-length_bucket"
+      ]
+    }
+  ],
+  "summary": "Analizamos 40 posts de @demo_finanzas. Tu engagement promedio es 4,9%. Tu mejor momento: miércoles a las 21 h. El tema 'presupuesto' es el que mejor te funciona.",
+  "engine": "fake",
+  "context": {
+    "goal": "sell",
+    "goal_detail": "Llenar la próxima cohorte del curso antes de fin de mes.",
+    "offering": "Curso online de finanzas personales para gente que cobra en pesos (4 semanas).",
+    "target_audience": "Jóvenes que empiezan a trabajar y no saben cómo organizar su sueldo.",
+    "audience_filters": {
+      "age_groups": [
+        "18 a 29 años",
+        "30 a 49 años"
+      ],
+      "genders": [],
+      "provinces": []
+    },
+    "brand_voice": "Cercana, con humor y sin tecnicismos. Siempre con voseo.",
+    "avoid_topics": [
+      "política",
+      "cripto"
+    ],
+    "preferred_cta": "link"
+  }
+}

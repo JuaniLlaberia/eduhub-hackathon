@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "EduHub Creator Analytics API",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Contract C4. Generated from eduhub_shared; do not edit by hand."
   },
   "paths": {
@@ -885,6 +885,18 @@
             "description": "Which analyzer produced it, e.g. 'fake' or 'hybrid-v1'.",
             "title": "Engine",
             "type": "string"
+          },
+          "context": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CreatorContext"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "The creator brief the report was made with."
           }
         },
         "required": [
@@ -899,7 +911,8 @@
           "insights",
           "recommendations",
           "summary",
-          "engine"
+          "engine",
+          "context"
         ],
         "title": "AnalysisReport",
         "type": "object"
@@ -918,6 +931,18 @@
             "minimum": 10,
             "title": "Max Posts",
             "type": "integer"
+          },
+          "context": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CreatorContext"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional creator brief (\"el para qué\")."
           }
         },
         "required": [
@@ -1035,6 +1060,114 @@
         "title": "AudienceFilters",
         "type": "object"
       },
+      "CreatorContext": {
+        "additionalProperties": false,
+        "description": "The creator's brief (\"el para qué\"): goal, offering, audience, voice. Every field is optional, free text is\nes-AR. The AI uses it to frame and prioritize; it never changes computed numbers.\nIt travels in requests and responses, so it keeps one OpenAPI schema (no -Input/-Output split).",
+        "properties": {
+          "goal": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CreatorGoal"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          },
+          "goal_detail": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Goal Detail"
+          },
+          "offering": {
+            "anyOf": [
+              {
+                "maxLength": 500,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Product, service or campaign.",
+            "title": "Offering"
+          },
+          "target_audience": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Target Audience"
+          },
+          "audience_filters": {
+            "$ref": "#/components/schemas/AudienceFilters"
+          },
+          "brand_voice": {
+            "anyOf": [
+              {
+                "maxLength": 300,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Brand Voice"
+          },
+          "avoid_topics": {
+            "items": {
+              "maxLength": 60,
+              "type": "string"
+            },
+            "maxItems": 10,
+            "title": "Avoid Topics",
+            "type": "array"
+          },
+          "preferred_cta": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PreferredCta"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null
+          }
+        },
+        "title": "CreatorContext",
+        "type": "object"
+      },
+      "CreatorGoal": {
+        "description": "What the creator publishes for. es-AR labels live in the frontend.",
+        "enum": [
+          "sell",
+          "traffic",
+          "reach",
+          "community",
+          "launch",
+          "other"
+        ],
+        "title": "CreatorGoal",
+        "type": "string"
+      },
       "Draft": {
         "additionalProperties": false,
         "description": "A generated post draft in the creator's voice (es-AR).",
@@ -1150,6 +1283,18 @@
             "minimum": 1,
             "title": "Count",
             "type": "integer"
+          },
+          "context": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CreatorContext"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Overrides report.context for these drafts."
           }
         },
         "required": [
@@ -1991,6 +2136,19 @@
         "title": "PostRates",
         "type": "object"
       },
+      "PreferredCta": {
+        "description": "What the creator wants readers to do.",
+        "enum": [
+          "link",
+          "reply",
+          "save",
+          "share",
+          "follow",
+          "none"
+        ],
+        "title": "PreferredCta",
+        "type": "string"
+      },
       "PublishRequest": {
         "additionalProperties": false,
         "description": "Publish a text now, or schedule it when scheduled_for is set.",
@@ -2297,6 +2455,18 @@
           },
           "filters": {
             "$ref": "#/components/schemas/AudienceFilters"
+          },
+          "context": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/CreatorContext"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "description": "Optional creator brief (product, audience)."
           }
         },
         "required": [

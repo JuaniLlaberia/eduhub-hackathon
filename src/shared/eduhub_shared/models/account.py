@@ -1,6 +1,7 @@
 from enum import StrEnum
 from pydantic import AwareDatetime, Field, NonNegativeInt, PositiveInt
 from eduhub_shared.models.common import ContractModel, Handle
+from eduhub_shared.models.context import CreatorContext
 
 class Platform(StrEnum):
     """
@@ -92,3 +93,4 @@ class AccountSnapshot(ContractModel):
     trends: list[Trend] = Field(default_factory=list)
     source: str = Field(description="Data source id, e.g. 'twitterapi.io' or 'fixture'. Never branch on it.")
     collected_at: AwareDatetime
+    context: CreatorContext | None = Field(default=None, description="Creator brief sent with the analysis request.")

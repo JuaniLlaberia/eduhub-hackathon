@@ -1,0 +1,858 @@
+{
+  "id": "fa6d2597-0cad-5003-9d76-1a5490165222",
+  "personas": [
+    {
+      "id": "p-01-0",
+      "age_group": "18 a 29 años",
+      "gender": "Mujer",
+      "province": "Ciudad Autónoma de Buenos Aires",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "instagram"
+      ],
+      "traits": [
+        "estudiante",
+        "ahorra en dólares"
+      ],
+      "weight": 9200.0
+    },
+    {
+      "id": "p-02-0",
+      "age_group": "18 a 29 años",
+      "gender": "Varón",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Bajo",
+      "platforms": [
+        "x",
+        "tiktok"
+      ],
+      "traits": [
+        "primer trabajo",
+        "fan del fútbol"
+      ],
+      "weight": 12100.0
+    },
+    {
+      "id": "p-03-0",
+      "age_group": "30 a 49 años",
+      "gender": "Mujer",
+      "province": "Córdoba",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "facebook"
+      ],
+      "traits": [
+        "madre",
+        "emprendedora"
+      ],
+      "weight": 10400.0
+    },
+    {
+      "id": "p-04-0",
+      "age_group": "30 a 49 años",
+      "gender": "Varón",
+      "province": "Santa Fe",
+      "socioeconomic_level": "Alto",
+      "platforms": [
+        "x",
+        "linkedin"
+      ],
+      "traits": [
+        "profesional",
+        "invierte"
+      ],
+      "weight": 7800.0
+    },
+    {
+      "id": "p-05-0",
+      "age_group": "13 a 17 años",
+      "gender": "Mujer",
+      "province": "Mendoza",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "tiktok",
+        "instagram"
+      ],
+      "traits": [
+        "secundaria",
+        "sigue influencers"
+      ],
+      "weight": 6100.0
+    },
+    {
+      "id": "p-06-0",
+      "age_group": "50 a 64 años",
+      "gender": "Varón",
+      "province": "Tucumán",
+      "socioeconomic_level": "Bajo",
+      "platforms": [
+        "x",
+        "facebook"
+      ],
+      "traits": [
+        "comerciante",
+        "lee noticias"
+      ],
+      "weight": 5300.0
+    },
+    {
+      "id": "p-07-0",
+      "age_group": "18 a 29 años",
+      "gender": "Mujer",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Alto",
+      "platforms": [
+        "x",
+        "instagram"
+      ],
+      "traits": [
+        "freelancer",
+        "cobra en dólares"
+      ],
+      "weight": 8700.0
+    },
+    {
+      "id": "p-08-0",
+      "age_group": "30 a 49 años",
+      "gender": "Varón",
+      "province": "Ciudad Autónoma de Buenos Aires",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x"
+      ],
+      "traits": [
+        "programador",
+        "crítico"
+      ],
+      "weight": 9900.0
+    },
+    {
+      "id": "p-09-0",
+      "age_group": "65 años y mas",
+      "gender": "Mujer",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "whatsapp"
+      ],
+      "traits": [
+        "jubilada",
+        "cuida el presupuesto"
+      ],
+      "weight": 3200.0
+    },
+    {
+      "id": "p-10-0",
+      "age_group": "18 a 29 años",
+      "gender": "Varón",
+      "province": "Córdoba",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "twitch"
+      ],
+      "traits": [
+        "universitario",
+        "gamer"
+      ],
+      "weight": 8800.0
+    },
+    {
+      "id": "p-11-0",
+      "age_group": "30 a 49 años",
+      "gender": "Mujer",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Bajo",
+      "platforms": [
+        "x",
+        "tiktok"
+      ],
+      "traits": [
+        "empleada",
+        "busca ingresos extra"
+      ],
+      "weight": 11300.0
+    },
+    {
+      "id": "p-12-0",
+      "age_group": "50 a 64 años",
+      "gender": "Mujer",
+      "province": "Santa Fe",
+      "socioeconomic_level": "Alto",
+      "platforms": [
+        "x",
+        "facebook"
+      ],
+      "traits": [
+        "docente",
+        "comparte consejos"
+      ],
+      "weight": 4600.0
+    },
+    {
+      "id": "p-01-1",
+      "age_group": "18 a 29 años",
+      "gender": "Mujer",
+      "province": "Ciudad Autónoma de Buenos Aires",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "instagram"
+      ],
+      "traits": [
+        "estudiante",
+        "ahorra en dólares"
+      ],
+      "weight": 9200.0
+    },
+    {
+      "id": "p-02-1",
+      "age_group": "18 a 29 años",
+      "gender": "Varón",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Bajo",
+      "platforms": [
+        "x",
+        "tiktok"
+      ],
+      "traits": [
+        "primer trabajo",
+        "fan del fútbol"
+      ],
+      "weight": 12100.0
+    },
+    {
+      "id": "p-03-1",
+      "age_group": "30 a 49 años",
+      "gender": "Mujer",
+      "province": "Córdoba",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "facebook"
+      ],
+      "traits": [
+        "madre",
+        "emprendedora"
+      ],
+      "weight": 10400.0
+    },
+    {
+      "id": "p-04-1",
+      "age_group": "30 a 49 años",
+      "gender": "Varón",
+      "province": "Santa Fe",
+      "socioeconomic_level": "Alto",
+      "platforms": [
+        "x",
+        "linkedin"
+      ],
+      "traits": [
+        "profesional",
+        "invierte"
+      ],
+      "weight": 7800.0
+    },
+    {
+      "id": "p-05-1",
+      "age_group": "13 a 17 años",
+      "gender": "Mujer",
+      "province": "Mendoza",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "tiktok",
+        "instagram"
+      ],
+      "traits": [
+        "secundaria",
+        "sigue influencers"
+      ],
+      "weight": 6100.0
+    },
+    {
+      "id": "p-06-1",
+      "age_group": "50 a 64 años",
+      "gender": "Varón",
+      "province": "Tucumán",
+      "socioeconomic_level": "Bajo",
+      "platforms": [
+        "x",
+        "facebook"
+      ],
+      "traits": [
+        "comerciante",
+        "lee noticias"
+      ],
+      "weight": 5300.0
+    },
+    {
+      "id": "p-07-1",
+      "age_group": "18 a 29 años",
+      "gender": "Mujer",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Alto",
+      "platforms": [
+        "x",
+        "instagram"
+      ],
+      "traits": [
+        "freelancer",
+        "cobra en dólares"
+      ],
+      "weight": 8700.0
+    },
+    {
+      "id": "p-08-1",
+      "age_group": "30 a 49 años",
+      "gender": "Varón",
+      "province": "Ciudad Autónoma de Buenos Aires",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x"
+      ],
+      "traits": [
+        "programador",
+        "crítico"
+      ],
+      "weight": 9900.0
+    },
+    {
+      "id": "p-09-1",
+      "age_group": "65 años y mas",
+      "gender": "Mujer",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "whatsapp"
+      ],
+      "traits": [
+        "jubilada",
+        "cuida el presupuesto"
+      ],
+      "weight": 3200.0
+    },
+    {
+      "id": "p-10-1",
+      "age_group": "18 a 29 años",
+      "gender": "Varón",
+      "province": "Córdoba",
+      "socioeconomic_level": "Medio",
+      "platforms": [
+        "x",
+        "twitch"
+      ],
+      "traits": [
+        "universitario",
+        "gamer"
+      ],
+      "weight": 8800.0
+    },
+    {
+      "id": "p-11-1",
+      "age_group": "30 a 49 años",
+      "gender": "Mujer",
+      "province": "Buenos Aires",
+      "socioeconomic_level": "Bajo",
+      "platforms": [
+        "x",
+        "tiktok"
+      ],
+      "traits": [
+        "empleada",
+        "busca ingresos extra"
+      ],
+      "weight": 11300.0
+    },
+    {
+      "id": "p-12-1",
+      "age_group": "50 a 64 años",
+      "gender": "Mujer",
+      "province": "Santa Fe",
+      "socioeconomic_level": "Alto",
+      "platforms": [
+        "x",
+        "facebook"
+      ],
+      "traits": [
+        "docente",
+        "comparte consejos"
+      ],
+      "weight": 4600.0
+    }
+  ],
+  "reactions": [
+    {
+      "persona_id": "p-01-0",
+      "variant_index": 0,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-02-0",
+      "variant_index": 0,
+      "reaction": "reply",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-03-0",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-04-0",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-05-0",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-06-0",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-07-0",
+      "variant_index": 0,
+      "reaction": "repost",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-08-0",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-09-0",
+      "variant_index": 0,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-10-0",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-11-0",
+      "variant_index": 0,
+      "reaction": "bookmark",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-12-0",
+      "variant_index": 0,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-01-1",
+      "variant_index": 0,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-02-1",
+      "variant_index": 0,
+      "reaction": "reply",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-03-1",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-04-1",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-05-1",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-06-1",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-07-1",
+      "variant_index": 0,
+      "reaction": "repost",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-08-1",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-09-1",
+      "variant_index": 0,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-10-1",
+      "variant_index": 0,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-11-1",
+      "variant_index": 0,
+      "reaction": "bookmark",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-12-1",
+      "variant_index": 0,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-01-0",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-02-0",
+      "variant_index": 1,
+      "reaction": "repost",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-03-0",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-04-0",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-05-0",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-06-0",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-07-0",
+      "variant_index": 1,
+      "reaction": "bookmark",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-08-0",
+      "variant_index": 1,
+      "reaction": "reply",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-09-0",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-10-0",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-11-0",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-12-0",
+      "variant_index": 1,
+      "reaction": "reply",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-01-1",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-02-1",
+      "variant_index": 1,
+      "reaction": "repost",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-03-1",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-04-1",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-05-1",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-06-1",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-07-1",
+      "variant_index": 1,
+      "reaction": "bookmark",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-08-1",
+      "variant_index": 1,
+      "reaction": "reply",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-09-1",
+      "variant_index": 1,
+      "reaction": "like",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-10-1",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-11-1",
+      "variant_index": 1,
+      "reaction": "read",
+      "comment": null,
+      "sentiment": null
+    },
+    {
+      "persona_id": "p-12-1",
+      "variant_index": 1,
+      "reaction": "reply",
+      "comment": null,
+      "sentiment": null
+    }
+  ],
+  "variants": [
+    {
+      "variant_index": 0,
+      "text": "Hilo rápido sobre presupuesto: 3 cosas que me hubiera gustado saber antes 👇",
+      "interaction_rate": 0.8254620123203286,
+      "reaction_counts": {
+        "ignore": 0,
+        "read": 6,
+        "like": 12,
+        "reply": 2,
+        "repost": 2,
+        "bookmark": 2
+      }
+    },
+    {
+      "variant_index": 1,
+      "text": "¿Qué es lo que más te cuesta de presupuesto? Leo todas las respuestas y armo un post con las mejores.",
+      "interaction_rate": 0.606776180698152,
+      "reaction_counts": {
+        "ignore": 0,
+        "read": 8,
+        "like": 8,
+        "reply": 4,
+        "repost": 2,
+        "bookmark": 2
+      }
+    }
+  ],
+  "segments": [
+    {
+      "dimension": "age_group",
+      "value": "13 a 17 años",
+      "variant_index": 0,
+      "persona_count": 2,
+      "interaction_rate": 1.0
+    },
+    {
+      "dimension": "age_group",
+      "value": "18 a 29 años",
+      "variant_index": 0,
+      "persona_count": 8,
+      "interaction_rate": 0.7628865979381443
+    },
+    {
+      "dimension": "age_group",
+      "value": "30 a 49 años",
+      "variant_index": 0,
+      "persona_count": 8,
+      "interaction_rate": 1.0
+    },
+    {
+      "dimension": "age_group",
+      "value": "50 a 64 años",
+      "variant_index": 0,
+      "persona_count": 4,
+      "interaction_rate": 0.5353535353535354
+    },
+    {
+      "dimension": "age_group",
+      "value": "65 años y mas",
+      "variant_index": 0,
+      "persona_count": 2,
+      "interaction_rate": 0.0
+    },
+    {
+      "dimension": "gender",
+      "value": "Mujer",
+      "variant_index": 0,
+      "persona_count": 14,
+      "interaction_rate": 0.6822429906542056
+    },
+    {
+      "dimension": "gender",
+      "value": "Varón",
+      "variant_index": 0,
+      "persona_count": 10,
+      "interaction_rate": 1.0
+    },
+    {
+      "dimension": "age_group",
+      "value": "13 a 17 años",
+      "variant_index": 1,
+      "persona_count": 2,
+      "interaction_rate": 1.0
+    },
+    {
+      "dimension": "age_group",
+      "value": "18 a 29 años",
+      "variant_index": 1,
+      "persona_count": 8,
+      "interaction_rate": 0.7731958762886598
+    },
+    {
+      "dimension": "age_group",
+      "value": "30 a 49 años",
+      "variant_index": 1,
+      "persona_count": 8,
+      "interaction_rate": 0.2512690355329949
+    },
+    {
+      "dimension": "age_group",
+      "value": "50 a 64 años",
+      "variant_index": 1,
+      "persona_count": 4,
+      "interaction_rate": 1.0
+    },
+    {
+      "dimension": "age_group",
+      "value": "65 años y mas",
+      "variant_index": 1,
+      "persona_count": 2,
+      "interaction_rate": 1.0
+    },
+    {
+      "dimension": "gender",
+      "value": "Mujer",
+      "variant_index": 1,
+      "persona_count": 14,
+      "interaction_rate": 0.594392523364486
+    },
+    {
+      "dimension": "gender",
+      "value": "Varón",
+      "variant_index": 1,
+      "persona_count": 10,
+      "interaction_rate": 0.621867881548975
+    }
+  ],
+  "best_variant_index": 0,
+  "summary": "La variante 1 generó más interacción (82,5% de la audiencia simulada).",
+  "disclaimer": "Simulación orientativa con audiencias sintéticas basadas en la ENCC 2022-23 (OpenARG). Sirve para comparar variantes; no predice resultados reales."
+}

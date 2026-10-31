@@ -1,0 +1,9 @@
+{
+  "goal": "community",
+  "goal_detail": "Que más gente comente y haga preguntas de ciencia.",
+  "target_audience": "Estudiantes y curiosos de la ciencia.",
+  "audience_filters": {"age_groups": ["13 a 17 años", "18 a 29 años"], "genders": [], "provinces": []},
+  "brand_voice": "Cercana, clara y con humor.",
+  "avoid_topics": ["política"],
+  "preferred_cta": "reply"
+}

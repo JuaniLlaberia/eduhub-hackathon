@@ -1,0 +1,4 @@
+src/lib/api/schema.d.ts
+src/lib/api/fixtures/
+package-lock.json
+*.md

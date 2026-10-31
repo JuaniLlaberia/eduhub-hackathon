@@ -1,0 +1,66 @@
+/* Post sky: posts appear left to right (oldest first), then the novas flare.
+   Plain global CSS (prefixed ps-): the Turbopack CSS rule in next.config.ts does not support CSS modules.
+   Final states are the default styles, so with reduced motion everything is simply shown. */
+
+.ps-star,
+.ps-glow {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.ps-glow {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ps-star {
+    animation: ps-appear 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) var(--delay) both;
+  }
+
+  .ps-glow {
+    animation:
+      ps-flare 1.6s ease-out var(--delay) both,
+      ps-breathe 7s ease-in-out calc(var(--delay) + 1.6s) infinite;
+  }
+
+  .ps-line {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: ps-draw 1.4s ease-out 0.1s both;
+  }
+}
+
+@keyframes ps-appear {
+  from {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+}
+
+@keyframes ps-flare {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ps-breathe {
+  50% {
+    opacity: 0.6;
+    transform: scale(0.85);
+  }
+}
+
+@keyframes ps-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
