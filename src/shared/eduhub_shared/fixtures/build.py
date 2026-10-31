@@ -16,6 +16,9 @@ from eduhub_shared.models import (
     AccountSnapshot,
     AnalysisJob,
     ApiError,
+    AudienceFilters,
+    CreatorContext,
+    CreatorGoal,
     DraftRequest,
     DraftsResponse,
     ErrorCode,
@@ -27,6 +30,7 @@ from eduhub_shared.models import (
     Post,
     PostKind,
     PostMetrics,
+    PreferredCta,
     PublishRequest,
     SimulationRequest,
     Trend,
@@ -132,6 +136,17 @@ def build_post(index: int, rng: random.Random) -> Post:
         metrics=metrics,
     )
 
+EXAMPLE_CONTEXT = CreatorContext(
+    goal=CreatorGoal.SELL,
+    goal_detail="Llenar la próxima cohorte del curso antes de fin de mes.",
+    offering="Curso online de finanzas personales para gente que cobra en pesos (4 semanas).",
+    target_audience="Jóvenes que empiezan a trabajar y no saben cómo organizar su sueldo.",
+    audience_filters=AudienceFilters(age_groups=["18 a 29 años", "30 a 49 años"]),
+    brand_voice="Cercana, con humor y sin tecnicismos. Siempre con voseo.",
+    avoid_topics=["política", "cripto"],
+    preferred_cta=PreferredCta.LINK,
+)
+
 def build_snapshot() -> AccountSnapshot:
     """
     Build the fictional account snapshot (40 posts over ~10 weeks, newest first).
@@ -154,7 +169,8 @@ def build_snapshot() -> AccountSnapshot:
             start=1,
         )
     ]
-    return AccountSnapshot(profile=profile, posts=posts, trends=trends, source="fixture", collected_at=NOW)
+    return AccountSnapshot(profile=profile, posts=posts, trends=trends, source="fixture", collected_at=NOW,
+                           context=EXAMPLE_CONTEXT)
 
 def job(status: JobStatus, progress: float, message: str | None, report_id: str | None = None,
         error: ApiError | None = None) -> AnalysisJob:

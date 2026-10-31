@@ -10,7 +10,7 @@ from eduhub_ai.labeling import prompts
 from eduhub_ai.labeling.schemas import MAX_TOPICS, OTHER_TOPIC, PostLabel, TaxonomyResponse, label_batch_schema
 from eduhub_ai.llm.client import LLMClient, LLMError
 from eduhub_shared.errors import RateLimitedError
-from eduhub_shared.models import Post, PostFeatures
+from eduhub_shared.models import CreatorContext, Post, PostFeatures
 
 TAXONOMY_SAMPLE_SIZE = 60
 DEFAULT_BATCH_SIZE = 25
@@ -50,15 +50,18 @@ def normalize_taxonomy(topics: list[str]) -> list[str]:
             seen.append(label)
     return [*seen[:MAX_TOPICS], OTHER_TOPIC]
 
-async def build_taxonomy(posts: list[Post], client: LLMClient, settings: AISettings) -> list[str]:
+async def build_taxonomy(
+    posts: list[Post], client: LLMClient, settings: AISettings, context: CreatorContext | None = None
+) -> list[str]:
     """
-    Ask the LLM for this account's topics from a sample of posts. Raises LLMError/RateLimitedError on failure.
+    Ask the LLM for this account's topics from a sample of posts (the brief's offering is a naming hint).
+    Raises LLMError/RateLimitedError on failure.
     """
     sample = sample_for_taxonomy(posts)
     response = await client.complete_json(
         model=settings.label_model,
         system=prompts.TAXONOMY_SYSTEM,
-        user=prompts.taxonomy_user(sample),
+        user=prompts.taxonomy_user(sample, context),
         schema=TaxonomyResponse,
         temperature=TAXONOMY_TEMPERATURE,
         reasoning=settings.label_reasoning,
@@ -152,6 +155,7 @@ async def label_account(
     client: LLMClient | None,
     settings: AISettings,
     batch_size: int = DEFAULT_BATCH_SIZE,
+    context: CreatorContext | None = None,
 ) -> LabelingResult:
     """
     Run both passes and merge the labels into features. Never raises on LLM failures: without a client (or with
@@ -162,7 +166,7 @@ async def label_account(
         return LabelingResult(features=dict(features))
     errors: list[str] = []
     try:
-        taxonomy = await build_taxonomy(posts, client, settings)
+        taxonomy = await build_taxonomy(posts, client, settings, context)
     except LLM_FAILURES as error:
         logger.warning("taxonomy failed, falling back to hashtag topics: %s", error)
         errors.append(f"taxonomy failed: {error}")

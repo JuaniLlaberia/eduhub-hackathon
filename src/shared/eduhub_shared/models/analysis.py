@@ -2,6 +2,7 @@ from enum import StrEnum
 from pydantic import AwareDatetime, Field, NonNegativeFloat, NonNegativeInt
 from eduhub_shared.models.account import AccountProfile, MediaType, Post
 from eduhub_shared.models.common import ContractModel
+from eduhub_shared.models.context import CreatorContext
 
 Rate = NonNegativeFloat
 
@@ -168,3 +169,4 @@ class AnalysisReport(ContractModel):
     recommendations: list[Recommendation]
     summary: str = Field(description="es-AR, 2-4 sentences.")
     engine: str = Field(description="Which analyzer produced it, e.g. 'fake' or 'hybrid-v1'.")
+    context: CreatorContext | None = Field(default=None, description="The creator brief the report was made with.")

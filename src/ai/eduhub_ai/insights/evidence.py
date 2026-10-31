@@ -7,6 +7,7 @@ import json
 from collections.abc import Callable
 from typing import Literal
 from pydantic import BaseModel, Field
+from eduhub_ai.context import brief_payload, brief_texts
 from eduhub_ai.features.deterministic import hour_block
 from eduhub_ai.insights.grounding import extract_numbers
 from eduhub_ai.stats.segments import SegmentDetail, segment_details, segment_value
@@ -16,6 +17,7 @@ from eduhub_shared.models import (
     AccountKPIs,
     AccountProfile,
     AnalyzedPost,
+    CreatorContext,
     InsightCategory,
     SegmentDimension,
     TimeSlotStat,
@@ -107,6 +109,7 @@ class EvidencePack(BaseModel):
     top_posts: list[PostEvidence]
     bottom_posts: list[PostEvidence]
     pattern_effects: list[EvidenceItem] = Field(default_factory=list)
+    context: CreatorContext | None = None
     post_ids: set[str] = Field(default_factory=set)
     allowed_numbers: set[str] = Field(default_factory=set)
 
@@ -136,6 +139,9 @@ class EvidencePack(BaseModel):
             "top_posts": [p.model_dump() for p in self.top_posts],
             "bottom_posts": [p.model_dump() for p in self.bottom_posts],
         }
+        brief = brief_payload(self.context)
+        if brief is not None:
+            payload["contexto_del_creador"] = brief
         return json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
 
 def fmt_x(value: float) -> str:
@@ -178,10 +184,11 @@ def build_evidence(
     max_findings: int = MAX_FINDINGS,
     top_n: int = TOP_POSTS,
     pattern_effects: list[EvidenceItem] | None = None,
+    context: CreatorContext | None = None,
 ) -> EvidencePack:
     """
-    Build the evidence pack: KPIs, significant segment and timing findings, best slots, top/bottom posts and
-    the pattern model's effects (stage 07) when given.
+    Build the evidence pack: KPIs, significant segment and timing findings, best slots, top/bottom posts, the
+    pattern model's effects (stage 07) and the creator brief (stage 11) when given.
     """
     scored = sorted((p for p in posts if p.score is not None), key=lambda p: (-(p.score or 0), p.post.id))
     top = scored[:top_n]
@@ -195,9 +202,17 @@ def build_evidence(
         top_posts=[post_evidence(p, "top") for p in top],
         bottom_posts=[post_evidence(p, "bottom") for p in bottom],
         pattern_effects=list(pattern_effects or []),
+        context=context,
         post_ids={p.post.id for p in posts},
     )
-    return pack.model_copy(update={"allowed_numbers": extract_numbers(pack.prompt_json())})
+    allowed = extract_numbers(pack.prompt_json()) | brief_numbers(context)
+    return pack.model_copy(update={"allowed_numbers": allowed})
+
+def brief_numbers(context: CreatorContext | None) -> set[str]:
+    """
+    Number tokens the creator wrote in the brief: texts may quote them (e.g. "500 ventas").
+    """
+    return set().union(*(extract_numbers(text) for text in brief_texts(context)))
 
 def kpi_items(kpis: AccountKPIs, scored_count: int) -> list[EvidenceItem]:
     """

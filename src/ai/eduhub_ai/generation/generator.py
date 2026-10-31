@@ -10,6 +10,7 @@ from datetime import UTC, datetime, timedelta
 from typing import Any
 from zoneinfo import ZoneInfo
 from eduhub_ai.config import AISettings
+from eduhub_ai.context import CTA_LABELS, brief_payload, mentions_avoided
 from eduhub_ai.features.deterministic import extract_deterministic
 from eduhub_ai.generation.prompts import GENERATOR_SYSTEM, generator_user, retry_note
 from eduhub_ai.generation.schemas import DraftItem, DraftsResponse
@@ -19,6 +20,7 @@ from eduhub_ai.patterns import feature_row, fit_from_report
 from eduhub_shared.errors import GenerationError
 from eduhub_shared.models import (
     AnalysisReport,
+    CreatorContext,
     Draft,
     DraftRequest,
     Insight,
@@ -86,8 +88,9 @@ class LLMDraftGenerator:
         """
         recommendation = pick_recommendation(report, request.recommendation_id)
         insights = based_on(report, recommendation)
-        payload = build_payload(request, report, trends, recommendation, insights)
-        items = await self._collect(payload, request.count)
+        context = request.context or report.context
+        payload = build_payload(request, report, trends, recommendation, insights, context)
+        items = await self._collect(payload, request.count, context)
         now = self._clock()
         scorer = self._scorer or default_scorer(report)
         slots = report.best_time_slots
@@ -105,15 +108,16 @@ class LLMDraftGenerator:
             ))
         return drafts
 
-    async def _collect(self, payload: dict[str, Any], count: int) -> list[DraftItem]:
+    async def _collect(self, payload: dict[str, Any], count: int, context: CreatorContext | None) -> list[DraftItem]:
         """
-        Ask for count drafts, dedupe them, and retry once for the missing ones.
+        Ask for count drafts, dedupe them, drop the ones about the brief's avoided topics, and retry once for
+        the missing ones.
         """
-        items = dedupe(await self._ask(generator_user(payload)))
+        items = usable(await self._ask(generator_user(payload)), context)
         if len(items) < count:
             missing = {**payload, "cantidad": count - len(items)}
             user = generator_user(missing) + retry_note([i.text for i in items])
-            items = dedupe([*items, *await self._ask(user)])
+            items = usable([*items, *await self._ask(user)], context)
         if len(items) < count:
             raise GenerationError(TOO_FEW)
         return items[:count]
@@ -131,6 +135,12 @@ class LLMDraftGenerator:
             logger.warning("draft generation failed: %s", error)
             raise GenerationError(FAILED) from error
         return response.drafts
+
+def usable(items: list[DraftItem], context: CreatorContext | None) -> list[DraftItem]:
+    """
+    Deduped drafts that don't mention a topic the brief asks to avoid.
+    """
+    return [item for item in dedupe(items) if not mentions_avoided(item.text, context)]
 
 def dedupe(items: list[DraftItem]) -> list[DraftItem]:
     """
@@ -200,16 +210,18 @@ def build_payload(
     trends: list[Trend],
     recommendation: Recommendation | None,
     insights: list[Insight],
+    context: CreatorContext | None = None,
 ) -> dict[str, Any]:
     """
-    Everything the LLM needs, as a JSON-ready dict.
+    Everything the LLM needs, as a JSON-ready dict. A brief adds "brief" and its preferred CTA replaces the
+    account's best CTAs; without one the payload is unchanged.
     """
     topics = topic_segments(report)
     reliable = [s for s in topics if s.post_count >= MIN_TOPIC_POSTS]
     objective: dict[str, Any] = {"insights": [{"titulo": i.title, "detalle": i.description} for i in insights]}
     if recommendation is not None:
         objective["recomendacion"] = {"accion": recommendation.action, "por_que": recommendation.rationale}
-    return {
+    payload: dict[str, Any] = {
         "cuenta": f"@{report.profile.handle}",
         "ejemplos": voice_examples(report),
         "objetivo": objective,
@@ -221,6 +233,12 @@ def build_payload(
         "instrucciones": request.instructions,
         "cantidad": request.count,
     }
+    brief = brief_payload(context)
+    if brief is not None:
+        payload["brief"] = brief
+    if context is not None and context.preferred_cta is not None:
+        payload["mejores_cta"] = [CTA_LABELS[context.preferred_cta]]
+    return payload
 
 def draft_features(item: DraftItem, report: AnalysisReport, when: datetime) -> PostFeatures:
     """

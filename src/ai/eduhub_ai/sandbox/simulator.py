@@ -10,12 +10,14 @@ from collections.abc import Callable
 from datetime import UTC, datetime
 from pydantic import BaseModel, ConfigDict, Field
 from eduhub_ai.config import AISettings
+from eduhub_ai.context import product_line
 from eduhub_ai.llm.client import LLMClient, LLMError
 from eduhub_ai.sandbox.personas import load_personas, sample_personas
 from eduhub_ai.sandbox.prompts import SANDBOX_SYSTEM, sandbox_user
 from eduhub_shared.errors import SimulationError
 from eduhub_shared.models import (
     AudienceDimension,
+    AudienceFilters,
     Persona,
     PersonaReaction,
     ReactionType,
@@ -34,6 +36,7 @@ DISCLAIMER = (
     "Simulación orientativa con audiencias sintéticas basadas en la ENCC 2022-23 (OpenARG). "
     "Sirve para comparar variantes; no predice resultados reales."
 )
+BRIEF_AUDIENCE_NOTE = " (Simulado con la audiencia objetivo de tu brief.)"
 NO_AUDIENCE = "No encontramos personas para esa audiencia. Probá con menos filtros."
 FAILED = "No pudimos simular la audiencia. Probá de nuevo en unos minutos."
 logger = logging.getLogger(__name__)
@@ -89,19 +92,21 @@ class LLMAudienceSimulator:
         when no persona matches the filters or more than half the reactions are missing.
         """
         pool = self._personas if self._personas is not None else load_personas()
-        personas = sample_personas(pool, request.filters, request.audience_size, self.seed)
+        filters, from_brief = audience_filters(request)
+        personas = sample_personas(pool, filters, request.audience_size, self.seed)
         if not personas:
             raise SimulationError(NO_AUDIENCE)
         batches = [personas[i:i + BATCH_SIZE] for i in range(0, len(personas), BATCH_SIZE)]
-        answers = await asyncio.gather(*[self._react(batch, request.variants) for batch in batches])
+        product = product_line(request.context)
+        answers = await asyncio.gather(*[self._react(batch, request.variants, product) for batch in batches])
         reactions = [reaction for batch in answers for reaction in batch]
         expected = len(personas) * len(request.variants)
         if len(reactions) * 2 < expected:
             logger.warning("simulation got %d of %d reactions", len(reactions), expected)
             raise SimulationError(FAILED)
-        return self._result(request, personas, reactions)
+        return self._result(request, personas, reactions, from_brief)
 
-    async def _react(self, batch: list[Persona], variants: list[str]) -> list[PersonaReaction]:
+    async def _react(self, batch: list[Persona], variants: list[str], product: str | None) -> list[PersonaReaction]:
         """
         One LLM call for a batch; keeps one valid reaction per (persona, variant). A failed call yields none.
         """
@@ -109,6 +114,8 @@ class LLMAudienceSimulator:
             "personas": [persona_card(p) for p in batch],
             "variantes": [{"indice": i, "texto": text} for i, text in enumerate(variants)],
         }
+        if product is not None:
+            payload["producto"] = product
         try:
             response = await self.client.complete_json(
                 model=self.settings.label_model, system=SANDBOX_SYSTEM, user=sandbox_user(payload),
@@ -128,7 +135,8 @@ class LLMAudienceSimulator:
         return list(kept.values())
 
     def _result(
-        self, request: SimulationRequest, personas: list[Persona], reactions: list[PersonaReaction]
+        self, request: SimulationRequest, personas: list[Persona], reactions: list[PersonaReaction],
+        from_brief: bool = False,
     ) -> SimulationResult:
         """
         Aggregate by variant and by segment, pick the best variant and write the es-AR summary.
@@ -143,9 +151,19 @@ class LLMAudienceSimulator:
             variants=variants,
             segments=segments,
             best_variant_index=best.variant_index,
-            summary=summary(best, variants, segments),
+            summary=summary(best, variants, segments) + (BRIEF_AUDIENCE_NOTE if from_brief else ""),
             disclaimer=DISCLAIMER,
         )
+
+def audience_filters(request: SimulationRequest) -> tuple[AudienceFilters, bool]:
+    """
+    The request's filters, or the brief's target audience when the request sets none; plus whether the brief's
+    were used.
+    """
+    brief = request.context.audience_filters if request.context is not None else AudienceFilters()
+    if request.filters == AudienceFilters() and brief != AudienceFilters():
+        return brief, True
+    return request.filters, False
 
 def persona_card(persona: Persona) -> dict[str, object]:
     """

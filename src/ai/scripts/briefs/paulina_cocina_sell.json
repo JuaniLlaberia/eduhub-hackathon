@@ -1,0 +1,10 @@
+{
+  "goal": "sell",
+  "goal_detail": "Vender el ebook antes de fin de año.",
+  "offering": "Ebook 'Soy Solito': recetas fáciles para cocinar para una persona.",
+  "target_audience": "Gente que vive sola y cocina poco.",
+  "audience_filters": {"age_groups": ["18 a 29 años", "30 a 49 años"], "genders": [], "provinces": []},
+  "brand_voice": "Cercana, con humor y mucho voseo.",
+  "avoid_topics": ["política"],
+  "preferred_cta": "link"
+}

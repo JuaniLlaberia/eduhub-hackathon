@@ -36,12 +36,13 @@ from eduhub_shared.models.api import (
     JobStatus,
     TrendsResponse,
 )
+from eduhub_shared.models.audience import AudienceFilters
 from eduhub_shared.models.common import ContractModel, Handle, normalize_handle
+from eduhub_shared.models.context import CreatorContext, CreatorGoal, PreferredCta
 from eduhub_shared.models.generation import Draft, DraftRequest
 from eduhub_shared.models.publishing import PublishRequest, PublishResult, PublishStatus
 from eduhub_shared.models.simulation import (
     AudienceDimension,
-    AudienceFilters,
     Persona,
     PersonaReaction,
     ReactionType,
@@ -63,6 +64,8 @@ __all__ = [
     "AudienceDimension",
     "AudienceFilters",
     "ContractModel",
+    "CreatorContext",
+    "CreatorGoal",
     "Draft",
     "DraftRequest",
     "DraftsResponse",
@@ -86,6 +89,7 @@ __all__ = [
     "PostKind",
     "PostMetrics",
     "PostRates",
+    "PreferredCta",
     "PublishRequest",
     "PublishResult",
     "PublishStatus",
